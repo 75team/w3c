@@ -18,13 +18,13 @@
 - [@verymuch](https://github.com/verymuch)，Web Performance Working Group
 - [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
 - [@Berwin](https://github.com/Berwin)，Web Performance Working Group
-- [@chunpu](https://github.com/chunpu)，Broswer Tools and Testing Working Group
+- [@chunpu](https://github.com/chunpu)，Browser Tools and Testing Working Group
 
 ## 贡献
 
 - [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
 - [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
-- [Broswer Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BroswerTaT.md)
+- [Browser Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BrowserTaT.md)
 
 
 ## 文章
