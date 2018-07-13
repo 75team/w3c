@@ -10,7 +10,7 @@
     - 我也表示了赞同，人家说的对，自己学到了
 
 - \#2557 [[css-grid] Applying 'justify-content' content distribution is in the wrong place in the overall grid sizing algo](https://github.com/w3c/csswg-drafts/issues/2557)
-  - 表达了观点：虽然 Gird 的 Layout 的算法细节我不特别清楚，但是我赞同FF的实现更符合预期，与Chrome的相比
+  - 表达了观点：虽然 Gird 的 Layout 的算法细节我不特别清楚，但是我赞同FF的实现更符合预期，与 Chrome 的相比
 
 - \#2701 [[css-nesting] request to pick up the css-nesting proposal](https://github.com/w3c/csswg-drafts/issues/2701)
   - 表达了观点，非常赞同CSS能原生支持嵌套
