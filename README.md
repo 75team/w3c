@@ -1,4 +1,4 @@
-## 项目简介
+## 360 W3C工作组
 
 本项目记录360 W3C工作组参与Web标准制定过程中的各项产出。
 
@@ -8,7 +8,7 @@
 
 为了让广大同行及社会公众更好地了解360参与W3C标准制定的情况，吸引更多对Web标准感兴趣、有研究，愿意贡献力量的小伙伴参与，我们创建了这个项目。
 
-## 360 W3C工作组成员
+## 成员
 
 - [@cncuckoo](https://github.com/cncuckoo)，Advisory Committee Representative（顾问委员会代表）
 - [@liuguanyu](https://github.com/liuguanyu)，CSS Working Group
@@ -20,21 +20,21 @@
 - [@Berwin](https://github.com/Berwin)，Web Performance Working Group
 - [@chunpu](https://github.com/chunpu)，Broswer Tools and Testing Working Group
 
-## 贡献列表
+## 贡献
 
 - [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
 - [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
 - [Broswer Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BroswerTaT.md)
 
 
-## 文章列表
+## 文章
 
 1. [不用预编译，CSS直接写嵌套的日子就要到了](https://github.com/75team/w3c/blob/master/articles/20180712_不用预编译，CSS直接写嵌套的日子就要到了.md)（2018-7-12 [@anjia](https://github.com/anjia)）
 1. [震惊！滑动验证码竟然能这样破解](https://github.com/75team/w3c/blob/master/articles/20180709_震惊！滑动验证码竟然能这样破解.md)（2018-7-9 [@Berwin](https://github.com/Berwin)）
 1. [Tim Berners-Lee小传](https://github.com/75team/w3c/blob/master/articles/20180630_TimBernersLee小传.md)（2018-6-30 [@cncuckoo](https://github.com/cncuckoo)）
 1. [为什么不会有CSS4了？](https://github.com/75team/w3c/blob/master/articles/20180625_为什么不会有CSS4了？.md)（2018-6-25 [@cncuckoo](https://github.com/cncuckoo)）
 1. [来，一起帮忙制定CSS规范吧](https://github.com/75team/w3c/blob/master/articles/20180613_来，一起帮忙制定CSS规范吧.md)（2018-6-13 [@cncuckoo](https://github.com/cncuckoo)）
-1. [同学，W3C了解一下](https://github.com/75team/w3c/blob/master/articles/20180612_同学，W3C了解一下.md)（2018-6-12 [@huangxialu](https://github.com/huangxialu)）
+1. [同学，W3C了解一下](https://github.com/75team/w3c/blob/master/articles/20180612_同学，W3C了解一下.md)（2018-6-12 [@huangxialu](https://github.com/huangxiaolu)）
 
 
 > **版权声明**
