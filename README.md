@@ -30,7 +30,7 @@
 ## 文章
 
 1. [不用预编译，CSS直接写嵌套的日子就要到了](https://github.com/75team/w3c/blob/master/articles/20180712_不用预编译，CSS直接写嵌套的日子就要到了.md)（2018-7-12 [@anjia](https://github.com/anjia)）
-1. [震惊！滑动验证码竟然能这样破解](https://github.com/75team/w3c/blob/master/articles/20180709_震惊！滑动验证码竟然能这样破解.md)（2018-7-9 [@Berwin](https://github.com/Berwin)）
+1. [震惊！滑动验证码竟然能这样破解](https://github.com/75team/w3c/blob/master/articles/20180709_震惊！滑动验证码竟然能这样破解.md)（2018-7-9 [@chunpu](https://github.com/chunpu)）
 1. [Tim Berners-Lee小传](https://github.com/75team/w3c/blob/master/articles/20180630_TimBernersLee小传.md)（2018-6-30 [@cncuckoo](https://github.com/cncuckoo)）
 1. [为什么不会有CSS4了？](https://github.com/75team/w3c/blob/master/articles/20180625_为什么不会有CSS4了？.md)（2018-6-25 [@cncuckoo](https://github.com/cncuckoo)）
 1. [来，一起帮忙制定CSS规范吧](https://github.com/75team/w3c/blob/master/articles/20180613_来，一起帮忙制定CSS规范吧.md)（2018-6-13 [@cncuckoo](https://github.com/cncuckoo)）
