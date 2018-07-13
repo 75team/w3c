@@ -20,14 +20,14 @@
 - [@Berwin](https://github.com/Berwin)，Web Performance Working Group
 - [@chunpu](https://github.com/chunpu)，Broswer Tools and Testing Working Group
 
+## 贡献列表
+
+- [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
+- [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
+- [Broswer Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BroswerTaT.md)
+
 
 ## 文章列表
-
-> **版权声明**
-> 
-> 本项目下所有文章均为360公司W3C工作组成员原创作品。如需转载，请务必先联系作者，取得授权后再转载。转载时也必须遵循创意共享的惯例，注明文章的作者和出处（即本页面或文章页面）。
->
-> 谢谢合作！
 
 1. [不用预编译，CSS直接写嵌套的日子就要到了](https://github.com/75team/w3c/blob/master/articles/20180712_不用预编译，CSS直接写嵌套的日子就要到了.md)（2018-7-12 [@anjia](https://github.com/anjia)）
 1. [震惊！滑动验证码竟然能这样破解](https://github.com/75team/w3c/blob/master/articles/20180709_震惊！滑动验证码竟然能这样破解.md)（2018-7-9 [@Berwin](https://github.com/Berwin)）
@@ -37,16 +37,8 @@
 1. [同学，W3C了解一下](https://github.com/75team/w3c/blob/master/articles/20180612_同学，W3C了解一下.md)（2018-6-12 [@huangxialu](https://github.com/huangxialu)）
 
 
-
-## 贡献列表
-
-- [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
-- [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
-- [Broswer Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BroswerTaT.md)
-
-## 国际会议
-
-- [AC 2018](https://ppt.baomitu.com/embed/83d17fc9?style=light)
-- [TPAC 2016](https://ppt.baomitu.com/embed/dc4f954f?style=light)
-- [AC 2016](https://ppt.baomitu.com/embed/b9df871e?style=light)
-- [TPAC 2015](https://ppt.baomitu.com/embed/5b3839aa?style=light)
+> **版权声明**
+> 
+> 本项目下所有文章均为360公司W3C工作组成员原创作品。如需转载，请务必先联系作者，取得授权后再转载。转载时也必须遵循创意共享的惯例，注明文章的作者和出处（即本页面或文章页面）。
+>
+> 谢谢合作！
