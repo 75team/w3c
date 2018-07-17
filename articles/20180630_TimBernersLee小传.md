@@ -1,11 +1,5 @@
 # Tim Berners-Lee小传
 
-> **版权声明**
-> 
-> 本项目下所有文章均为360公司W3C工作组成员原创作品。如需转载，请务必先联系：lsf.email@gmail.com，取得授权后再转载。转载时也必须遵循创意共享的惯例，注明文章的作者和出处（即本页面）。
-
-
-
 > 本文基于维基百科条目编译：https://en.wikipedia.org/wiki/Tim_Berners-Lee
 
 Tim Berners-Lee，1955年6月8日出生于英国伦敦。父母都是数学家，父亲Conway Berners-Lee也是计算机科学家、第一台商业计算机“费伦蒂马克1号”（Ferranti Mark 1）开发团队成员，母亲Mary Lee Woods则还是一位程序员，曾为“费伦蒂马克1号”写程序，父母因此相识并结婚。
