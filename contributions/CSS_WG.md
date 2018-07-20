@@ -26,3 +26,15 @@
     - 如果`shape-outside`能实现`initial-letter-wrap`的现有功能，两者能合二为一更好~（因为对于前端开发者而言，使用就更方便啦）
     - 鉴于目前的情况，对`shape-outside`和`initial-letter-wrap`的属性值们给了一些其它建议
       - > 目前此 issue 暂无进展，预计此功能优先级不高~
+
+- \#2421 [[css-overflow] How does max-lines interact with hidden content?](https://github.com/w3c/csswg-drafts/issues/2421)
+  - 我的观点：也赞同不做改动
+    - “它们两个都让字符不可见了，但一个算行另一个却不算”，初看似乎有点矛盾，其实是符合预期的，因为原因不同
+      - `max-lines:1` 不算行，是因为它影响了布局
+      - `max-height: 1lh; overflow: clip`算行，是因为`max-height: 1lh`影响了布局，而`overflow`只做了视觉上的裁切
+
+- \#862 [[css-inline] should `initial-letter` be plural?](https://github.com/w3c/csswg-drafts/issues/862)
+  - 我的观点：
+    - 针对要应用到第一个内联盒子里的多字母情形，觉得单复数的名字都不太合适，`initial-letter/initial-letters`
+	    - 因为这已经不再是纯CSS了，而是和HTML结构相关了。感觉`initial-child`或者其它什么名字更贴切些
+
