@@ -29,6 +29,7 @@
 
 ## 文章
 
+1. [你一定是闲得蛋疼才重构的吧.md](https://github.com/75team/w3c/blob/master/articles/20180724_你一定是闲得蛋疼才重构的吧.md)（2018-7-24 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [5分钟撸一个前端性能监控工具](https://github.com/75team/w3c/blob/master/articles/20180718_5分钟撸一个前端性能监控工具.md)（2018-7-18 [@liuyuchenzh](https://github.com/liuyuchenzh)）
 1. [嗨，送你一张Web性能优化地图](https://github.com/75team/w3c/blob/master/articles/20180716_嗨，送你一张Web性能优化地图.md)（2018-7-16 [@Berwin](https://github.com/Berwin)）
 1. [不用预编译，CSS直接写嵌套的日子就要到了](https://github.com/75team/w3c/blob/master/articles/20180712_不用预编译，CSS直接写嵌套的日子就要到了.md)（2018-7-12 [@anjia](https://github.com/anjia)）
