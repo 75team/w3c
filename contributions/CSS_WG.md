@@ -2,7 +2,7 @@
 
 ### 参与讨论的 Issues
 
-模块      | ID      | 内容详情 | &nbsp;Gains&nbsp;
+模块      | ID      | 内容详情 | Gains&nbsp;
 :-------:|---------|:-------- |----
 grid     | 1102  | [[css-grid-2] Allow minmax where max wins over min](https://github.com/w3c/csswg-drafts/issues/1102)
 &nbsp;   |         | 我的提议：可以给`minmax()`再多加一个参数，大约长这样`minmax(min-value, max-value, more-prior-item)`
@@ -36,7 +36,7 @@ shapes   | 885   | [[css-shapes] Allow shape-outside to apply to initial letter]
 
 ### 阅读的 Issues
 
-模块      | ID      | 内容   | 详情    | &nbsp;Notes&nbsp;
+模块      | ID      | 内容   | 详情    | Notes&nbsp;
 :-------:|---------|-------|:---------|----
 nesting  | 2881  | Issue | [[css-nesting] Concern about combinatorial explosion](https://github.com/w3c/csswg-drafts/issues/2881) | 实现
 &nbsp;   |         |       | 当嵌套太深时，会导致选择器数量呈指数级增长
