@@ -34,8 +34,6 @@ shapes   | \#885   | [[css-shapes] Allow shape-outside to apply to initial lette
 &nbsp;   |         |
 
 
-
-
 ### 阅读的 Issues
 
 模块      | ID      | 内容   | 详情    | 备注
