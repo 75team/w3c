@@ -29,6 +29,7 @@
 
 ## 文章
 
+1. [20180727_再见了jQuery，我的老朋友](/articles/20180727_再见了jQuery，我的老朋友.md)（2018-7-27 [@cncuckoo](https://github.com/cncuckoo)）
 1. [5分钟彻底理解Object.keys](/articles/20180726_5分钟彻底理解Object.keys.md)（2018-7-26 [@Berwin](https://github.com/berwin)）
 1. [你一定是闲得蛋疼才重构的吧.md](https://github.com/75team/w3c/blob/master/articles/20180724_你一定是闲得蛋疼才重构的吧.md)（2018-7-24 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [5分钟撸一个前端性能监控工具](https://github.com/75team/w3c/blob/master/articles/20180718_5分钟撸一个前端性能监控工具.md)（2018-7-18 [@liuyuchenzh](https://github.com/liuyuchenzh)）
