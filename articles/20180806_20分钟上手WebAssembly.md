@@ -7,7 +7,6 @@ Web应用的蓬勃发展，使得JavaScript、Web前端，乃至整个互联网�
 
 特别是2018年，W3C的WebAssembly工作组发布了第一个工作草案，包含了[核心标准](https://www.w3.org/TR/2018/WD-wasm-core-1-20180215/)、[JavaScript API](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/)以及[Web API](https://www.w3.org/TR/2018/WD-wasm-web-api-1-20180215/)。另外，除了C/C++和Rust之外，Golang语言也正式支持了wasm的编译。我们罕见的看到，各大主流浏览器一致表示支持这一新的技术，也许一个崭新的Web时代即将到来。
 
-<!--more-->
 ### 简单介绍wasm
 
 打开wasm的[官网](https://webassembly.org/)，我们可以看到其宏伟的技术目标。除了定义一个可移植、精悍、载入迅捷的二进制格式之外，还有对移动设备、非浏览器乃至IoT设备支持的规划，并且还会逐步建立一系列工具链。感兴趣的读者，可以从[这里](https://webassembly.org/docs/high-level-goals/)看到wasm官方的阐述。
