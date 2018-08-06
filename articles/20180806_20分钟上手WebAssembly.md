@@ -7,7 +7,7 @@ Web应用的蓬勃发展，使得JavaScript、Web前端，乃至整个互联网�
 
 ### 简单介绍wasm
 
-打开wasm的[官网](https://webassembly.org/)，我们可以看到其宏伟的技术目标。除了定义一个可移植、精悍、载入迅捷的二进制格式之外，还有对移动设备、非浏览器乃至IoT设备支持的规划，并且还会逐步建立一系列工具链。感兴趣的读者，可以从[这里](https://webassembly.org/docs/high-level-goals/)看到wasm官方的阐述。
+打开wasm的[官网](https://webassembly.org/)，我们可以看到其宏伟的技术目标。除了定义一个可移植、精悍、载入迅捷的二进制格式之外，还有对移动设备、非浏览器乃至IoT设备支持的规划，并且还会逐步建立一系列工具链。感兴趣的读者，可以从[这里](https://webassembly.org/docs/high-level-goals/)看到wasm官方的阐述。
 
 简单的说，wasm并不是一种编程语言，而是一种新的字节码格式，目前，主流浏览器都已经支持 wasm。与 JavaScript 需要解释执行不同的是，wasm字节码和底层机器码很相似可快速装载运行，因此性能相对于 JavaScript 解释执行有了很大的提升。
 
@@ -17,9 +17,9 @@ Web应用的蓬勃发展，使得JavaScript、Web前端，乃至整个互联网�
 
 除了在浏览器上可以运行外，目前wasm已经可以在包括NodeJS等命令行环境下运行。
 
-### wasm的工具链结构
+### wasm的工具链结构
 
-按照最初的设想，各种高级语言通过自己的前端编译工具，将自己的源代码编译成为底层虚拟机(LLVM)可识别的中间语言表示(LLVM IR)。此时，底层的LLVM可以将LLVM IR根据不同的CPU架构生成不同的机器码，同时可以对这些机器码进行编译时的空间与性能的优化。大多数的高级语言都是按照这样的结构来支持wasm的。上述提到的两个步骤，也依次被成为编译器前端和编译器后端。
+按照最初的设想，各种高级语言通过自己的前端编译工具，将自己的源代码编译成为底层虚拟机(LLVM)可识别的中间语言表示(LLVM IR)。此时，底层的LLVM可以将LLVM IR根据不同的CPU架构生成不同的机器码，同时可以对这些机器码进行编译时的空间与性能的优化。大多数的高级语言都是按照这样的结构来支持wasm的。上述提到的两个步骤，也依次被成为编译器前端和编译器后端。
 
 编译到wasm的代码，是最终进行实际工作的程序。对此，有一种名为S-表达式的文本格式，扩展名为.wast，以方便程序猿阅读。借助wabt工具链可以实现wasm和wast的互转。一个S-表达式形如：
 
@@ -43,7 +43,7 @@ Web应用的蓬勃发展，使得JavaScript、Web前端，乃至整个互联网�
 
 目前已经有多种高级语言支持对wasm的编译，特别是[AssemblyScript](https://github.com/AssemblyScript/assemblyscript)，这种以TypeScript为基础语言，通过AssemblyScript的工具链支持，可以完成最终到wasm的转换。
 
-根据上述架构，浏览器以及各种运行环境提供者，各自通过提供不同的运行支持以抹平各个CPU架构不同造成的差异，使得需要支持wasm高级语言，只需要支持编译到中间语言表示层。可以预见的是，随着开发环境的舒适度逐步提高，越来越多的高级语言也会加入支持wasm的阵营。
+根据上述架构，浏览器以及各种运行环境提供者，各自通过提供不同的运行支持以抹平各个CPU架构不同造成的差异，使得需要支持wasm高级语言，只需要支持编译到中间语言表示层。可以预见的是，随着开发环境的舒适度逐步提高，越来越多的高级语言也会加入支持wasm的阵营。
 
 ### 使用AssemblyScript编写wasm
 
@@ -51,10 +51,10 @@ Web应用的蓬勃发展，使得JavaScript、Web前端，乃至整个互联网�
 
 AssemblyScript项目主要分为三个子项目：
 - [AssemblyScript](https://github.com/AssemblyScript/assemblyscript)：将TypeScript转化为wasm的主程序
-- [binaryen.js](https://github.com/AssemblyScript/binaryen.js)：AssemblyScript主程序转化为wasm的底层实现，依托于[binaryen](http://github.com/WebAssembly/binaryen)库，是对binaryen的TypeScript封装。
-- [wast.js](https://github.com/AssemblyScript/wabt.js)：AssemblyScript主程序转化为wasm的底层实现，依托于[wast](https://github.com/WebAssembly/wabt)库，是对wast的TypeScript封装。
+- [binaryen.js](https://github.com/AssemblyScript/binaryen.js)：AssemblyScript主程序转化为wasm的底层实现，依托于[binaryen](http://github.com/WebAssembly/binaryen)库，是对binaryen的TypeScript封装。
+- [wast.js](https://github.com/AssemblyScript/wabt.js)：AssemblyScript主程序转化为wasm的底层实现，依托于[wast](https://github.com/WebAssembly/wabt)库，是对wast的TypeScript封装。
 
-这里需要说明的是，目前工具链还在开发过程中，个别步骤可能还不太稳定。我们尽量保证安装配置过程的严谨，如果遇到有变动，请以[官方](https://github.com/AssemblyScript/assemblyscript/wiki/Hello-World)描述为准。
+这里需要说明的是，目前工具链还在开发过程中，个别步骤可能还不太稳定。我们尽量保证安装配置过程的严谨，如果遇到有变动，请以[官方](https://github.com/AssemblyScript/assemblyscript/wiki/Hello-World)描述为准。
 
 为了支持编译，我们首先需要安装AssemblyScript的支持。为了编译的顺利进行，首先需要保证你的Node版本在8.0以上。同时，你需要安装好TypeScript运行环境。
 
@@ -71,13 +71,13 @@ npm install
 npm link
 ```
 
-执行上述命令后，你可以使用命令```asc```来判定是否安装正确。如果正常安装，命令行会显示asc命令的使用说明。
+执行上述命令后，你可以使用命令```asc```来判定是否安装正确。如果正常安装，命令行会显示asc命令的使用说明。
 
 ![](//p2.ssl.qhimg.com/t01d7c3585f2088ad07.jpg)
 
 #### 第二步：新建项目
 接下来，我们新建一个NPM项目，如：wasmExample。如果需要，可以加入ts-node和typescript的devDependencies，并安装好依赖。
-然后，在项目根目录下，我们新建一个目录：assembly。
+然后，在项目根目录下，我们新建一个目录：assembly。
 我们进入assembly目录，同时我们在这里加入tsconfig.json，内容如下：
 
 ```javascript
@@ -105,7 +105,7 @@ export function add(a: i32, b: i32): i32 {
 ![](//p1.ssl.qhimg.com/t010528af9951c2e150.jpg)
 
 #### 第四步：配置NPM Scripts
-为了后面运行简便，我们把build步骤加入到npm scripts里面，方法是打开项目根目录的package.json，更新scripts字段为：
+为了后面运行简便，我们把build步骤加入到npm scripts里面，方法是打开项目根目录的package.json，更新scripts字段为：
 
 ```javascript
  "scripts": {
@@ -135,7 +135,7 @@ const wasm = new WebAssembly.Module(
 module.exports = new WebAssembly.Instance(wasm).exports;
 ```
 
-同时，我们需要一个使用module的代码。如：index.js，如下：
+同时，我们需要一个使用module的代码。如：index.js，如下：
 
 ```javascript
 var myModule = require("./module.js");
