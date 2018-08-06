@@ -1,4 +1,5 @@
 > 本文作者：刘观宇，360奇舞团高级前端工程师、技术经理，曾参与360导航、360影视、360金融、360游戏等多个大型前端项目。关注W3C标准、IOT、机器学习的最新进展，现为W3C CSS工作组成员。
+
 ### 背景
 Web应用的蓬勃发展，使得JavaScript、Web前端，乃至整个互联网都发生了深刻的变化。前端开始承担起了更多的职责，于是对于执行效率的诉求也就更为急迫。除了在语言本身的进化，Web从业者以及各大浏览器厂商，也在不停地进行探索。2012年Mozillia的工程师提出了Asm.js和Emscripten，使得C/C++以及多种编程语言编写的高效程序转译为JavaScript并在浏览器运行成为可能。
 
@@ -15,7 +16,7 @@ Web应用的蓬勃发展，使得JavaScript、Web前端，乃至整个互联网�
 
 下面这张图，展示了目前（2018年7月）主流浏览器对于wasm的支持情况。
 
-![](//p0.ssl.qhimg.com/t01bb75a86a76a498da.jpg)
+![](https://p0.ssl.qhimg.com/t01bb75a86a76a498da.jpg)
 
 除了在浏览器上可以运行外，目前wasm已经可以在包括NodeJS等命令行环境下运行。
 
@@ -75,7 +76,7 @@ npm link
 
 执行上述命令后，你可以使用命令```asc```来判定是否安装正确。如果正常安装，命令行会显示asc命令的使用说明。
 
-![](//p2.ssl.qhimg.com/t01d7c3585f2088ad07.jpg)
+![](https://p2.ssl.qhimg.com/t01d7c3585f2088ad07.jpg)
 
 #### 第二步：新建项目
 接下来，我们新建一个NPM项目，如：wasmExample。如果需要，可以加入ts-node和typescript的devDependencies，并安装好依赖。
@@ -104,7 +105,7 @@ export function add(a: i32, b: i32): i32 {
 我们把上面这段TypeScript代码存储为：module.ts。
 那么，现在从项目根目录来看，我们的文件结构如下图：
 
-![](//p1.ssl.qhimg.com/t010528af9951c2e150.jpg)
+![](https://p1.ssl.qhimg.com/t010528af9951c2e150.jpg)
 
 #### 第四步：配置NPM Scripts
 为了后面运行简便，我们把build步骤加入到npm scripts里面，方法是打开项目根目录的package.json，更新scripts字段为：
@@ -160,7 +161,7 @@ console.log(myModule.add(1, 2));
 
 完整的步骤，也可以参见下面的流程图：
 
-![](//p2.ssl.qhimg.com/t01cbe282fc7451c953.jpg) 
+![](https://p2.ssl.qhimg.com/t01cbe282fc7451c953.jpg) 
 
 这里提供一个异步代码的例子，我们将其命名为async_module.js：
 
@@ -272,7 +273,7 @@ export function add(a: i32, b: i32): void {
 
 之后，运行`node index.js` 我们看到，原来的结果，改为用*的个数来表示了。说明WebAssembly调用JavaScript代码成功。
 
-![](//p2.ssl.qhimg.com/t0114059a98b5e8ce45.jpg)
+![](https://p2.ssl.qhimg.com/t0114059a98b5e8ce45.jpg)
 
 ### 小结
 对于wasm技术，我们总结如下：
