@@ -1,5 +1,3 @@
-> 本文作者：刘观宇，360奇舞团高级前端工程师、技术经理，曾参与360导航、360影视、360金融、360游戏等多个大型前端项目。关注W3C标准、IOT、机器学习的最新进展，现为W3C CSS工作组成员。
-
 ### 背景
 Web应用的蓬勃发展，使得JavaScript、Web前端，乃至整个互联网都发生了深刻的变化。前端开始承担起了更多的职责，于是对于执行效率的诉求也就更为急迫。除了在语言本身的进化，Web从业者以及各大浏览器厂商，也在不停地进行探索。2012年Mozillia的工程师提出了Asm.js和Emscripten，使得C/C++以及多种编程语言编写的高效程序转译为JavaScript并在浏览器运行成为可能。
 
@@ -7,7 +5,6 @@ Web应用的蓬勃发展，使得JavaScript、Web前端，乃至整个互联网�
 
 特别是2018年，W3C的WebAssembly工作组发布了第一个工作草案，包含了[核心标准](https://www.w3.org/TR/2018/WD-wasm-core-1-20180215/)、[JavaScript API](https://www.w3.org/TR/2018/WD-wasm-js-api-1-20180215/)以及[Web API](https://www.w3.org/TR/2018/WD-wasm-web-api-1-20180215/)。另外，除了C/C++和Rust之外，Golang语言也正式支持了wasm的编译。我们罕见的看到，各大主流浏览器一致表示支持这一新的技术，也许一个崭新的Web时代即将到来。
 
-<!--more-->
 ### 简单介绍wasm
 
 打开wasm的[官网](https://webassembly.org/)，我们可以看到其宏伟的技术目标。除了定义一个可移植、精悍、载入迅捷的二进制格式之外，还有对移动设备、非浏览器乃至IoT设备支持的规划，并且还会逐步建立一系列工具链。感兴趣的读者，可以从[这里](https://webassembly.org/docs/high-level-goals/)看到wasm官方的阐述。
@@ -156,7 +153,7 @@ console.log(myModule.add(1, 2));
 1. 加载wasm的字节码。
 2. 将获取到字节码后转换成 ArrayBuffer，只有这种结构才能被正确编译。编译时会对上述ArrayBuffer进行验证。验证通过方可编译。编译后会通过Promise resolve一个 WebAssembly.Module。
 3. 在获取到 module 后需要通过 WebAssembly.Instance API 去同步的实例化 module。
-4. 上述第2、3步骤可以用instantiate 异步API等价代替。
+4. 上述第2、3步骤可以用instantiate异步API等价代替。
 5. 之后就可以和像使用JavaScript模块一样调用了。
 
 完整的步骤，也可以参见下面的流程图：
@@ -171,8 +168,8 @@ const fs = require("fs");
 const readFile = require("util").promisify(fs.readFile);
 
 const getInstance = async (wasm, importObject={}) => {
-	let buffer = new Uint8Array(wasm)
-	return await WebAssembly.instantiate(wasm, importObject)
+  let buffer = new Uint8Array(wasm)
+  return await WebAssembly.instantiate(wasm, importObject)
 }
 
 let ins;
@@ -180,19 +177,19 @@ let ins;
 const noop = () => {};
 
 const exportFun = (obj, funName) => {
-	return (typeof obj[funName] === "function") 
-		? obj[funName] : noop;
+  return (typeof obj[funName] === "function") 
+    ? obj[funName] : noop;
 }
 
 async function getModuleFun(filePath, funName ,importObject={}) {
-	if (ins){
-		return exportFun(ins, funName)
-	}
+  if (ins){
+    return exportFun(ins, funName)
+  }
 
-	const wasmText = await readFile(filePath);
-	const mod = await getInstance(wasmText, importObject);
+  const wasmText = await readFile(filePath);
+  const mod = await getInstance(wasmText, importObject);
 
-	return exportFun(mod.instance.exports, funName)
+  return exportFun(mod.instance.exports, funName)
 }
 
 module.exports = getModuleFun;
@@ -204,9 +201,9 @@ var myModule = require("./async_module.js");
 
 // 调用代码
 (async () => {
-	const fun = await myModule(__dirname + "/dist/module.optimized.wasm", "add")
-	console.log(fun(1, 2))
-	console.log(fun(4, 10000))
+  const fun = await myModule(__dirname + "/dist/module.optimized.wasm", "add")
+  console.log(fun(1, 2))
+  console.log(fun(4, 10000))
 })()
 ```
 
