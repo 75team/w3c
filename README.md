@@ -29,6 +29,8 @@
 
 ## 文章
 
+1. [这款狗狗引擎这么快？一定是考虑了这几个特性](https://github.com/75team/w3c/blob/master/articles/20180812_这款狗狗引擎这么快？一定是考虑了这几个特性.md)
+1. [Quantum 初探](https://github.com/75team/w3c/blob/master/articles/20180808_Quantum 初探.md)
 1. [嗨，送你一张Web性能优化地图](https://github.com/75team/w3c/blob/master/articles/20180716_嗨，送你一张Web性能优化地图.md)（2018-7-16 [@Berwin](https://github.com/Berwin)）
 1. [不用预编译，CSS直接写嵌套的日子就要到了](https://github.com/75team/w3c/blob/master/articles/20180712_不用预编译，CSS直接写嵌套的日子就要到了.md)（2018-7-12 [@anjia](https://github.com/anjia)）
 1. [震惊！滑动验证码竟然能这样破解](https://github.com/75team/w3c/blob/master/articles/20180709_震惊！滑动验证码竟然能这样破解.md)（2018-7-9 [@chunpu](https://github.com/chunpu)）
