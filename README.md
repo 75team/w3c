@@ -29,6 +29,8 @@
 
 ## 文章
 
+1. [这款狗狗引擎这么快？一定是考虑了这几个特性](https://github.com/75team/w3c/blob/master/articles/20180812_这款狗狗引擎这么快？一定是考虑了这几个特性.md)
+1. [Quantum 初探](https://github.com/75team/w3c/blob/master/articles/20180808_Quantum 初探.md)
 1. [20分钟上手WebAssembly](/articles/20180806_20分钟上手WebAssembly.md)（2018-08-06 [@liuguanyu](https://github.com/liuguanyu)）
 1. [Flexbox，终于可以承认自己明白了](/articles/20180804_Flexbox，终于可以承认自己明白了.md)（2018-8-04 [@cncuckoo](https://github.com/cncuckoo)）
 1. [CSS性能优化的8个技巧](/articles/20180801_CSS性能优化的8个技巧.md)（2018-08-01 [@verymuch](https://github.com/verymuch)）
