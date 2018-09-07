@@ -28,6 +28,7 @@
 
 
 ## 文章
+1. [vue-cli中的自动化测试Nightwatch详解](/articles/20180829_vue-cli中的自动化测试Nightwatch详解.md)（2018-8-29 [@chunpu](https://github.com/chunpu)）
 1. [小哥哥小姐姐，来尝尝Async函数这块语法糖](/articles/20180824_小哥哥小姐姐，来尝尝Async函数这块语法糖.md)（2018-8-24 [@cncuckoo](https://github.com/cncuckoo)）
 1. [有一种优化，叫Preload](/articles/20180821_有一种优化，叫Preload.md) （2018-8-21 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [代码快不快？跑个分就知道](/articles/20180820_代码快不快？跑个分就知道.md) （2018-8-20 [@liuyuchenzh](https://github.com/liuyuchenzh)）
