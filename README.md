@@ -28,7 +28,9 @@
 
 
 ## 文章
+1. [从撒狗粮带你了解WoT连接场景](/articles/20180905-从撒狗粮带你了解WoT连接场景.md)（2018-9-5 [@verymuch](https://github.com/verymuch)）
 1. [vue-cli中的自动化测试Nightwatch详解](/articles/20180829_vue-cli中的自动化测试Nightwatch详解.md)（2018-8-29 [@chunpu](https://github.com/chunpu)）
+1. [W3C标准导读之标准化过程](/articles/20180828-W3C标准导读之标准化过程.md)（2018-8-28 [@verymuch](https://github.com/verymuch)）
 1. [小哥哥小姐姐，来尝尝Async函数这块语法糖](/articles/20180824_小哥哥小姐姐，来尝尝Async函数这块语法糖.md)（2018-8-24 [@cncuckoo](https://github.com/cncuckoo)）
 1. [有一种优化，叫Preload](/articles/20180821_有一种优化，叫Preload.md) （2018-8-21 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [代码快不快？跑个分就知道](/articles/20180820_代码快不快？跑个分就知道.md) （2018-8-20 [@liuyuchenzh](https://github.com/liuyuchenzh)）
