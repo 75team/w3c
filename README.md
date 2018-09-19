@@ -28,7 +28,7 @@
 
 ## 文章
 
-1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917_精准操控的滚动体验，浅谈新标准 Scroll Snap.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
+1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
 1. [树莓派，不玩不知道（一）](/articles/20180913_树莓派，不玩不知道（一）.md)（2018-9-13 [@liuguanyu](https://github.com/liuguanyu)）
 1. [聊聊我对现代前端框架的认知](/articles/20180910_聊聊我对现代前端框架的认知.md)（2018-9-10 [@berwin](https://github.com/berwin)）
 1. [从撒狗粮带你了解 WoT 连接场景](/articles/20180905-从撒狗粮带你了解WoT连接场景.md)（2018-9-5 [@verymuch](https://github.com/verymuch)）
