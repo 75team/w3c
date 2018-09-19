@@ -28,12 +28,14 @@
 
 ## 文章
 
-1. [树莓派，不玩不知道（一）](/articles/201809013_树莓派，不玩不知道（一）.md)（2018-9-13 [@liuguanyu](https://github.com/liuguanyu)）
+1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917_精准操控的滚动体验，浅谈新标准 Scroll Snap.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
+1. [树莓派，不玩不知道（一）](/articles/20180913_树莓派，不玩不知道（一）.md)（2018-9-13 [@liuguanyu](https://github.com/liuguanyu)）
 1. [聊聊我对现代前端框架的认知](/articles/20180910_聊聊我对现代前端框架的认知.md)（2018-9-10 [@berwin](https://github.com/berwin)）
 1. [从撒狗粮带你了解 WoT 连接场景](/articles/20180905-从撒狗粮带你了解WoT连接场景.md)（2018-9-5 [@verymuch](https://github.com/verymuch)）
 1. [Web 性能信息采集指南](/articles/20180903_Web性能信息采集指南.md)（2018-9-3 [@berwin](https://github.com/berwin)）
 1. [vue-cli 中的自动化测试 Nightwatch 详解](/articles/20180829_vue-cli中的自动化测试Nightwatch详解.md)（2018-8-29 [@chunpu](https://github.com/chunpu)）
 1. [W3C 标准导读之标准化过程](/articles/20180828-W3C标准导读之标准化过程.md)（2018-8-28 [@verymuch](https://github.com/verymuch)）
+1. [页面字体闪一下？这两个标准能帮到你](/articles/20180827_页面字体闪一下？这两个标准能帮到你.md) (2018-08-27 [@nimitzdev](https://github.com/nimitzdev))
 1. [小哥哥小姐姐，来尝尝 Async 函数这块语法糖](/articles/20180824_小哥哥小姐姐，来尝尝Async函数这块语法糖.md)（2018-8-24 [@cncuckoo](https://github.com/cncuckoo)）
 1. [有一种优化，叫 Preload](/articles/20180821_有一种优化，叫Preload.md) （2018-8-21 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [代码快不快？跑个分就知道](/articles/20180820_代码快不快？跑个分就知道.md) （2018-8-20 [@liuyuchenzh](https://github.com/liuyuchenzh)）
