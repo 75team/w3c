@@ -29,6 +29,7 @@
 ## 文章
 
 1. [简析Web应用6种主要漏洞及解决方案](/articles/20180926_简析Web应用6种主要漏洞及解决方案.md)（2018-9-26 [@cncuckoo](https://github.com/cncuckoo)）
+1. [Prefetch和预加载实践](/articles/20180925_Prefetch和预加载实践.md)（2018-9-25 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [聊聊 Server Timing](/articles/20180919_聊聊Server_Timing.md) （2018-09-19 [@liuyuchenzh](https://github.com/liuyuchenzh)）
 1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
 1. [树莓派，不玩不知道（一）](/articles/20180913_树莓派，不玩不知道（一）.md)（2018-9-13 [@liuguanyu](https://github.com/liuguanyu)）
