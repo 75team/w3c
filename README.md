@@ -15,7 +15,7 @@
 -   [@anjia](https://github.com/anjia)，CSS Working Group
 -   [@nimitzdev](https://github.com/nimitzdev)，CSS Working Group
 -   [@huangxiaolu](https://github.com/huangxiaolu)，Web Performance Working Group
--   [@verymuch](https://github.com/verymuch)，Web Performance Working Group
+-   [@verymuch](https://github.com/verymuch)，Web of Things Working Group
 -   [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
 -   [@Berwin](https://github.com/Berwin)，Web Performance Working Group
 -   [@chunpu](https://github.com/chunpu)，Browser Tools and Testing Working Group
