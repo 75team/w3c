@@ -29,6 +29,7 @@
 
 ## 文章
 
+1. [CSS Painting API](/articles/20181008_CSS-Painting-API.md)（2018-10-08 [@anjia](https://github.com/anjia)）
 1. [简析Web应用6种主要漏洞及解决方案](/articles/20180926_简析Web应用6种主要漏洞及解决方案.md)（2018-9-26 [@cncuckoo](https://github.com/cncuckoo)）
 1. [Prefetch和预加载实践](/articles/20180925_Prefetch和预加载实践.md)（2018-9-25 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [聊聊 Server Timing](/articles/20180919_聊聊Server_Timing.md) （2018-09-19 [@liuyuchenzh](https://github.com/liuyuchenzh)）
