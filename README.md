@@ -15,7 +15,7 @@
 -   [@anjia](https://github.com/anjia)，CSS Working Group
 -   [@nimitzdev](https://github.com/nimitzdev)，CSS Working Group
 -   [@huangxiaolu](https://github.com/huangxiaolu)，Web Performance Working Group
--   [@verymuch](https://github.com/verymuch)，Web Performance Working Group
+-   [@verymuch](https://github.com/verymuch)，Web of Things Working Group
 -   [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
 -   [@Berwin](https://github.com/Berwin)，Web Performance Working Group
 -   [@chunpu](https://github.com/chunpu)，Browser Tools and Testing Working Group
@@ -25,15 +25,22 @@
 -   [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
 -   [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
 -   [Browser Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BrowserTaT.md)
+-   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoTWG)
 
 ## 文章
 
-1. [树莓派，不玩不知道（一）](/articles/201809013_树莓派，不玩不知道（一）.md)（2018-9-13 [@liuguanyu](https://github.com/liuguanyu)）
+1. [CSS Painting API](/articles/20181008_CSS-Painting-API.md)（2018-10-08 [@anjia](https://github.com/anjia)）
+1. [简析Web应用6种主要漏洞及解决方案](/articles/20180926_简析Web应用6种主要漏洞及解决方案.md)（2018-9-26 [@cncuckoo](https://github.com/cncuckoo)）
+1. [Prefetch和预加载实践](/articles/20180925_Prefetch和预加载实践.md)（2018-9-25 [@huangxiaolu](https://github.com/huangxiaolu)）
+1. [聊聊 Server Timing](/articles/20180919_聊聊Server_Timing.md) （2018-09-19 [@liuyuchenzh](https://github.com/liuyuchenzh)）
+1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
+1. [树莓派，不玩不知道（一）](/articles/20180913_树莓派，不玩不知道（一）.md)（2018-9-13 [@liuguanyu](https://github.com/liuguanyu)）
 1. [聊聊我对现代前端框架的认知](/articles/20180910_聊聊我对现代前端框架的认知.md)（2018-9-10 [@berwin](https://github.com/berwin)）
 1. [从撒狗粮带你了解 WoT 连接场景](/articles/20180905-从撒狗粮带你了解WoT连接场景.md)（2018-9-5 [@verymuch](https://github.com/verymuch)）
 1. [Web 性能信息采集指南](/articles/20180903_Web性能信息采集指南.md)（2018-9-3 [@berwin](https://github.com/berwin)）
 1. [vue-cli 中的自动化测试 Nightwatch 详解](/articles/20180829_vue-cli中的自动化测试Nightwatch详解.md)（2018-8-29 [@chunpu](https://github.com/chunpu)）
 1. [W3C 标准导读之标准化过程](/articles/20180828-W3C标准导读之标准化过程.md)（2018-8-28 [@verymuch](https://github.com/verymuch)）
+1. [页面字体闪一下？这两个标准能帮到你](/articles/20180827_页面字体闪一下？这两个标准能帮到你.md) (2018-08-27 [@nimitzdev](https://github.com/nimitzdev))
 1. [小哥哥小姐姐，来尝尝 Async 函数这块语法糖](/articles/20180824_小哥哥小姐姐，来尝尝Async函数这块语法糖.md)（2018-8-24 [@cncuckoo](https://github.com/cncuckoo)）
 1. [有一种优化，叫 Preload](/articles/20180821_有一种优化，叫Preload.md) （2018-8-21 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [代码快不快？跑个分就知道](/articles/20180820_代码快不快？跑个分就知道.md) （2018-8-20 [@liuyuchenzh](https://github.com/liuyuchenzh)）
