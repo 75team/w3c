@@ -29,6 +29,7 @@
 
 ## 文章
 
+1. [前端字体截取：实战篇](/articles/20181024_前端字体截取：实战篇.md)（2018-10-24 [@cncuckoo](https://github.com/cncuckoo)）
 1. [你的浏览器为什么卡](/articles/20181022_你的浏览器为什么卡.md)（2018-10-22[@liuyuchenzh](https://github.com/liuyuchenzh)）
 1. [《深入浅出Vue.js》作者谈前端框架的“御剑之道”](/articles/20181010_《深入浅出Vue.js》作者谈前端框架的“御剑之道”.md)（2018-10-10 [@Berwin](https://github.com/berwin)）
 1. [CSS Painting API](/articles/20181008_CSS-Painting-API.md)（2018-10-08 [@anjia](https://github.com/anjia)）
