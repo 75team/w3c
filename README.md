@@ -29,6 +29,7 @@
 
 ## 文章
 
+1. [前端日志上报的新姿势“Beacon”](/articles/20181031_前端日志上报的新姿势“Beacon”.md)（2018-10-31 [@Berwin](https://github.com/berwin)）
 1. [精打细算浏览器空闲时间](/articles/20181029_精打细算浏览器空闲时间.md)（2018-10-29 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [前端字体截取：实战篇](/articles/20181024_前端字体截取：实战篇.md)（2018-10-24 [@cncuckoo](https://github.com/cncuckoo)）
 1. [你的浏览器为什么卡](/articles/20181022_你的浏览器为什么卡.md)（2018-10-22[@liuyuchenzh](https://github.com/liuyuchenzh)）
