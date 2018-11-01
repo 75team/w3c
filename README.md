@@ -34,7 +34,7 @@
 1. [你的浏览器为什么卡](/articles/20181022_你的浏览器为什么卡.md)（2018-10-22[@liuyuchenzh](https://github.com/liuyuchenzh)）
 1. [《深入浅出Vue.js》作者谈前端框架的“御剑之道”](/articles/20181010_《深入浅出Vue.js》作者谈前端框架的“御剑之道”.md)（2018-10-10 [@Berwin](https://github.com/berwin)）
 1. [CSS Painting API](/articles/20181008_CSS-Painting-API.md)（2018-10-08 [@anjia](https://github.com/anjia)）
-1. [给你的动画加点料：谈谈 AnimationWorklet](/articles/20181003_给你的动画加点料：谈谈AnimationWorklet.md)（2018-10-08 [@liuguanyu](https://github.com/liuguanyu)）
+1. [给你的动画加点料：谈谈 AnimationWorklet](/articles/20181003_给你的动画加点料：谈谈AnimationWorklet.md)（2018-10-03 [@liuguanyu](https://github.com/liuguanyu)）
 1. [彻底搞懂小程序登录流程-附小程序和服务端代码.md](/articles/20181001_彻底搞懂小程序登录流程-附小程序和服务端代码.md)（2018-10-01 [@chunpu](https://github.com/chunpu)）
 1. [简析 Web 应用 6 种主要漏洞及解决方案](/articles/20180926_简析Web应用6种主要漏洞及解决方案.md)（2018-9-26 [@cncuckoo](https://github.com/cncuckoo)）
 1. [Prefetch 和预加载实践](/articles/20180925_Prefetch和预加载实践.md)（2018-9-25 [@huangxiaolu](https://github.com/huangxiaolu)）
