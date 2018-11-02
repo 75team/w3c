@@ -25,7 +25,7 @@
 -   [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
 -   [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
 -   [Browser Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BrowserTaT.md)
--   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoTWG)
+-   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoTWG.md)
 
 ## 文章
 
