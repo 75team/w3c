@@ -28,6 +28,7 @@
 -   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoT_WG.md)
 
 ## 文章
+1. [你有懒癌？我有WebDriver~](articles/20181121_你有懒癌？我有WebDriver~.md)（2018-11-21 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [优雅适配低端移动设备](articles/20181119_优雅适配低端移动设备.md)（2018-11-19 [@liuyuchenzh](https://github.com/liuyuchenzh)）
 1. [行内元素空白“消消乐”.md](articles/20181112_行内元素空白“消消乐”.md)（2018-11-12 [@verymuch](https://github.com/verymuch)）
 1. [TPAC 2018 参会总结](articles/20181107_TPAC-2018-参会总结.md)（2018-11-7 [@anjia](https://github.com/anjia)）
