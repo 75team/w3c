@@ -28,7 +28,10 @@
 -   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoT_WG.md)
 
 ## 文章
-
+1. [360 AI音箱H5开发实践](/articles/20181126_360AI音箱H5开发实践.md)（2018-11-26 [@cncuckoo](https://github.com/cncuckoo)）
+1. [你有懒癌？我有WebDriver~](articles/20181121_你有懒癌？我有WebDriver~.md)（2018-11-21 [@huangxiaolu](https://github.com/huangxiaolu)）
+1. [优雅适配低端移动设备](articles/20181119_优雅适配低端移动设备.md)（2018-11-19 [@liuyuchenzh](https://github.com/liuyuchenzh)）
+1. [精心点缀的文字：CSS Text Decoration](/articles/20181114_精心点缀的文字_CSS_Text_Decoration.md) (2018-11-14 [@nimitzdev](https://github.com/nimitzdev))
 1. [行内元素空白“消消乐”.md](articles/20181112_行内元素空白“消消乐”.md)（2018-11-12 [@verymuch](https://github.com/verymuch)）
 1. [TPAC 2018 参会总结](articles/20181107_TPAC-2018-参会总结.md)（2018-11-7 [@anjia](https://github.com/anjia)）
 1. [从一道面试题说起](articles/20181105_从一道面试题说起.md)（2018-11-5 [@liuguanyu](https://github.com/liuguanyu)）
