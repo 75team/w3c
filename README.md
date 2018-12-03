@@ -28,6 +28,8 @@
 -   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoT_WG.md)
 
 ## 文章
+
+1. [给你点颜色看看](/articles/20181203_给你点颜色看看.md)（2018-12-03 [@liuguanyu](https://github.com/liuguanyu)）
 1. [图像优化原理](/articles/20181128_图像优化原理.md)（2018-11-28 [@berwin](https://github.com/berwin)）
 1. [360 AI音箱H5开发实践](/articles/20181126_360AI音箱H5开发实践.md)（2018-11-26 [@cncuckoo](https://github.com/cncuckoo)）
 1. [你有懒癌？我有WebDriver~](articles/20181121_你有懒癌？我有WebDriver~.md)（2018-11-21 [@huangxiaolu](https://github.com/huangxiaolu)）
@@ -79,6 +81,7 @@
 1. [为什么不会有 CSS4 了？](https://github.com/75team/w3c/blob/master/articles/20180625_为什么不会有CSS4了？.md)（2018-6-25 [@cncuckoo](https://github.com/cncuckoo)）
 1. [来，一起帮忙制定 CSS 规范吧](https://github.com/75team/w3c/blob/master/articles/20180613_来，一起帮忙制定CSS规范吧.md)（2018-6-13 [@cncuckoo](https://github.com/cncuckoo)）
 1. [同学，W3C 了解一下](https://github.com/75team/w3c/blob/master/articles/20180612_同学，W3C了解一下.md)（2018-6-12 [@huangxialu](https://github.com/huangxiaolu)）
+
 
 > **版权声明**
 >
