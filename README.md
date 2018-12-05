@@ -29,6 +29,7 @@
 
 ## 文章
 
+1. [深入理解 CSS linear-gradient](articles/20181205_深入理解-CSS-linear-gradient.md)（2018-12-5 [@anjia](https://github.com/anjia)）
 1. [给你点颜色看看](/articles/20181203_给你点颜色看看.md)（2018-12-03 [@liuguanyu](https://github.com/liuguanyu)）
 1. [图像优化原理](/articles/20181128_图像优化原理.md)（2018-11-28 [@berwin](https://github.com/berwin)）
 1. [360 AI音箱H5开发实践](/articles/20181126_360AI音箱H5开发实践.md)（2018-11-26 [@cncuckoo](https://github.com/cncuckoo)）
