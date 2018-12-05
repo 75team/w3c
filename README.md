@@ -29,6 +29,7 @@
 
 ## 文章
 
+1. [深入理解 CSS linear-gradient](articles/20181205_深入理解-CSS-linear-gradient.md)（2018-12-5 [@anjia](https://github.com/anjia)）
 1. [TPAC 2018 参会总结](articles/20181107_TPAC-2018-参会总结.md)（2018-11-7 [@anjia](https://github.com/anjia)）
 1. [前端日志上报的新姿势“Beacon”](/articles/20181031_前端日志上报的新姿势“Beacon”.md)（2018-10-31 [@Berwin](https://github.com/berwin)）
 1. [精打细算浏览器空闲时间](/articles/20181029_精打细算浏览器空闲时间.md)（2018-10-29 [@huangxiaolu](https://github.com/huangxiaolu)）
