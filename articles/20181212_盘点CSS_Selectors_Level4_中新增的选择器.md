@@ -1,11 +1,3 @@
----
-title: "盘点 CSS Selectors Level 4 中新增的选择器"
-description: "CSS Selectors Level 4 changelog"
-date: "2018-12-10"
-authors: ["nimitzdev"]
-tags: ["w3c", "css-selectors-level4", "css"]
----
-
 ## 前言
 
 CSS 选择器在实践中是非常常用的，无论是在写样式上或是在 JS 中选择 DOM 元素都需要用到。在 CSS Selectors Level 4 中，工作组继续为选择器标准添加了更丰富的选择器。下面我们来了解一下。
@@ -74,7 +66,7 @@ section :is(section, article, aside, nav) h1 {
    }
    ```
 
-   而在`:is`中出现不支持的选择器，则是相反的行为，`:supported` 让然会被正确生效。
+   而在`:is`中出现不支持的选择器，则是相反的行为，`:supported` 仍然会被正确生效。
 
    ```css
    :is(:supported, :unsupported) {
@@ -98,7 +90,7 @@ section :is(section, article, aside, nav) h1 {
 
 #### 浏览器支持情况
 
-![:is support](./css_matches_support.png)
+![:is support](https://p2.ssl.qhimg.com/t01a949b1bcb482494b.png)
 
 > 这里查的数据是 `:matches`，`:matches` 即为 `:is` 的前身，在 CSS Selector Level 4 中，我们所熟知的`:not` 也支持选择器列表作为参数使用了，而功能上`:matches`则与`:not`是相对的，所以为了成对，`:matches`改名为`:is` 
 

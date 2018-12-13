@@ -29,7 +29,7 @@
 
 ## 文章
 
-1. [盘点 CSS Selectors Level 4 中新增的选择器](/articles/20181212_盘点CSS_Selectors_Level4_中新增的选择器.md) (2018-12-12 [@nimitzdev](https://github.com/nimitzdec))
+1. [盘点 CSS Selectors Level 4 中新增的选择器](/articles/20181212_盘点CSS_Selectors_Level4_中新增的选择器.md) (2018-12-12 [@nimitzdev](https://github.com/nimitzdev))
 1. [跳出forEach](articles/20181210_跳出forEach.md)（2018-12-10 [@verymuch](https://github.com/verymuch/blog)）
 1. [深入理解 CSS linear-gradient](articles/20181205_深入理解-CSS-linear-gradient.md)（2018-12-5 [@anjia](https://github.com/anjia)）
 1. [给你点颜色看看](/articles/20181203_给你点颜色看看.md)（2018-12-03 [@liuguanyu](https://github.com/liuguanyu)）
