@@ -29,16 +29,17 @@
 
 ## 文章
 
-1. [Async Clipboard API来了](/articles/20181224_Async_Clipboard_API来了.md)（2018-12-24 [@cncuckoo](https://github.com/cncuckoo)）
-1. [Node.js定时邮件的那些事儿](/articles/20181219_Node.js定时邮件的那些事儿.md)（2018-12-19 [@huangxiaolu](https://github.com/huangxiaolu)）
-1. [你未必知道的CSS故事](/articles/20181217_你未必知道的CSS故事.md)（2018-12-17 [@cncuckoo](https://github.com/cncuckoo)）
+1. [形神兼备——谈谈 CSS_Shapes](/articles/20181231_形神兼备——谈谈CSS_Shapes.md)（2018-12-31 [@liuguanyu](https://github.com/liuguanyu)）
+1. [Async Clipboard API 来了](/articles/20181224_Async_Clipboard_API来了.md)（2018-12-24 [@cncuckoo](https://github.com/cncuckoo)）
+1. [Node.js 定时邮件的那些事儿](/articles/20181219_Node.js定时邮件的那些事儿.md)（2018-12-19 [@huangxiaolu](https://github.com/huangxiaolu)）
+1. [你未必知道的 CSS 故事](/articles/20181217_你未必知道的CSS故事.md)（2018-12-17 [@cncuckoo](https://github.com/cncuckoo)）
 1. [盘点 CSS Selectors Level 4 中新增的选择器](/articles/20181212_盘点CSS_Selectors_Level4_中新增的选择器.md) (2018-12-12 [@nimitzdev](https://github.com/nimitzdev))
-1. [跳出forEach](articles/20181210_跳出forEach.md)（2018-12-10 [@verymuch](https://github.com/verymuch/blog)）
+1. [跳出 forEach](articles/20181210_跳出forEach.md)（2018-12-10 [@verymuch](https://github.com/verymuch/blog)）
 1. [深入理解 CSS linear-gradient](articles/20181205_深入理解-CSS-linear-gradient.md)（2018-12-5 [@anjia](https://github.com/anjia)）
 1. [给你点颜色看看](/articles/20181203_给你点颜色看看.md)（2018-12-03 [@liuguanyu](https://github.com/liuguanyu)）
 1. [图像优化原理](/articles/20181128_图像优化原理.md)（2018-11-28 [@berwin](https://github.com/berwin)）
-1. [360 AI音箱H5开发实践](/articles/20181126_360AI音箱H5开发实践.md)（2018-11-26 [@cncuckoo](https://github.com/cncuckoo)）
-1. [你有懒癌？我有WebDriver~](articles/20181121_你有懒癌？我有WebDriver~.md)（2018-11-21 [@huangxiaolu](https://github.com/huangxiaolu)）
+1. [360 AI 音箱 H5 开发实践](/articles/20181126_360AI音箱H5开发实践.md)（2018-11-26 [@cncuckoo](https://github.com/cncuckoo)）
+1. [你有懒癌？我有 WebDriver~](articles/20181121_你有懒癌？我有WebDriver~.md)（2018-11-21 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [优雅适配低端移动设备](articles/20181119_优雅适配低端移动设备.md)（2018-11-19 [@liuyuchenzh](https://github.com/liuyuchenzh)）
 1. [精心点缀的文字：CSS Text Decoration](/articles/20181114_精心点缀的文字_CSS_Text_Decoration.md) (2018-11-14 [@nimitzdev](https://github.com/nimitzdev))
 1. [行内元素空白“消消乐”.md](articles/20181112_行内元素空白“消消乐”.md)（2018-11-12 [@verymuch](https://github.com/verymuch/blog)）
@@ -87,7 +88,6 @@
 1. [为什么不会有 CSS4 了？](https://github.com/75team/w3c/blob/master/articles/20180625_为什么不会有CSS4了？.md)（2018-6-25 [@cncuckoo](https://github.com/cncuckoo)）
 1. [来，一起帮忙制定 CSS 规范吧](https://github.com/75team/w3c/blob/master/articles/20180613_来，一起帮忙制定CSS规范吧.md)（2018-6-13 [@cncuckoo](https://github.com/cncuckoo)）
 1. [同学，W3C 了解一下](https://github.com/75team/w3c/blob/master/articles/20180612_同学，W3C了解一下.md)（2018-6-12 [@huangxialu](https://github.com/huangxiaolu)）
-
 
 > **版权声明**
 >
