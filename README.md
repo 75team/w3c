@@ -30,6 +30,7 @@
 ## 文章
 
 1. [形神兼备——谈谈 CSS_Shapes](/articles/20181231_形神兼备——谈谈CSS_Shapes.md)（2018-12-31 [@liuguanyu](https://github.com/liuguanyu)）
+1. [关键渲染路径](/articles/20181226_关键渲染路径.md)（2018-12-26 [@berwin](https://github.com/berwin)）
 1. [Async Clipboard API 来了](/articles/20181224_Async_Clipboard_API来了.md)（2018-12-24 [@cncuckoo](https://github.com/cncuckoo)）
 1. [Node.js 定时邮件的那些事儿](/articles/20181219_Node.js定时邮件的那些事儿.md)（2018-12-19 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [你未必知道的 CSS 故事](/articles/20181217_你未必知道的CSS故事.md)（2018-12-17 [@cncuckoo](https://github.com/cncuckoo)）
