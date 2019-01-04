@@ -30,14 +30,21 @@
 ## 文章
 
 1. [CSS 是怎样确定图像大小的？](articles/20190102_CSS%20是怎样确定图像大小的？.md)（2019-1-2 [@anjia](https://github.com/anjia)）
+1. [形神兼备——谈谈 CSS_Shapes](/articles/20181231_形神兼备——谈谈CSS_Shapes.md)（2018-12-31 [@liuguanyu](https://github.com/liuguanyu)）
+1. [关键渲染路径](/articles/20181226_关键渲染路径.md)（2018-12-26 [@berwin](https://github.com/berwin)）
+1. [Async Clipboard API 来了](/articles/20181224_Async_Clipboard_API来了.md)（2018-12-24 [@cncuckoo](https://github.com/cncuckoo)）
+1. [Node.js 定时邮件的那些事儿](/articles/20181219_Node.js定时邮件的那些事儿.md)（2018-12-19 [@huangxiaolu](https://github.com/huangxiaolu)）
+1. [你未必知道的 CSS 故事](/articles/20181217_你未必知道的CSS故事.md)（2018-12-17 [@cncuckoo](https://github.com/cncuckoo)）
+1. [盘点 CSS Selectors Level 4 中新增的选择器](/articles/20181212_盘点CSS_Selectors_Level4_中新增的选择器.md) (2018-12-12 [@nimitzdev](https://github.com/nimitzdev))
+1. [跳出 forEach](articles/20181210_跳出forEach.md)（2018-12-10 [@verymuch](https://github.com/verymuch/blog)）
 1. [深入理解 CSS linear-gradient](articles/20181205_深入理解-CSS-linear-gradient.md)（2018-12-5 [@anjia](https://github.com/anjia)）
 1. [给你点颜色看看](/articles/20181203_给你点颜色看看.md)（2018-12-03 [@liuguanyu](https://github.com/liuguanyu)）
 1. [图像优化原理](/articles/20181128_图像优化原理.md)（2018-11-28 [@berwin](https://github.com/berwin)）
-1. [360 AI音箱H5开发实践](/articles/20181126_360AI音箱H5开发实践.md)（2018-11-26 [@cncuckoo](https://github.com/cncuckoo)）
-1. [你有懒癌？我有WebDriver~](articles/20181121_你有懒癌？我有WebDriver~.md)（2018-11-21 [@huangxiaolu](https://github.com/huangxiaolu)）
+1. [360 AI 音箱 H5 开发实践](/articles/20181126_360AI音箱H5开发实践.md)（2018-11-26 [@cncuckoo](https://github.com/cncuckoo)）
+1. [你有懒癌？我有 WebDriver~](articles/20181121_你有懒癌？我有WebDriver~.md)（2018-11-21 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [优雅适配低端移动设备](articles/20181119_优雅适配低端移动设备.md)（2018-11-19 [@liuyuchenzh](https://github.com/liuyuchenzh)）
 1. [精心点缀的文字：CSS Text Decoration](/articles/20181114_精心点缀的文字_CSS_Text_Decoration.md) (2018-11-14 [@nimitzdev](https://github.com/nimitzdev))
-1. [行内元素空白“消消乐”.md](articles/20181112_行内元素空白“消消乐”.md)（2018-11-12 [@verymuch](https://github.com/verymuch)）
+1. [行内元素空白“消消乐”.md](articles/20181112_行内元素空白“消消乐”.md)（2018-11-12 [@verymuch](https://github.com/verymuch/blog)）
 1. [TPAC 2018 参会总结](articles/20181107_TPAC-2018-参会总结.md)（2018-11-7 [@anjia](https://github.com/anjia)）
 1. [从一道面试题说起](articles/20181105_从一道面试题说起.md)（2018-11-5 [@liuguanyu](https://github.com/liuguanyu)）
 1. [前端日志上报的新姿势“Beacon”](/articles/20181031_前端日志上报的新姿势“Beacon”.md)（2018-10-31 [@Berwin](https://github.com/berwin)）
@@ -45,7 +52,7 @@
 1. [前端字体截取：实战篇](/articles/20181024_前端字体截取：实战篇.md)（2018-10-24 [@cncuckoo](https://github.com/cncuckoo)）
 1. [你的浏览器为什么卡](/articles/20181022_你的浏览器为什么卡.md)（2018-10-22[@liuyuchenzh](https://github.com/liuyuchenzh)）
 1. [更高效、安全地操作 CSSOM：CSS Typed OM](/articles/20181017_更高效_安全地操作_CSSOM_CSS_Typed_OM.md) (2018-10-17 [@nimitzdev](https://github.com/nimitzdev))
-1. [浏览器缓存策略之扫盲篇](/articles/20181015_浏览器缓存策略之扫盲篇.md)（2018-10-15 [@verymuch](https://github.com/verymuch)）
+1. [浏览器缓存策略之扫盲篇](/articles/20181015_浏览器缓存策略之扫盲篇.md)（2018-10-15 [@verymuch](https://github.com/verymuch/blog)）
 1. [《深入浅出 Vue.js》作者谈前端框架的“御剑之道”](/articles/20181010_《深入浅出Vue.js》作者谈前端框架的“御剑之道”.md)（2018-10-10 [@Berwin](https://github.com/berwin)）
 1. [CSS Painting API](/articles/20181008_CSS-Painting-API.md)（2018-10-08 [@anjia](https://github.com/anjia)）
 1. [给你的动画加点料：谈谈 AnimationWorklet](/articles/20181003_给你的动画加点料：谈谈AnimationWorklet.md)（2018-10-03 [@liuguanyu](https://github.com/liuguanyu)）
@@ -56,10 +63,10 @@
 1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
 1. [树莓派，不玩不知道（一）](/articles/20180913_树莓派，不玩不知道（一）.md)（2018-9-13 [@liuguanyu](https://github.com/liuguanyu)）
 1. [聊聊我对现代前端框架的认知](/articles/20180910_聊聊我对现代前端框架的认知.md)（2018-9-10 [@Berwin](https://github.com/berwin)）
-1. [从撒狗粮带你了解 WoT 连接场景](/articles/20180905-从撒狗粮带你了解WoT连接场景.md)（2018-9-5 [@verymuch](https://github.com/verymuch)）
+1. [从撒狗粮带你了解 WoT 连接场景](/articles/20180905-从撒狗粮带你了解WoT连接场景.md)（2018-9-5 [@verymuch](https://github.com/verymuch/blog)）
 1. [Web 性能信息采集指南](/articles/20180903_Web性能信息采集指南.md)（2018-9-3 [@Berwin](https://github.com/berwin)）
 1. [vue-cli 中的自动化测试 Nightwatch 详解](/articles/20180829_vue-cli中的自动化测试Nightwatch详解.md)（2018-8-29 [@chunpu](https://github.com/chunpu)）
-1. [W3C 标准导读之标准化过程](/articles/20180828-W3C标准导读之标准化过程.md)（2018-8-28 [@verymuch](https://github.com/verymuch)）
+1. [W3C 标准导读之标准化过程](/articles/20180828-W3C标准导读之标准化过程.md)（2018-8-28 [@verymuch](https://github.com/verymuch/blog)）
 1. [页面字体闪一下？这两个标准能帮到你](/articles/20180827_页面字体闪一下？这两个标准能帮到你.md) (2018-08-27 [@nimitzdev](https://github.com/nimitzdev))
 1. [小哥哥小姐姐，来尝尝 Async 函数这块语法糖](/articles/20180824_小哥哥小姐姐，来尝尝Async函数这块语法糖.md)（2018-8-24 [@cncuckoo](https://github.com/cncuckoo)）
 1. [有一种优化，叫 Preload](/articles/20180821_有一种优化，叫Preload.md) （2018-8-21 [@huangxiaolu](https://github.com/huangxiaolu)）
@@ -70,7 +77,7 @@
 1. [Quantum 初探](https://github.com/75team/w3c/blob/master/articles/20180808_Quantum初探.md) （2018-8-8 [@anjia](https://github.com/anjia)）
 1. [20 分钟上手 WebAssembly](/articles/20180806_20分钟上手WebAssembly.md)（2018-08-06 [@liuguanyu](https://github.com/liuguanyu)）
 1. [Flexbox，终于可以承认自己明白了](/articles/20180804_Flexbox，终于可以承认自己明白了.md)（2018-8-04 [@cncuckoo](https://github.com/cncuckoo)）
-1. [CSS 性能优化的 8 个技巧](/articles/20180801_CSS性能优化的8个技巧.md)（2018-08-01 [@verymuch](https://github.com/verymuch)）
+1. [CSS 性能优化的 8 个技巧](/articles/20180801_CSS性能优化的8个技巧.md)（2018-08-01 [@verymuch](https://github.com/verymuch/blog)）
 1. [CSS 新玩法之彩色字体](/articles/20180730_CSS字体新玩法之彩色字体.md) (2018-07-30 [@nimitzdev](https://github.com/nimitzdev))
 1. [再见 jQuery，我的老朋友](/articles/20180727_再见jQuery，我的老朋友.md)（2018-7-27 [@cncuckoo](https://github.com/cncuckoo)）
 1. [5 分钟彻底理解 Object.keys](/articles/20180726_5分钟彻底理解Object.keys.md)（2018-7-26 [@Berwin](https://github.com/berwin)）
@@ -83,7 +90,6 @@
 1. [为什么不会有 CSS4 了？](https://github.com/75team/w3c/blob/master/articles/20180625_为什么不会有CSS4了？.md)（2018-6-25 [@cncuckoo](https://github.com/cncuckoo)）
 1. [来，一起帮忙制定 CSS 规范吧](https://github.com/75team/w3c/blob/master/articles/20180613_来，一起帮忙制定CSS规范吧.md)（2018-6-13 [@cncuckoo](https://github.com/cncuckoo)）
 1. [同学，W3C 了解一下](https://github.com/75team/w3c/blob/master/articles/20180612_同学，W3C了解一下.md)（2018-6-12 [@huangxialu](https://github.com/huangxiaolu)）
-
 
 > **版权声明**
 >
