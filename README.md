@@ -30,6 +30,7 @@
 ## 文章
 
 1. [GraphQL 初探(一)](</articles/20190123_GraphQL初探(一).md>)（2019-1-23 [@liuguanyu](https://github.com/liuguanyu)）
+1. [优化关键渲染路径](/articles/20190121_优化关键渲染路径.md)（2019-01-21 [@berwin](https://github.com/berwin)）
 1. [快速搭建基于 HTTPS 的本地开发环境](/articles/20190116_快速搭建基于HTTPS的本地开发环境.md)（2019-1-16 [@cncuckoo](https://github.com/cncuckoo)）
 1. [基于 Puppeteer 实现网页自动化操作](/articles/20190114_基于Puppeteer实现网页自动化操作.md)（2019-1-14 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [ES 模块基础用法及常见使用问题](articles/20190107_ES模块基础用法及常见使用问题.md)（2018-1-7 [@verymuch](https://github.com/verymuch/blog)）
