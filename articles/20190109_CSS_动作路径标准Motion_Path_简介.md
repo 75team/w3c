@@ -51,7 +51,7 @@ Motion Path Level 1 从 2015 年 4 月 9 日发表第一个工作草案以来，
 </body>
 ```
 
-![](./offset_distance_without_contain.png)
+![](https://p0.ssl.qhimg.com/t0118cefbd2570ee0ef.png)
 
 ##### 角度
 
@@ -77,7 +77,7 @@ Motion Path Level 1 从 2015 年 4 月 9 日发表第一个工作草案以来，
 
 `offset-path: ray(90deg, closest-side, contain)`
 
-![](./offset_distance_with_contain.png)
+![](https://p0.ssl.qhimg.com/t01039b85146de2da74.png)
 
 #### CSS  图形
 
@@ -106,7 +106,7 @@ Motion Path Level 1 从 2015 年 4 月 9 日发表第一个工作草案以来，
 </body>
 ```
 
-![](./geometry-box.svg)
+![](https://s5.ssl.qhres.com/static/6ee7be0ecfe1684a.svg)
 
 #### path()
 
@@ -167,7 +167,7 @@ url 与 上面的 `path()` 相同，`path()` 直接将 SVG 几何描述内容写
 
 ```
 
-![](./simple_offset_position.png)
+![](https://p1.ssl.qhimg.com/t015532aa3eb09eafd9.png)
 
  上面例子中，通过设定三个不同的`offset-distance`设定对应对象在路径上的位置分别为 50%, 20%, 100%。
 
@@ -196,7 +196,7 @@ url 与 上面的 `path()` 相同，`path()` 直接将 SVG 几何描述内容写
 </body>
 ```
 
-![](./offset-distance-unclosed.svg)
+![](https://s4.ssl.qhres.com/static/9628cca874d15e3a.svg)
 
 可以看到，两个分别设置在 -280% 和 +190% 的位置，最终由于路径没有形成闭合，两个对象停留在最小和最大的可达位置。
 
@@ -223,7 +223,7 @@ url 与 上面的 `path()` 相同，`path()` 直接将 SVG 几何描述内容写
 </body>
 ```
 
-![](./offset-distance-closed.svg)
+![](https://s5.ssl.qhres.com/static/6b81007db84dfa0a.svg)
 
 上面的例子则演示了闭合路径的状态，两个对象均可在路径上“循环”移动。
 
@@ -259,7 +259,7 @@ url 与 上面的 `path()` 相同，`path()` 直接将 SVG 几何描述内容写
 </body>
 ```
 
-![](./offset_position_auto.png)
+![](https://p0.ssl.qhimg.com/t01e767147f9237f851.png)
 
 ### offset-anchor
 
@@ -271,7 +271,7 @@ url 与 上面的 `path()` 相同，`path()` 直接将 SVG 几何描述内容写
 }
 ```
 
-![](./plane.svg)
+![](https://s1.ssl.qhres.com/static/78d3130914068f93.svg)
 
 上面例子指定了对象的锚点在中心位置。
 
@@ -317,7 +317,7 @@ url 与 上面的 `path()` 相同，`path()` 直接将 SVG 几何描述内容写
 </body>
 ```
 
-![](./offset_anchor.png)
+![](https://p2.ssl.qhimg.com/t0143085667629cc244.png)
 
 上面例子中指定了四个矩形的四个不同的锚点位置。
 
@@ -369,7 +369,7 @@ url 与 上面的 `path()` 相同，`path()` 直接将 SVG 几何描述内容写
 </body>
 ```
 
-![](./offset_anchor_auto.svg)
+![](https://s2.ssl.qhres.com/static/9c20063d78390dbf.svg)
 
 上面例子展示了，`offset-anchor` 为 `auto` 时，锚点的位置计算结果。
 
@@ -385,15 +385,15 @@ url 与 上面的 `path()` 相同，`path()` 直接将 SVG 几何描述内容写
 
 当属性值为 `auto` 时，随着 `offset-distance` 的改变，角度也会自动改变
 
-![](./offset-rotate-auto.svg)
+![](https://s5.ssl.qhres.com/static/ea894f8d63e08edc.svg)
 
 当属性值为 `reverse `时，角度与朝向相反
 
-![](./offset-rotate-reverse.svg)
+![](https://s0.ssl.qhres.com/static/a3807a89f8dcdc96.svg)
 
 当属性值为 `-45deg` 时，角度始终不变
 
-![](./offset-rotate-45.svg)
+![](https://s2.ssl.qhres.com/static/ebe860f65939d502.svg)
 
 ## 在线演示
 
