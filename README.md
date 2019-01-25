@@ -33,6 +33,7 @@
 1. [优化关键渲染路径](/articles/20190121_优化关键渲染路径.md)（2019-01-21 [@berwin](https://github.com/berwin)）
 1. [快速搭建基于 HTTPS 的本地开发环境](/articles/20190116_快速搭建基于HTTPS的本地开发环境.md)（2019-1-16 [@cncuckoo](https://github.com/cncuckoo)）
 1. [基于 Puppeteer 实现网页自动化操作](/articles/20190114_基于Puppeteer实现网页自动化操作.md)（2019-1-14 [@huangxiaolu](https://github.com/huangxiaolu)）
+1. [CSS 动作路径标准Motion Path 简介](/articles/20190109_CSS_动作路径标准Motion_Path_简介.md) (2019-1-9 [@nimitzdev](https://github.com/nimitzdev))
 1. [ES 模块基础用法及常见使用问题](articles/20190107_ES模块基础用法及常见使用问题.md)（2018-1-7 [@verymuch](https://github.com/verymuch/blog)）
 1. [CSS 是怎样确定图像大小的？](articles/20190102_CSS%20是怎样确定图像大小的？.md)（2019-1-2 [@anjia](https://github.com/anjia)）
 1. [形神兼备——谈谈 CSS_Shapes](/articles/20181231_形神兼备——谈谈CSS_Shapes.md)（2018-12-31 [@liuguanyu](https://github.com/liuguanyu)）
@@ -65,7 +66,7 @@
 1. [简析 Web 应用 6 种主要漏洞及解决方案](/articles/20180926_简析Web应用6种主要漏洞及解决方案.md)（2018-9-26 [@cncuckoo](https://github.com/cncuckoo)）
 1. [Prefetch 和预加载实践](/articles/20180925_Prefetch和预加载实践.md)（2018-9-25 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [聊聊 Server Timing](/articles/20180919_聊聊Server_Timing.md) （2018-09-19 [@liuyuchenzh](https://github.com/liuyuchenzh)）
-1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
+1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917_精确操控的滚动体验_浅谈Scroll_Snap.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
 1. [树莓派，不玩不知道（一）](/articles/20180913_树莓派，不玩不知道（一）.md)（2018-9-13 [@liuguanyu](https://github.com/liuguanyu)）
 1. [聊聊我对现代前端框架的认知](/articles/20180910_聊聊我对现代前端框架的认知.md)（2018-9-10 [@Berwin](https://github.com/berwin)）
 1. [从撒狗粮带你了解 WoT 连接场景](/articles/20180905-从撒狗粮带你了解WoT连接场景.md)（2018-9-5 [@verymuch](https://github.com/verymuch/blog)）
