@@ -30,6 +30,7 @@
 ## 文章
 
 1. [CSS的“层”峦“叠”翠](</articles/20190225_CSS的“层”峦“叠”翠.md>)（2019-02-25 [@verymuch](https://github.com/verymuch/blog)）
+1. [逻辑属性和逻辑值](articles/20190220_逻辑属性和逻辑值.md)（2019-2-20 [@anjia](https://github.com/anjia)）
 1. [GraphQL 初探(一)](</articles/20190123_GraphQL初探(一).md>)（2019-1-23 [@liuguanyu](https://github.com/liuguanyu)）
 1. [优化关键渲染路径](/articles/20190121_优化关键渲染路径.md)（2019-01-21 [@berwin](https://github.com/berwin)）
 1. [快速搭建基于 HTTPS 的本地开发环境](/articles/20190116_快速搭建基于HTTPS的本地开发环境.md)（2019-1-16 [@cncuckoo](https://github.com/cncuckoo)）
