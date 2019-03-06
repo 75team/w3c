@@ -29,7 +29,7 @@
 
 ## 文章
 
-1. [H5必知必会之与App交互](/articles/20190306_H5必知必会之与App交互.md)（2019-1-16 [@cncuckoo]
+1. [H5必知必会之与App交互](/articles/20190306_H5必知必会之与App交互.md)（2019-3-6 [@cncuckoo](https://github.com/cncuckoo)）
 1. [CSS的“层”峦“叠”翠](</articles/20190225_CSS的“层”峦“叠”翠.md>)（2019-02-25 [@verymuch](https://github.com/verymuch/blog)）
 1. [逻辑属性和逻辑值](articles/20190220_逻辑属性和逻辑值.md)（2019-2-20 [@anjia](https://github.com/anjia)）
 1. [GraphQL 初探(一)](</articles/20190123_GraphQL初探(一).md>)（2019-1-23 [@liuguanyu](https://github.com/liuguanyu)）
