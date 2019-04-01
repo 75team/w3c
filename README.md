@@ -29,6 +29,7 @@
 
 ## 文章
 
+1. [360AI音箱官网开发手记](/articles/20190401_360AI音箱官网开发手记.md)（2019-4-1 [@cncuckoo](https://github.com/cncuckoo)）
 1. [NodeJS 与模块系统](/articles/20190313_NodeJS与模块系统.md)（2019-03-13 [@liuguanyu](https://github.com/liuguanyu)）
 1. [H5 必知必会之与 App 交互](/articles/20190306_H5必知必会之与App交互.md)（2019-3-6 [@cncuckoo](https://github.com/cncuckoo)）
 1. [CSS 的“层”峦“叠”翠](/articles/20190225_CSS的“层”峦“叠”翠.md)（2019-02-25 [@verymuch](https://github.com/verymuch/blog)）
