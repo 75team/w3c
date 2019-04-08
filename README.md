@@ -18,26 +18,26 @@
 -   [@verymuch](https://github.com/verymuch)，Web of Things Working Group
 -   [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
 -   [@Berwin](https://github.com/Berwin)，Web Performance Working Group
--   [@chunpu](https://github.com/chunpu)，Browser Tools and Testing Working Group
 
 ## 贡献
 
 -   [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
 -   [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
--   [Browser Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BrowserTaT.md)
 -   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoT_WG.md)
 
 ## 文章
 
-1. [H5必知必会之与App交互](/articles/20190306_H5必知必会之与App交互.md)（2019-3-6 [@cncuckoo](https://github.com/cncuckoo)）
+1. [360AI音箱官网开发手记](/articles/20190401_360AI音箱官网开发手记.md)（2019-4-1 [@cncuckoo](https://github.com/cncuckoo)）
+1. [NodeJS 与模块系统](/articles/20190313_NodeJS与模块系统.md)（2019-03-13 [@liuguanyu](https://github.com/liuguanyu)）
+1. [H5 必知必会之与 App 交互](/articles/20190306_H5必知必会之与App交互.md)（2019-3-6 [@cncuckoo](https://github.com/cncuckoo)）
 1. [屏幕方向读取与锁定：Screen Orientation API](/articles/20190227_屏幕方向读取与锁定_Screen_Orientation_API.md) (2019-02-27 [@nimitzdev](https://github.com/nimitzdev))
-1. [CSS的“层”峦“叠”翠](</articles/20190225_CSS的“层”峦“叠”翠.md>)（2019-02-25 [@verymuch](https://github.com/verymuch/blog)）
+1. [CSS 的“层”峦“叠”翠](/articles/20190225_CSS的“层”峦“叠”翠.md)（2019-02-25 [@verymuch](https://github.com/verymuch/blog)）
 1. [逻辑属性和逻辑值](articles/20190220_逻辑属性和逻辑值.md)（2019-2-20 [@anjia](https://github.com/anjia)）
 1. [GraphQL 初探(一)](</articles/20190123_GraphQL初探(一).md>)（2019-1-23 [@liuguanyu](https://github.com/liuguanyu)）
 1. [优化关键渲染路径](/articles/20190121_优化关键渲染路径.md)（2019-01-21 [@berwin](https://github.com/berwin)）
 1. [快速搭建基于 HTTPS 的本地开发环境](/articles/20190116_快速搭建基于HTTPS的本地开发环境.md)（2019-1-16 [@cncuckoo](https://github.com/cncuckoo)）
 1. [基于 Puppeteer 实现网页自动化操作](/articles/20190114_基于Puppeteer实现网页自动化操作.md)（2019-1-14 [@huangxiaolu](https://github.com/huangxiaolu)）
-1. [CSS 动作路径标准Motion Path 简介](/articles/20190109_CSS_动作路径标准Motion_Path_简介.md) (2019-1-9 [@nimitzdev](https://github.com/nimitzdev))
+1. [CSS 动作路径标准 Motion Path 简介](/articles/20190109_CSS_动作路径标准Motion_Path_简介.md) (2019-1-9 [@nimitzdev](https://github.com/nimitzdev))
 1. [ES 模块基础用法及常见使用问题](articles/20190107_ES模块基础用法及常见使用问题.md)（2018-1-7 [@verymuch](https://github.com/verymuch/blog)）
 1. [CSS 是怎样确定图像大小的？](articles/20190102_CSS%20是怎样确定图像大小的？.md)（2019-1-2 [@anjia](https://github.com/anjia)）
 1. [形神兼备——谈谈 CSS_Shapes](/articles/20181231_形神兼备——谈谈CSS_Shapes.md)（2018-12-31 [@liuguanyu](https://github.com/liuguanyu)）
