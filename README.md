@@ -18,13 +18,11 @@
 -   [@verymuch](https://github.com/verymuch)，Web of Things Working Group
 -   [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
 -   [@Berwin](https://github.com/Berwin)，Web Performance Working Group
--   [@chunpu](https://github.com/chunpu)，Browser Tools and Testing Working Group
 
 ## 贡献
 
 -   [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
 -   [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
--   [Browser Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BrowserTaT.md)
 -   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoT_WG.md)
 
 ## 文章
@@ -32,6 +30,7 @@
 1. [360AI音箱官网开发手记](/articles/20190401_360AI音箱官网开发手记.md)（2019-4-1 [@cncuckoo](https://github.com/cncuckoo)）
 1. [NodeJS 与模块系统](/articles/20190313_NodeJS与模块系统.md)（2019-03-13 [@liuguanyu](https://github.com/liuguanyu)）
 1. [H5 必知必会之与 App 交互](/articles/20190306_H5必知必会之与App交互.md)（2019-3-6 [@cncuckoo](https://github.com/cncuckoo)）
+1. [屏幕方向读取与锁定：Screen Orientation API](/articles/20190227_屏幕方向读取与锁定_Screen_Orientation_API.md) (2019-02-27 [@nimitzdev](https://github.com/nimitzdev))
 1. [CSS 的“层”峦“叠”翠](/articles/20190225_CSS的“层”峦“叠”翠.md)（2019-02-25 [@verymuch](https://github.com/verymuch/blog)）
 1. [逻辑属性和逻辑值](articles/20190220_逻辑属性和逻辑值.md)（2019-2-20 [@anjia](https://github.com/anjia)）
 1. [GraphQL 初探(一)](</articles/20190123_GraphQL初探(一).md>)（2019-1-23 [@liuguanyu](https://github.com/liuguanyu)）
