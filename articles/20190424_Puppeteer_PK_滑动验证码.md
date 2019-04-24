@@ -4,7 +4,7 @@
 
 ### 引子
 
-几个月之前，chunpu小编曾经在《[震惊! 滑动验证码竟然能这样破解](https://mp.weixin.qq.com/s/NDIEaAhMHdrC3l9DV8z00g)》一中给大家展示了使用支持WebDriver标准的Firefox破解滑动验证码的示例，脑洞之大，构思之巧，笔法幽默，叹为观止，也极大的燃起了笔者对此的兴趣。
+几个月之前，chunpu小编曾经在《[震惊! 滑动验证码竟然能这样破解](https://mp.weixin.qq.com/s/NDIEaAhMHdrC3l9DV8z00g)》一文中给大家展示了使用支持WebDriver标准的Firefox破解滑动验证码的示例，脑洞之大，构思之巧，笔法幽默，叹为观止，也极大的燃起了笔者对此的兴趣。
 
 这篇文章就带大家使用目前较为流行的Puppeteer完成这件事情。
 
@@ -231,7 +231,7 @@ await m.up()
 
 let _moveTrace = function* (dis){
     let trace = []
-    let t0 = 0.2
+    let t = 0.2
     let curr = 0
     let step = 0
     let a = 0.8
