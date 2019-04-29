@@ -26,7 +26,7 @@
 -   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoT_WG.md)
 
 ## 文章
-
+1. [Puppeteer PK 滑动验证码](/articles/20190424_Puppeteer_PK_滑动验证码.md)（2019-04-24 [@liuguanyu](https://github.com/liuguanyu)）
 1. [CSS自定义属性及其用法](/articles/20190415-CSS自定义属性及其用法.md)（2019-04-15 [@verymuch](https://github.com/verymuch/blog)）
 1. [《中国第五届 CSS 大会》参会总结](articles/20190410_《中国第五届%20CSS%20大会》参会总结.md)（2019-4-10 [@anjia](https://github.com/anjia)）
 1. [NodeJS和命令行程序](/articles/20190408_NodeJS和命令行程序.md)（2019-04-08 [@liuguanyu](https://github.com/liuguanyu)）
