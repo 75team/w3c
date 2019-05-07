@@ -231,7 +231,7 @@ await m.up()
 
 let _moveTrace = function* (dis){
     let trace = []
-    let t = 0.2
+    let t0 = 0.2
     let curr = 0
     let step = 0
     let a = 0.8
