@@ -18,21 +18,33 @@
 -   [@verymuch](https://github.com/verymuch)，Web of Things Working Group
 -   [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
 -   [@Berwin](https://github.com/Berwin)，Web Performance Working Group
--   [@chunpu](https://github.com/chunpu)，Browser Tools and Testing Working Group
 
 ## 贡献
 
 -   [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
 -   [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
--   [Browser Tools and Testing Working Group](https://github.com/75team/w3c/blob/master/contributions/BrowserTaT.md)
 -   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoT_WG.md)
 
 ## 文章
 
+1. [H5必知必会之像素级还原设计稿](/articles/20190501_H5必知必会之像素级还原设计稿.md)（2019-5-1 [@cncuckoo](https://github.com/cncuckoo)）
+1. [Puppeteer PK 滑动验证码](/articles/20190424_Puppeteer_PK_滑动验证码.md)（2019-04-24 [@liuguanyu](https://github.com/liuguanyu)）
+1. [CSS自定义属性及其用法](/articles/20190415-CSS自定义属性及其用法.md)（2019-04-15 [@verymuch](https://github.com/verymuch/blog)）
+1. [《中国第五届 CSS 大会》参会总结](articles/20190410_《中国第五届%20CSS%20大会》参会总结.md)（2019-4-10 [@anjia](https://github.com/anjia)）
+1. [NodeJS和命令行程序](/articles/20190408_NodeJS和命令行程序.md)（2019-04-08 [@liuguanyu](https://github.com/liuguanyu)）
+1. [360AI音箱官网开发手记](/articles/20190401_360AI音箱官网开发手记.md)（2019-4-1 [@cncuckoo](https://github.com/cncuckoo)）
+1. [细数最新的CSS微元素及其用法](/articles/20190320-细数最新的CSS微元素及其用法.md)（2019-03-20 [@verymuch](https://github.com/verymuch/blog)）
+1. [看图理解 perspective 和 preserve-3d](articles/20190318_看图理解%20perspective%20和%20preserve-3d.md)（2019-3-18 [@anjia](https://github.com/anjia)）
+1. [NodeJS 与模块系统](/articles/20190313_NodeJS与模块系统.md)（2019-03-13 [@liuguanyu](https://github.com/liuguanyu)）
+1. [H5 必知必会之与 App 交互](/articles/20190306_H5必知必会之与App交互.md)（2019-3-6 [@cncuckoo](https://github.com/cncuckoo)）
+1. [屏幕方向读取与锁定：Screen Orientation API](/articles/20190227_屏幕方向读取与锁定_Screen_Orientation_API.md) (2019-02-27 [@nimitzdev](https://github.com/nimitzdev))
+1. [CSS 的“层”峦“叠”翠](/articles/20190225_CSS的“层”峦“叠”翠.md)（2019-02-25 [@verymuch](https://github.com/verymuch/blog)）
+1. [逻辑属性和逻辑值](articles/20190220_逻辑属性和逻辑值.md)（2019-2-20 [@anjia](https://github.com/anjia)）
 1. [GraphQL 初探(一)](</articles/20190123_GraphQL初探(一).md>)（2019-1-23 [@liuguanyu](https://github.com/liuguanyu)）
 1. [优化关键渲染路径](/articles/20190121_优化关键渲染路径.md)（2019-01-21 [@berwin](https://github.com/berwin)）
 1. [快速搭建基于 HTTPS 的本地开发环境](/articles/20190116_快速搭建基于HTTPS的本地开发环境.md)（2019-1-16 [@cncuckoo](https://github.com/cncuckoo)）
 1. [基于 Puppeteer 实现网页自动化操作](/articles/20190114_基于Puppeteer实现网页自动化操作.md)（2019-1-14 [@huangxiaolu](https://github.com/huangxiaolu)）
+1. [CSS 动作路径标准 Motion Path 简介](/articles/20190109_CSS_动作路径标准Motion_Path_简介.md) (2019-1-9 [@nimitzdev](https://github.com/nimitzdev))
 1. [ES 模块基础用法及常见使用问题](articles/20190107_ES模块基础用法及常见使用问题.md)（2018-1-7 [@verymuch](https://github.com/verymuch/blog)）
 1. [CSS 是怎样确定图像大小的？](articles/20190102_CSS%20是怎样确定图像大小的？.md)（2019-1-2 [@anjia](https://github.com/anjia)）
 1. [形神兼备——谈谈 CSS_Shapes](/articles/20181231_形神兼备——谈谈CSS_Shapes.md)（2018-12-31 [@liuguanyu](https://github.com/liuguanyu)）
@@ -65,7 +77,7 @@
 1. [简析 Web 应用 6 种主要漏洞及解决方案](/articles/20180926_简析Web应用6种主要漏洞及解决方案.md)（2018-9-26 [@cncuckoo](https://github.com/cncuckoo)）
 1. [Prefetch 和预加载实践](/articles/20180925_Prefetch和预加载实践.md)（2018-9-25 [@huangxiaolu](https://github.com/huangxiaolu)）
 1. [聊聊 Server Timing](/articles/20180919_聊聊Server_Timing.md) （2018-09-19 [@liuyuchenzh](https://github.com/liuyuchenzh)）
-1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
+1. [精确操控的滚动体验，浅谈新标准 Scroll Snap](/articles/20180917_精确操控的滚动体验_浅谈Scroll_Snap.md) (2018-09-17 [@nimitzdev](https://github.com/nimitzdev))
 1. [树莓派，不玩不知道（一）](/articles/20180913_树莓派，不玩不知道（一）.md)（2018-9-13 [@liuguanyu](https://github.com/liuguanyu)）
 1. [聊聊我对现代前端框架的认知](/articles/20180910_聊聊我对现代前端框架的认知.md)（2018-9-10 [@Berwin](https://github.com/berwin)）
 1. [从撒狗粮带你了解 WoT 连接场景](/articles/20180905-从撒狗粮带你了解WoT连接场景.md)（2018-9-5 [@verymuch](https://github.com/verymuch/blog)）
