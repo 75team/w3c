@@ -10,7 +10,6 @@
 
 ## 成员
 
--
 -   [@cncuckoo](https://github.com/cncuckoo)，Advisory Committee Representative（顾问委员会代表）
 -   [@liuguanyu](https://github.com/liuguanyu)，CSS Working Group
 -   [@anjia](https://github.com/anjia)，CSS Working Group
