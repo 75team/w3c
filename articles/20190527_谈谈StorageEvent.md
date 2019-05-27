@@ -18,7 +18,7 @@ StorageEvent是什么呢？
 1. 当storage变化时候，事件会被派发到所有同域下的其他页面。
 1. 触发变化的当前页面，没有事件派发。
 
-这里有一个简单的示例可以展示这个API的用法。读者可以打开多个Tab并观察页面的变化。这里面能够同步的关键在于如下语句:
+这里有一个简单的示例可以展示这个API的用法。
 
 ```JavaScript
 const STORAGE_KEY = "cartlist"
@@ -113,6 +113,8 @@ window.addEventListener('storage', (e) => {
 
 当我们注释掉这个语句，我们的页面同步就不能运行了。
 
+读者可以打开多个Tab并观察页面的变化 https://jsbin.com/radekilosu/1/edit?html,css,js,output 。
+
 实际上，这个事件e上还带有很多信息，方便编程时，对于事件做精确的控制。
 
 | 字段        | 含义                                             |
@@ -151,9 +153,9 @@ function (key, oldval, newval, url, storage){
 }
 ```
 
-此时，我们只需要再setItem、removeItem中获取对应的值，并手动调用一下即可。
+此时，我们只需要再setItem、removeItem、clear中获取对应的值，并手动调用一下即可。
 
 ### 参考资料
 
 1. https://developer.mozilla.org/en-US/docs/Web/API/Window/storage_event
-1. https://www.cnblogs.com/cczw/p/3196195.html
+2. https://www.cnblogs.com/cczw/p/3196195.html
