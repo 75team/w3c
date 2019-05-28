@@ -113,7 +113,7 @@ window.addEventListener('storage', (e) => {
 
 当我们注释掉这个语句，我们的页面同步就不能运行了。
 
-读者可以打开多个Tab并观察页面的变化 https://jsbin.com/radekilosu/1/edit?html,css,js,output 。
+读者可以打开多个Tab并观察页面的变化https://jsbin.com/radekilosu/1/edit?html,css,js,output。
 
 实际上，这个事件e上还带有很多信息，方便编程时，对于事件做精确的控制。
 
@@ -140,20 +140,21 @@ var Storage = {
     　　localStorage.removeItem(k);
     },
     clear: function (){},
-    getItem: function(k)
+    getItem: function(k){}
+}
 ```
 
 此时，我们再包装一个函数：
 
 ```javascript
-function (key, oldval, newval, url, storage){
+function dispatchMe(key, oldval, newval, url, storage){
     var se = document.createEvent("StorageEvent");
     se.initStorageEvent('storage', false, false, key, oldval, newval, url, storage);
     window.dispatchEvent(se);
 }
 ```
 
-此时，我们只需要再setItem、removeItem、clear中获取对应的值，并手动调用一下即可。
+此时，我们只需要在setItem、removeItem、clear中获取对应的值，并手动调用一下dispatchMe，同时把和localStorage打交道的地方改为调用我们包装的Storage即可。
 
 ### 参考资料
 
