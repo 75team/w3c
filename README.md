@@ -27,6 +27,7 @@
 
 ## 文章
 
+1. [谈谈StorageEvent](/articles/20190527_谈谈StorageEvent.md)（2019-05-27 [@liuguanyu](https://github.com/liuguanyu)）
 1. [从谷歌华为暂停合作说起](/articles/20190522_从谷歌华为暂停合作说起.md)（2019-05-22 [@liuguanyu](https://github.com/liuguanyu)）
 1. [H5 必知必会之快速搭建开发环境](/articles/20190515_H5必知必会之快速搭建开发环境.md)（2019-5-15 [@cncuckoo](https://github.com/cncuckoo)）
 1. [Filter Effects in Web (1)：CSS filter](/articles/20190508_Filter_Effects_in_Web_1_CSS_filter.md)（2019-5-8 [@verymuch](https://github.com/verymuch/blog)）
