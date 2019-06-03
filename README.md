@@ -20,7 +20,7 @@
 ## 前成员
 
 -   [@huangxiaolu](https://github.com/huangxiaolu)，Web Performance Working Group
--   [@chunpu](https://github.com/chunpu)）Browser Testing and Tools Working Group
+-   [@chunpu](https://github.com/chunpu)， Browser Testing and Tools Working Group
 -   [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
 
 ## 贡献
