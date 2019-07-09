@@ -90,11 +90,14 @@ WSL是一个缩写，全称是Windows Subsystem for Linux。意为一个在Windo
 
 实际上，我们可以分以下几步解决这个问题：
 
-1. 更换为更友好的zsh为默认shell，以ubuntu为例：
+1. 更换为更友好的zsh，并设置为默认shell，以ubuntu为例：
+
    `sudo apt-get install -y zsh`
+   
    `chsh -s /bin/zsh`
 
 1. 安装oh-my-zsh等命令行工具
+
    `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 
 1. 换用更加友好的命令行render
