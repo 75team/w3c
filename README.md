@@ -16,6 +16,7 @@
 -   [@nimitzdev](https://github.com/nimitzdev)，CSS Working Group
 -   [@verymuch](https://github.com/verymuch)，Web of Things Working Group
 -   [@Berwin](https://github.com/Berwin)，Web Performance Working Group
+-   [@songworld](https://github.com/songworld) ，Automative Working Group
 
 ## 前成员
 
