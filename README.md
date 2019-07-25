@@ -38,7 +38,7 @@
 1. [如何测试网站的可访问性](/articles/20190715_如何测试网站的可访问性.md) （2019-07-15 [@anjia](https://github.com/anjia)）
 1. [WSL：在Windows下优雅地玩Linux.md](/articles/20190711_WSL：在Windows下优雅地玩Linux.md)（2019-07-11 [@liuguanyu](https://github.com/liuguanyu)）
 1. [需求分析与开发时间评估](/articles/20190708_需求分析与开发时间评估.md)（2019-07-08 [@Berwin](https://github.com/berwin)）
-1. [你不知道的环境变量](/articles/20190703_你不知道的环境变量.md)（2019-07-03 [@cncucioo](https://github.com/cncuckoo)）
+1. [你不知道的环境变量](/articles/20190703_你不知道的环境变量.md)（2019-07-03 [@cncuckoo](https://github.com/cncuckoo)）
 1. [Web 安全漏洞之文件上传](/articles/20190701_Web%20安全漏洞之文件上传.md)（2019-07-01 [@lizheming](https://github.com/lizheming)）
 1. [给你一个奇舞团面试秘籍（上）](/articles/20190626_给你一个奇舞团面试秘籍（上）.md)（2019-06-26）
 1. [CSS Overscroll Behavior.md](/articles/20190624_CSS_Overscroll_Behavior.md)（2019-06-24 [@NimitzDEV](https://github.com/NimitzDEV)）
