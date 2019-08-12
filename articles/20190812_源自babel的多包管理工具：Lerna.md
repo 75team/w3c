@@ -74,19 +74,29 @@ lerna.json通常位于项目的根目录下，定义了lerna运行的主要行�
 
 ```lerna init```
  
-上述命令会初始化一个多包工程。初始化之后会在根目录生成packages目录、lerna.json。
+上述命令会初始化一个多包工程。初始化之后会在根目录生成packages目录、lerna.json，如果使用independent模式，请使用命令：`lerna init --independent`
 
 ### 创建子包
 
 ```lerna create <package> [-y]```
 
-创建package包。
+在packages所指目录下创建package包。
 
 ### 添加包
 
 ```lerna add <package>[@version] [--dev] [--exact] [--scope=module名]```
 
-上述命令会添加一个包package指明的软件包。指定--dev是添加在devDependencies中。指定--exact，则将用精确匹配的模式添加包。指定--scope将只在此指明的模块中安装这个软件包，否则将在所有packages目录中的包中安装。对于npm镜像中存在的包，将安装镜像中的包，对于
+上述命令会添加一个包package指明的软件包。
+
+指定--dev是添加在devDependencies中。
+
+指定--exact，则将用精确匹配的版本添加包。
+
+指定--scope将只在此指明的模块中安装这个软件包，否则将在所有packages目录中的包中安装。
+
+对于packages目录下的子包，讲通过设立systemlink来解决依赖。
+
+对于npm镜像中存在的包，将安装镜像中的包。
 
 ### 运行命令
 
@@ -124,7 +134,7 @@ lerna.json通常位于项目的根目录下，定义了lerna运行的主要行�
 
 ### 合并公共依赖
 
-我们在开发过程中，经常发现包依赖类似。这样，我们发现运行lerna bootstrap之后，会重复安装依赖包。为此，我们可以把同样的依赖包在根目录安装一次即可。此时，可以使用`lerna bootstrap --hoist`命令，则公用的依赖，只会在顶层目录安装一次。
+我们在开发过程中，经常发现包依赖类似。这样，我们发现运行lerna bootstrap之后，会重复安装依赖包，这样会造成空间的浪费和效率的降低。为此，我们可以把同样的依赖包在根目录安装一次即可。此时，可以使用`lerna bootstrap --hoist`命令，则公用的依赖，只会在顶层目录安装一次。
 
 ### 发布带有scope公有包
 
