@@ -9,9 +9,11 @@
 
 对于多个模块的大型项目的协作管理，一般地有multirepo、monorepo和submodules等多种方式：multirepo是将多个模块分别分为多个仓库，早期的babel（babel6以前）使用的就是这种方式；submodules是借助git的实现，在.gitmodules中写明引用的仓库，在主仓库中只保留必要的索引；monorepo则是将相关的模块用单一的仓库统一管理。
 
-上述的方式各有优劣。从目前前端主流的大型代码的代码管理来看，monorepo被很多超级repo选中。babel、vue-cli、create-react-app都采用这种模式。
+上述的方式各有优劣。从目前前端工程的代码管理来看，monorepo被很多超级repo选中。babel、vue-cli、create-react-app都采用这种模式。
 
-Babel的重要贡献者[jamiebuilds](https://github.com/jamiebuilds)，在为 Babel 6 工作的过程中发现所有东西都拆分成漂亮的小插件包，但同时也就需要管理数十个软件包。因此，多包存储库管理工具 Lerna 应运而生。为让项目更好用，他对项目进行了多次重写，试图让架构更完善。
+Babel的重要贡献者[Jamie Kyle](https://github.com/jamiebuilds)，在为 Babel 6 工作的过程中发现所有东西都拆分成漂亮的小插件包，但同时也就需要管理数十个软件包。因此，多包存储库管理工具 Lerna 应运而生。为让项目更好用，他对项目进行了多次重写，试图让架构更完善。下图是Jamie Kyle的靓照@_@
+
+![](https://p2.ssl.qhimg.com/t01a8274f322191222c.jpg)
 
 Lerna也是babel官方现在使用的多包管理工具。
 
@@ -20,8 +22,8 @@ Lerna也是babel官方现在使用的多包管理工具。
 [Lerna官网](https://lerna.js.org/)对此给出了官方的解释：Lerna是一个管理包含多个软件包的JavaScript项目的工具。它可以：
 
 1. 解决包之间的依赖关系。
-1. 通过git仓库检测改动，自动同步。
-1. 根据相关的git提交的commit，生成CHANGELOG。
+2. 通过git仓库检测改动，自动同步。
+3. 根据相关的git提交的commit，生成CHANGELOG。
 
 Lerna是一个命令行工具，可以将其安装在系统全局。简单的命令说明，可以使用：`lerna -h`查看命令帮助。
 
