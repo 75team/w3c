@@ -33,7 +33,7 @@ Lerna是一个命令行工具，可以将其安装在系统全局。简单的命
 
 Lerna分为两种模式：fixed模式和independent模式。两种模式的区别在于：前者强制所有的包都使用在根目录lerna.json中指定的版本号。而后者各个软件包，可以自己指定版本号。
 
-默认的，lerna使用的是fixed模式。笔者认为，这种模式下，所有的相关软件包，最好以几乎一致的发布周期发布，如babel这种，并且对外的软件被使用者更多以“黑盒”方式对待。这是fixed模式最适应的方式。
+默认的，lerna使用的是fixed模式。笔者认为，这种模式下，所有的相关软件包，最好以几乎一致的发布周期发布，如babel这种。并且软件内部应该被使用者更多以“黑盒”方式对待。这是fixed模式最适应的方式。
 
 而需要暴露内部包的细节，或者迭代频率显著不一致的包，建议采用independent模式。
 
@@ -64,9 +64,9 @@ lerna.json通常位于项目的根目录下，定义了lerna运行的主要行�
 上面的配置文件中：
 
 1. version指定的是所有包的统一版本号；对于independent模式，这个字段请指定为independent；
-1. npmClient指定的是npm的客户端。默认的，lerna将使用npm。读者也可依所需将程序设置为yarn，甚至cnpm等等。
-1. command字段，可以对publish和bootstrap命令进行参数传递和命令定制。如：`command.publish.ignoreChanges`，用来设置一些忽略的文件，以避免无关文件的提交对于版本号的变更，如README.md等等。`command.bootstrap.npmClientArgs`指定在bootstrap命令时，传递的默认参数。
-1. packages字段指定包所在的目录。
+2. npmClient指定的是npm的客户端。默认的，lerna将使用npm。读者也可依所需将程序设置为yarn，甚至cnpm等等。
+3. command字段，可以对publish和bootstrap命令进行参数传递和命令定制。如：`command.publish.ignoreChanges`，用来设置一些忽略的文件，以避免无关文件的提交对于版本号的变更，如README.md等等。`command.bootstrap.npmClientArgs`指定在bootstrap命令时，传递的默认参数，比如我们会常常使用`--no-package-lock`来禁止package-lock.json或yarn.lock等等。
+4. packages字段指定包所在的目录。
 
 ## Lerna命令
 
