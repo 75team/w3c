@@ -31,6 +31,7 @@
 
 ## 文章
 
+1. [【译】移动App的可访问性陷阱和测试方法](/articles/20190815_【译】移动App的可访问性陷阱和测试方法.md) （2019-08-15 [@anjia](https://github.com/anjia)）
 1. [如何测试网站的可访问性](/articles/20190715_如何测试网站的可访问性.md) （2019-07-15 [@anjia](https://github.com/anjia)）
 1. [WSL：在Windows下优雅地玩Linux.md](/articles/20190711_WSL：在Windows下优雅地玩Linux.md)（2019-07-11 [@liuguanyu](https://github.com/liuguanyu)）
 1. [你不知道的环境变量](/articles/20190703_你不知道的环境变量.md)（2019-07-03 [@cncucioo](https://github.com/cncuckoo)）
