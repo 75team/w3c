@@ -30,6 +30,8 @@
 -   [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoT_WG.md)
 
 ## 文章
+
+1. [20190801_CORS为什么要区分『简单请求』和『预检请求』？](/articles/20190801_CORS为什么要区分『简单请求』和『预检请求』？.md)（2019-09-02 [@hax](https://github.com/hax)）
 1. [setTimeout小尴尬的启示](/articles/20190805_setTimeout小尴尬的启示.md)（2019-08-05 [@cncucioo](https://github.com/cncuckoo)）
 1. [你不知道的环境变量](/articles/20190703_你不知道的环境变量.md)（2019-07-03 [@cncucioo](https://github.com/cncuckoo)）
 1. [深入理解现代浏览器](/articles/20190605_深入理解现代浏览器.md)（2019-06-05 [@cncucioo](https://github.com/cncuckoo)）
