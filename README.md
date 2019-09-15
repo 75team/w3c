@@ -34,9 +34,12 @@
 ## 文章
 
 
+1. [CSS字体：Level1到3](/articles/20190904_CSS字体：Level1到3.md)（2019-09-04 [@cncuckoo](https://github.com/cncuckoo)）
+1. [CORS为什么要区分『简单请求』和『预检请求』？](/articles/20190801_CORS为什么要区分『简单请求』和『预检请求』？.md)（2019-09-02 [@hax](https://github.com/hax)）
 1. [CSS混合模式](/articles/20190819_css_blend_mode.md)（2019-08-19 [@verymuch](https://github.com/verymuch)）
 1. [[译] 移动App的可访问性陷阱和测试方法](/articles/20190815_【译】移动App的可访问性陷阱和测试方法.md) （2019-08-15 [@anjia](https://github.com/anjia)）
 1. [源自babel的多包管理工具：Lerna](/articles/20190812_源自babel的多包管理工具：Lerna.md)（2019-08-12 [@liuguanyu](https://github.com/liuguanyu)）
+1. [setTimeout小尴尬的启示](/articles/20190805_setTimeout小尴尬的启示.md)（2019-08-05 [@cncucioo](https://github.com/cncuckoo)）
 1. [给你一个奇舞团面试秘籍（下）](/articles/20190724_给你一个奇舞团面试秘籍（下）.md)（2019-07-24）
 1. [最小栈和最小队列](/articles/20190717_最小栈和最小队列.md)（2019-07-17 [@verymuch](https://github.com/verymuch)）
 1. [如何测试网站的可访问性](/articles/20190715_如何测试网站的可访问性.md) （2019-07-15 [@anjia](https://github.com/anjia)）
