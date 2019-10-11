@@ -16,7 +16,20 @@
 
 ## shadow dom的概念
 
-我们仍以上面的滑块作为例子。在最新的Chrome浏览器上，
+我们仍以上面的滑块作为例子。在最新的Chrome浏览器上，你可以输入如下代码来实现上面的功能：
+
+```html
+<input type="range" disabled min="20" max="100" defaultValue="30"/>
+``` 
+
+请打开DevTools中的“show user agent shadow DOM”：
+
+![](https://p1.ssl.qhimg.com/t010ddc862b484179da.png)
+
+在DevTools的Elements标签中，我们可以看到这个“组件”的实现细节。
+
+![](https://p5.ssl.qhimg.com/t01c824429f8d05d74e.png)
+
 
 ## shadow dom的特性
 
