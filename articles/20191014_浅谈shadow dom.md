@@ -14,7 +14,7 @@
 
 针对这些问题，其实浏览器提供了一种名叫Shadow DOM的解决方案。这个方案目前与 Custom Elements、HTML Templates、CSS changes和JSON, CSS, HTML Modules并列为[Web Components标准](https://github.com/w3c/webcomponents)。
 
-## shadow dom的概念
+## Shadow DOM的概念
 
 我们仍以上面的滑块作为例子。在最新的Chrome浏览器上，你可以输入如下代码来实现上面的功能：
 
@@ -40,14 +40,36 @@
 1. Shadow Host：Shadow DOM所依附的DOM节点。
 1. Shadow Root： Shadow Trees的根节点。外部JavaScript如果希望对Shadow Dom进行访问，通常会借助Shadow Root。
 1. Shadow Boundary：Shadow Tree的边界，是JavaScript访问、CSS选择器访问的分界点。
-1. content：指原本存在于Light DOM 结构中，被 <content> 标签添加到影子 DOM 中的节点。自Chrome 63以后，content标签被弃用，转而使用template和slot标签。
-1. 
+1. content：指原本存在于Light DOM 结构中，被 <content> 标签添加到影子 DOM 中的节点。自Chrome 53以后，content标签被弃用，转而使用template和slot标签。
+1. template：一致标签。类似我们经常用的`<script type='tpl'>`，它不会被解析为dom树的一部分，template的内容可以被塞入到Shadow DOM中并且反复利用，在template中可以设置style，但只对这个template中的元素有效。
+1. slot：与template合用的标签，用于在template中预留显示坑位。如：
+   
+```html
+<div id="con">
+    我是基础文字
+    <span slot="main1">
+      占位1
+    </span>
+    <span slot="main2">
+      占位2
+    </span>
+    我还是基础文字 
+</div>
+<template id="tpl">
+    我是模版
+    <slot name="main1">
+    </slot>
+    <slot name="main2">
+    </slot>
+    我还是模版
+</template>
+```
 
 下面这幅图，展示了上述概念的相互关系：
 
 ![](https://p3.ssl.qhimg.com/t019da09b06e0c45b73.png)
 
-## shadow dom的特性
+## Shadow DOM的特性
 
 https://jsbin.com/juguyipodu/edit?html,console,output
 
