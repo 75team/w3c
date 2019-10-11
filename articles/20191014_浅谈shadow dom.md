@@ -171,7 +171,61 @@ root.appendChild(con);
 
 4. 定义一个组件
    
+```Javascript
+class FlagIcon extends HTMLElement {
+  constructor() {
+    super();
+    this._countryCode = null;
+  }
 
+  static get observedAttributes() { return ["country"]; }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    // name will always be "country" due to observedAttributes
+    this._countryCode = newValue;
+    this._updateRendering();
+  }
+  connectedCallback() {
+    this._updateRendering();
+  }
+
+  get country() {
+    return this._countryCode;
+  }
+  set country(v) {
+    this.setAttribute("country", v);
+  }
+
+  disconnectedCallback() {
+    console.log('disconnected!');
+  }
+
+  _updateRendering() {
+    // Left as an exercise for the reader. But, you'll probably want to
+    // check this.ownerDocument.defaultView to see if we've been
+    // inserted into a document with a browsing context, and avoid
+    // doing any work if not.
+  }
+}
+
+customElements.define("flag-icon", FlagIcon);
+
+const flagIcon = new FlagIcon()
+flagIcon.country = "zh"
+document.body.appendChild(flagIcon)
+```
+
+自定义的组件，都需继承自HTMLElement。然后调用`customElements.define`方法，将组件引入过来。之后，就可以在代码中使用了。
+
+组件生命周期大致经过以下几个阶段：
+
+1. constructor 会在元素创建后而尚未被附加到文档上之前被调用。我们用 constructor 来设置初始状态、事件监听以及 shadow DOM。
+
+1. connectCallback 会在元素被添加到 DOM 中后被调用。此时非常适合执行初始化代码，比如获取数据或是设置默认属性。
+
+1. disconnectedCallback() 会在元素从 DOM 中被移除后调用。可以利用 disconnectedCallback 来移除事件监听器或取消定时循环事件。
+
+1. attributeChangedCallback 会在元素的受监的控属性变动时被调用。
 
 ## 兼容性
 
@@ -179,9 +233,14 @@ root.appendChild(con);
 
 ![](https://p5.ssl.qhimg.com/t0193590762fd231d68.png)
 
+## 小结
+
+本文介绍了Shadow DOM的标准内容。这里或多或少的涉及到了WebComponents标准的其他内容，我们会在后面的文章，详细介绍其他相关标准的内容。在翻阅Shadow DOM历史资料的过程中，发现很多标准中定义的方法发生了变化甚至废弃，建议大家以官方最新的[标准](https://dom.spec.whatwg.org/#shadow-trees)为准。
+
 ## 参考资料
 
 1. https://meowni.ca/posts/part-theme-explainer/
-2. https://www.html5rocks.com/zh/tutorials/webcomponents/shadowdom-201/
-3. https://drafts.csswg.org/css-shadow-parts/
-4. https://www.cnblogs.com/yangguoe/p/8486046.html
+1. https://www.html5rocks.com/zh/tutorials/webcomponents/shadowdom-201/
+1. https://drafts.csswg.org/css-shadow-parts/
+1. https://www.cnblogs.com/yangguoe/p/8486046.html
+1. https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements
