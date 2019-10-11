@@ -79,9 +79,30 @@
    对于需要影响的、以Shadow Boundary分离的样式，需要由特殊的方案显示指定，如：`:host`选择器，:host-context()选择器、::content()选择器等等。
 1. JavaScript事件捕获与冒泡：
    传统的JavaScript事件捕获与冒泡，由于Shadow Boundary的存在，与一般的事件模型有一定的差异。
+   
    在捕获阶段，当事件发生在Shadow Boundary以上，Shadow Boundary上层可以捕获事件，而Shadow Boundary下层无法捕获事件。
    在冒泡阶段，当事件发生在Shadow Boundary以下，Shadow Boundary上层会以Shadow Host作为事件发生的源对象，而Shadow Boundary下层可以获取到源对象。
+
+   事件abort、 error、 select 、change 、load 、reset 、resize 、scroll 、selectstart不会进行重定向而是直接被干掉。
    
    读者可以从这个[例子](https://jsbin.com/kiqatolede/1/edit?html,console,output)里感受一下。
+1. 多个Shadow Tree同时共用一个Shadow Host，只会展示最后一个Shadow Tree。
 
-## 如何使用shadow dom
+## 如何使用Shadow DOM
+
+了解了上述基础知识之后，我们可以试着利用Shadow DOM做些事情了。
+
+1. 创建Shadow DOM
+
+```JavaScript
+const div = document.createElement('div');
+const sr = div.attachShadow({mode: 'open'});
+sr.innerHTML = '<h1>Hello Shadow DOM</h1>';
+```
+
+这里注意下`{mode: 'open'}`，此后通过`div.shadowRoot`即可拿到sr的实例。sr可以使用一般的JavaScript API来做相关的操作。
+
+如果这里采用`{mode: 'closed'}`，则此时`div.shadowRoot`为null。外部不可能再拿到sr的实例。此时外部很难操作到sr下的Shadow DOM，仅可以依靠Shadow内部的元素来进行操作。
+
+2. 在Shadow DOM内部来操作Shadow Host的样式
+
