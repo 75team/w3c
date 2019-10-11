@@ -34,8 +34,18 @@
 
 为了搞清Shadow DOM的机制，我们需要先厘清几个概念：
 
-1. Shadow Tree: 
+1. Shadow DOM: 是一种依附于文档原有节点的子 DOM，具有封装性。
+1. Light DOM: 指原生的DOM节点。Light DOM和Shadom DOM常常一起出现。这也是很有意思的一个比喻。一明一暗，灯下有影子。
+1. Shadow Trees：Shadow DOM的树形结构。一般地，在Shadow Trees的节点不能直接被外部JavaScript的API和选择器访问到，但是浏览器会对这些节点做渲染。
+1. Shadow Host：Shadow DOM所依附的DOM节点。
+1. Shadow Root： Shadow Trees的根节点。外部JavaScript如果希望对Shadow Dom进行访问，通常会借助Shadow Root。
+1. Shadow Boundary：Shadow Tree的边界，是JavaScript访问、CSS选择器访问的分界点。
+1. content：指原本存在于Light DOM 结构中，被 <content> 标签添加到影子 DOM 中的节点。自Chrome 63以后，content标签被弃用，转而使用template和slot标签。
+1. 
 
+下面这幅图，展示了上述概念的相互关系：
+
+![](https://p3.ssl.qhimg.com/t019da09b06e0c45b73.png)
 
 ## shadow dom的特性
 
