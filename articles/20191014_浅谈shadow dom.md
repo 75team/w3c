@@ -64,6 +64,14 @@
     </slot>
     我还是模版
 </template>
+<script>
+let host = document.querySelector('#con');
+let root = host.attachShadow({mode:'open'});
+
+let con = document.getElementById("tpl").content.cloneNode(true);
+
+root.appendChild(con);
+</script>
 ```
 
 下面这幅图，展示了上述概念的相互关系：
@@ -120,8 +128,49 @@ root.innerHTML = '<style>' +
 </script>
 ```
 
-3. 使用^和^^跨越Shadow Boundary
+3. 跨越Shadow Boundary的样式`::part()`
 
+对于::part，在允许样式的Shadow DOM，给属性part赋值，样式选择器可以使用::part(属性值)即可实现指定样式。需要注意的是，在::part()选择器后，子代选择器无效。如你不能使用`::part(foo) span`。
+
+```html
+<style>
+  c-e::part(innerspan) { color: red; }
+</style>
+
+<template id="c-e-outer-template">
+  <c-e-inner exportparts="innerspan: textspan"></c-e-inner>
+</template>
+
+<template id="c-e-inner-template">
+  <span part="innerspan">
+    This text will be red because the containing shadow
+    host forwards innerspan to the document as "textspan"
+    and the document style matches it.
+  </span>
+  <span part="textspan">
+    This text will not be red because textspan in the document style
+    cannot match against the part inside the inner custom element
+    if it is not forwarded.
+  </span>
+</template>
+
+<c-e></c-e>
+<script>
+  // Add template as custom elements c-e-inner, c-e-outer
+
+let host = document.querySelector('c-e');
+let root = host.attachShadow({mode:'open'});
+
+let con = document.getElementById("c-e-inner-template").content.cloneNode(true);
+
+root.appendChild(con);
+</script>
+```
+
+::part()选择器自Chrome73开始支持。之前的版本，可以考虑^和^^选择器，^和^^选择Shadow DOM在最新版本已经无效。
+
+4. 定义一个组件
+   
 
 
 ## 兼容性
@@ -129,3 +178,10 @@ root.innerHTML = '<style>' +
 目前Shadow dom有两个主流的标准，V0和V1，V0已经被废弃，当前的版本为V1。以下是当前（2019年10月）的主流浏览器支持情况：
 
 ![](https://p5.ssl.qhimg.com/t0193590762fd231d68.png)
+
+## 参考资料
+
+1. https://meowni.ca/posts/part-theme-explainer/
+2. https://www.html5rocks.com/zh/tutorials/webcomponents/shadowdom-201/
+3. https://drafts.csswg.org/css-shadow-parts/
+4. https://www.cnblogs.com/yangguoe/p/8486046.html
