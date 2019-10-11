@@ -225,7 +225,7 @@ document.body.appendChild(flagIcon)
 
 1. disconnectedCallback() 会在元素从 DOM 中被移除后调用。可以利用 disconnectedCallback 来移除事件监听器或取消定时循环事件。
 
-1. attributeChangedCallback 会在元素的受监的控属性变动时被调用。
+1. attributeChangedCallback 会在元素的受监控的属性变动时被调用。
 
 ## 兼容性
 
