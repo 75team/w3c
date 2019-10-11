@@ -106,3 +106,26 @@ sr.innerHTML = '<h1>Hello Shadow DOM</h1>';
 
 2. 在Shadow DOM内部来操作Shadow Host的样式
 
+:host 允许你选择并样式化 Shadow Tree所寄宿的元素
+
+```JavaScript
+<button class="red">My Button</button>
+<script>
+var button = document.querySelector('button');
+var root = button.createShadowRoot();
+root.innerHTML = '<style>' +
+    ':host { text-transform: uppercase;font-size:30px; }' +
+    '</style>' +
+    '<content></content>';
+</script>
+```
+
+3. 使用^和^^跨越Shadow Boundary
+
+
+
+## 兼容性
+
+目前Shadow dom有两个主流的标准，V0和V1，V0已经被废弃，当前的版本为V1。以下是当前（2019年10月）的主流浏览器支持情况：
+
+![](https://p5.ssl.qhimg.com/t0193590762fd231d68.png)
