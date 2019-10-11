@@ -35,12 +35,13 @@
 为了搞清Shadow DOM的机制，我们需要先厘清几个概念：
 
 1. Shadow DOM: 是一种依附于文档原有节点的子 DOM，具有封装性。
-1. Light DOM: 指原生的DOM节点。Light DOM和Shadom DOM常常一起出现。这也是很有意思的一个比喻。一明一暗，灯下有影子。
+1. Light DOM: 指原生的DOM节点，可以通过常规的API访问。Light DOM和Shadom DOM常常一起出现。这也是很有意思的一个比喻。一明一暗，灯下有影子。
 1. Shadow Trees：Shadow DOM的树形结构。一般地，在Shadow Trees的节点不能直接被外部JavaScript的API和选择器访问到，但是浏览器会对这些节点做渲染。
 1. Shadow Host：Shadow DOM所依附的DOM节点。
 1. Shadow Root： Shadow Trees的根节点。外部JavaScript如果希望对Shadow Dom进行访问，通常会借助Shadow Root。
 1. Shadow Boundary：Shadow Tree的边界，是JavaScript访问、CSS选择器访问的分界点。
 1. content：指原本存在于Light DOM 结构中，被 <content> 标签添加到影子 DOM 中的节点。自Chrome 53以后，content标签被弃用，转而使用template和slot标签。
+1. distributed nodes：指原本位于Light DOM，但被content或template+slot添加到Shadow DOM 中的节点。
 1. template：一致标签。类似我们经常用的`<script type='tpl'>`，它不会被解析为dom树的一部分，template的内容可以被塞入到Shadow DOM中并且反复利用，在template中可以设置style，但只对这个template中的元素有效。
 1. slot：与template合用的标签，用于在template中预留显示坑位。如：
    
@@ -71,6 +72,16 @@
 
 ## Shadow DOM的特性
 
-https://jsbin.com/juguyipodu/edit?html,console,output
+了解了Shadow DOM相关的概念，我们来了解一下相关的特性，以便更好地使用Shadow DOM：
+
+1. DOM 的封装性：在不同的 Shadow Trees中无法选择另外 Shadow Tree 中的元素，只有获取对应的 Shadow Tree 才能对其中的元素进行操作。
+1. 样式的封装性： 原则上，在Shadow Boundary外的样式，无法影响Shadow DOM的样式；而对于Shadow Tree内部的样式，可以由自身的style标签或样式指定；不同的Shadow Tree元素样式之间，也不会相互影响。
+   对于需要影响的、以Shadow Boundary分离的样式，需要由特殊的方案显示指定，如：`:host`选择器，:host-context()选择器、::content()选择器等等。
+1. JavaScript事件捕获与冒泡：
+   传统的JavaScript事件捕获与冒泡，由于Shadow Boundary的存在，与一般的事件模型有一定的差异。
+   在捕获阶段，当事件发生在Shadow Boundary以上，Shadow Boundary上层可以捕获事件，而Shadow Boundary下层无法捕获事件。
+   在冒泡阶段，当事件发生在Shadow Boundary以下，Shadow Boundary上层会以Shadow Host作为事件发生的源对象，而Shadow Boundary下层可以获取到源对象。
+   
+   读者可以从这个[例子](https://jsbin.com/kiqatolede/1/edit?html,console,output)里感受一下。
 
 ## 如何使用shadow dom
