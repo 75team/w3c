@@ -30,6 +30,12 @@
 
 ![](https://p5.ssl.qhimg.com/t01c824429f8d05d74e.png)
 
+上面的input range，可以看作是浏览器内置的一个组件。它是利用Shadow DOM来完成的一个组件。类似的，还有Audio、Video等组件。读者可以做类似的实验。
+
+为了搞清Shadow DOM的机制，我们需要先厘清几个概念：
+
+1. Shadow Tree: 
+
 
 ## shadow dom的特性
 
