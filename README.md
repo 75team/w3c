@@ -33,6 +33,7 @@
 
 ## 文章
 
+1. [浅谈ShadowDOM](/articles/20191014_浅谈ShadowDOM.md)（2019-10-14 [@liuguanyu](https://github.com/liuguanyu)）
 1. [ARIA 实践指南（1）](/articles/20190916_ARIA%20实践指南（1）.md)（2019-09-16 [@anjia](https://github.com/anjia)）
 1. [CSS字体：Level1到3](/articles/20190904_CSS字体：Level1到3.md)（2019-09-04 [@cncuckoo](https://github.com/cncuckoo)）
 1. [CORS为什么要区分『简单请求』和『预检请求』？](/articles/20190801_CORS为什么要区分『简单请求』和『预检请求』？.md)（2019-09-02 [@hax](https://github.com/hax)）
