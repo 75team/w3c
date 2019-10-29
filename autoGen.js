@@ -105,8 +105,7 @@ function spliceMemberInfo(members) {
   return Object.entries(members)
     .map(([member, info]) => {
       return `
-- [@${member}](${info.github}), ${info.desc}。
-      `
+- [@${member}](${info.github}), ${info.desc}。`
     }).join(' ')
 }
 
@@ -126,17 +125,14 @@ function spliceInfo() {
   
   const contribute = `
 - [CSS Working Group](https://github.com/75team/w3c/blob/master/contributions/CSS_WG.md)
-
 - [Web Performance Working Group](https://github.com/75team/w3c/blob/master/contributions/WebPerf_WG.md)
-
 - [WoT Working Group](https://github.com/75team/w3c/blob/master/contributions/WoT_WG.md)
   `
 
   const articles = getArticlesInfo(articlesDir)
     .map(({fileName, date, articleName, writer}, index) => {
       return `
-1. [${articleName}](/articles/${fileName})（${date} [@${writer}](${members[writer] ? members[writer].github : false || formerMembers[writer] ? formerMembers[writer].github : ''})）
-      `
+1. [${articleName}](/articles/${fileName})（${date} [@${writer}](${members[writer] ? members[writer].github : false || formerMembers[writer] ? formerMembers[writer].github : ''}) `
     }).join(' ');
 
   const copyright = `
