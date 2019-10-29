@@ -36,6 +36,7 @@
 1. [W3C万维物联网标准简介](/articles/20191021_W3C万维物联网标准简介.md)（2019-10-21 [@cncuckoo](https://github.com/cncuckoo)）
 1. [浅谈ShadowDOM](/articles/20191014_浅谈ShadowDOM.md)（2019-10-14 [@liuguanyu](https://github.com/liuguanyu)）
 1. [ARIA 实践指南（1）](/articles/20190916_ARIA%20实践指南（1）.md)（2019-09-16 [@anjia](https://github.com/anjia)）
+1. [CSS字体：字体特性](/articles/20190911_CSS%E5%AD%97%E4%BD%93%EF%BC%9A%E5%AD%97%E4%BD%93%E7%89%B9%E6%80%A7.md)（2019-09-11 [@cncuckoo](https://github.com/cncuckoo)）
 1. [CSS字体：Level1到3](/articles/20190904_CSS字体：Level1到3.md)（2019-09-04 [@cncuckoo](https://github.com/cncuckoo)）
 1. [CORS为什么要区分『简单请求』和『预检请求』？](/articles/20190801_CORS为什么要区分『简单请求』和『预检请求』？.md)（2019-09-02 [@hax](https://github.com/hax)）
 1. [CSS混合模式](/articles/20190819_css_blend_mode.md)（2019-08-19 [@verymuch](https://github.com/verymuch)）
