@@ -81,6 +81,16 @@ function readDir(dir) {
   })
 }
 
+function rename (path, fileName) {
+  const newFileName = fileName.replace(/ /g, '_');
+  fs.rename(`${path}/${fileName}`, `${path}/${newFileName}`, function(err) {
+      if (err) {
+          throw err;
+      }
+  });
+  return newFileName;
+}
+
 function getArticlesInfo(dir) {
   const articlesInfo = [];
 
@@ -89,10 +99,11 @@ function getArticlesInfo(dir) {
   files.forEach(file => {
     const execReg = /^(\d{8})[-_]([^_]+)[-_](.+)(?:.md)$/;
     let [fileName, date, writer, articleName] = execReg.exec(file);
+    fileName = rename(articlesDir, fileName);
     articlesInfo.push({
       fileName,
       date,
-      articleName,
+      articleName: articleName.replace(/ /g, '_'),
       writer: writer.toLowerCase(),
     });
   })
