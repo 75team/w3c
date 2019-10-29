@@ -12,23 +12,23 @@
 
 ## 成员
 
-- [@cncuckoo](https://github.com/cncuckoo) ,Advisory Committee Representative（顾问委员会代表）。 
-- [@liuguanyu](https://github.com/liuguanyu) ,CSS Working Group。 
-- [@anjia](https://github.com/anjia) ,CSS Working Group。 
-- [@verymuch](https://github.com/verymuch) ,Web of Things Working Group。 
-- [@berwin](https://github.com/Berwin) ,Web Performance Working Group。 
-- [@lizheming](https://github.com/lizheming)。 
-- [@betseyliu](https://github.com/betseyliu)。 
-- [@nimitzdev](https://github.com/NimitzDEV)。 
-- [@songworld](https://github.com/songworld) ,Automative Working Group。 
-- [@francisfeng](https://github.com/francisfeng) ,Automative Working。
+- [@cncuckoo](https://github.com/cncuckoo) ,Advisory Committee Representative（顾问委员会代表） 
+- [@liuguanyu](https://github.com/liuguanyu) ,CSS Working Group 
+- [@anjia](https://github.com/anjia) ,CSS Working Group 
+- [@verymuch](https://github.com/verymuch) ,Web of Things Working Group 
+- [@berwin](https://github.com/Berwin) ,Web Performance Working Group 
+- [@lizheming](https://github.com/lizheming) 
+- [@betseyliu](https://github.com/betseyliu) 
+- [@nimitzdev](https://github.com/NimitzDEV) 
+- [@songworld](https://github.com/songworld) ,Automative Working Group 
+- [@francisfeng](https://github.com/francisfeng) ,Automative Working
 
 
 ## 前成员
 
-- [@huangxiaolu](https://github.com/huangxiaolu) ,Web Performance Working Group。 
-- [@chunpu](https://github.com/chunpu) ,Browser Testing and Tools Working Group。 
-- [@liuyuchenzh](https://github.com/liuyuchenzh) ,Web Performance Working Group。
+- [@huangxiaolu](https://github.com/huangxiaolu) ,Web Performance Working Group 
+- [@chunpu](https://github.com/chunpu) ,Browser Testing and Tools Working Group 
+- [@liuyuchenzh](https://github.com/liuyuchenzh) ,Web Performance Working Group
 
 
 ## 贡献
