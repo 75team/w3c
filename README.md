@@ -21,7 +21,8 @@
 - [@betseyliu](https://github.com/betseyliu) 
 - [@nimitzdev](https://github.com/NimitzDEV) 
 - [@songworld](https://github.com/songworld) ,Automative Working Group 
-- [@francisfeng](https://github.com/francisfeng) ,Automative Working
+- [@francisfeng](https://github.com/francisfeng) ,Automative Working 
+- [@hax](https://github.com/hax)
 
 
 ## 前成员
@@ -54,7 +55,7 @@
 1. [【译】移动App的可访问性陷阱和测试方法](/articles/20190815_anjia_【译】移动App的可访问性陷阱和测试方法.md)（20190815 [@anjia](https://github.com/anjia))  
 1. [源自babel的多包管理工具：Lerna](/articles/20190812_anjia_源自babel的多包管理工具：Lerna.md)（20190812 [@anjia](https://github.com/anjia))  
 1. [setTimeout小尴尬的启示](/articles/20190805_cncuckoo_setTimeout小尴尬的启示.md)（20190805 [@cncuckoo](https://github.com/cncuckoo))  
-1. [CORS为什么要区分『简单请求』和『预检请求』？](/articles/20190801_cncuckoo_CORS为什么要区分『简单请求』和『预检请求』？.md)（20190801 [@cncuckoo](https://github.com/cncuckoo))  
+1. [CORS为什么要区分『简单请求』和『预检请求』？](/articles/20190801_hax_CORS为什么要区分『简单请求』和『预检请求』？.md)（20190801 [@hax](https://github.com/hax))  
 1. [给你一个奇舞团面试秘籍（下）](/articles/20190724_betseyliu_给你一个奇舞团面试秘籍（下）.md)（20190724 [@betseyliu](https://github.com/betseyliu))  
 1. [最小栈和最小队列](/articles/20190717_verymuch_最小栈和最小队列.md)（20190717 [@verymuch](https://github.com/verymuch))  
 1. [如何测试网站的可访问性](/articles/20190715_anjia_如何测试网站的可访问性.md)（20190715 [@anjia](https://github.com/anjia))  
