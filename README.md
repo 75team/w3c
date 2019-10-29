@@ -42,7 +42,6 @@
 
 ## 文章
     
-
 1. [CSS_display属性双值语法](/articles/20191028_betseyliu_CSS_display属性双值语法.md)（20191028 [@betseyliu](https://github.com/betseyliu)  
 1. [W3C万维物联网标准简介](/articles/20191021_cncuckoo_W3C万维物联网标准简介.md)（20191021 [@cncuckoo](https://github.com/cncuckoo)  
 1. [浅谈ShadowDOM](/articles/20191014_liuguanyu_浅谈ShadowDOM.md)（20191014 [@liuguanyu](https://github.com/liuguanyu)  
