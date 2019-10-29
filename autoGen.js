@@ -48,6 +48,9 @@ const members = {
   francisfeng: {
     github: 'https://github.com/francisfeng',
     desc: 'Automative Working',
+  },
+  hax: {
+    github: 'https://github.com/hax',
   }
 }
 
