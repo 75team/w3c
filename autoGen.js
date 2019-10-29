@@ -94,10 +94,10 @@ function getArticlesInfo(dir) {
       date,
       articleName,
       writer: writer.toLowerCase(),
-    })
+    });
   })
 
-  return articlesInfo;
+  return articlesInfo.sort((a, b) => b.date - a.date);
 }
 
 
@@ -135,7 +135,7 @@ function spliceInfo() {
   const articles = getArticlesInfo(articlesDir)
     .map(({fileName, date, articleName, writer}, index) => {
       return `
-${index}. [${articleName}](/articles/${fileName})（${date} [@${writer}](${members[writer] ? members[writer].github : false || formerMembers[writer] ? formerMembers[writer].github : ''})）
+1. [${articleName}](/articles/${fileName})（${date} [@${writer}](${members[writer] ? members[writer].github : false || formerMembers[writer] ? formerMembers[writer].github : ''})）
       `
     }).join(' ');
 
