@@ -32,17 +32,14 @@ const members = {
   // 李喆明
   lizheming: {
     github: 'https://github.com/lizheming',
-    desc: '',
   },
   // 刘冰晶
   betseyliu: {
     github: 'https://github.com/betseyliu',
-    desc: '',
   },
   // 何文力
   nimitzdev: {
     github: 'https://github.com/NimitzDEV',
-    desc: '',
   },
   songworld: {
     github: 'https://github.com/songworld',
@@ -116,7 +113,7 @@ function spliceMemberInfo(members) {
   return Object.entries(members)
     .map(([member, info]) => {
       return `
-- [@${member}](${info.github}), ${info.desc}。`
+- [@${member}](${info.github})${info.desc ? ' ,' + info.desc : ''}`
     }).join(' ')
 }
 
@@ -143,7 +140,7 @@ function spliceInfo() {
   const articles = getArticlesInfo(articlesDir)
     .map(({fileName, date, articleName, writer}, index) => {
       return `
-1. [${articleName}](/articles/${fileName})（${date} [@${writer}](${members[writer] ? members[writer].github : false || formerMembers[writer] ? formerMembers[writer].github : ''}) `
+1. [${articleName}](/articles/${fileName})（${date} [@${writer}](${members[writer] ? members[writer].github : false || formerMembers[writer] ? formerMembers[writer].github : ''})) `
     }).join(' ');
 
   const copyright = `
@@ -155,24 +152,23 @@ function spliceInfo() {
 
   return `
 ## 360 W3C 工作组
-
-    ${forword}
+${forword}
 
 ## 成员
-
 ${currentMemberInfo}
 
-## 前成员
 
+## 前成员
 ${formerMemberInfo}
 
-## 贡献
 
+## 贡献
 ${contribute}
 
+
 ## 文章
-    
 ${articles}
+
 
 > **版权声明**
 ${copyright}
