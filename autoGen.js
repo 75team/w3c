@@ -100,7 +100,7 @@ function getArticlesInfo(dir) {
     articlesInfo.push({
       fileName,
       date,
-      articleName: articleName.replace(/ /g, '_'),
+      articleName: articleName.replace(/_/g, ' '),
       writer: writer.toLowerCase(),
     });
   })
