@@ -1,5 +1,0 @@
-{
-    "scripts": {
-      "precommit": "node autoGen.js"
-    }
-  }
