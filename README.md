@@ -33,6 +33,7 @@
 
 ## 文章
 
+1. [具有“脚本魔力”的属性们](/articles/20191016_具有“脚本魔力”的属性们.md)（2019-09-16 [@anjia](https://github.com/anjia)）
 1. [ARIA 实践指南（1）](/articles/20190916_ARIA%20实践指南（1）.md)（2019-09-16 [@anjia](https://github.com/anjia)）
 1. [CSS字体：Level1到3](/articles/20190904_CSS字体：Level1到3.md)（2019-09-04 [@cncuckoo](https://github.com/cncuckoo)）
 1. [CORS为什么要区分『简单请求』和『预检请求』？](/articles/20190801_CORS为什么要区分『简单请求』和『预检请求』？.md)（2019-09-02 [@hax](https://github.com/hax)）
