@@ -12,24 +12,24 @@
 
 ## 成员
 
-- [@cncuckoo](https://github.com/cncuckoo) ,Advisory Committee Representative（顾问委员会代表） 
-- [@liuguanyu](https://github.com/liuguanyu) ,CSS Working Group 
-- [@anjia](https://github.com/anjia) ,CSS Working Group 
-- [@verymuch](https://github.com/verymuch) ,Web of Things Working Group 
-- [@berwin](https://github.com/Berwin) ,Web Performance Working Group 
+- [@cncuckoo](https://github.com/cncuckoo)，Advisory Committee Representative（顾问委员会代表） 
+- [@liuguanyu](https://github.com/liuguanyu)，CSS Working Group 
+- [@anjia](https://github.com/anjia)，CSS Working Group 
+- [@verymuch](https://github.com/verymuch)，Web of Things Working Group 
+- [@berwin](https://github.com/Berwin)，Web Performance Working Group 
 - [@lizheming](https://github.com/lizheming) 
 - [@betseyliu](https://github.com/betseyliu) 
 - [@nimitzdev](https://github.com/NimitzDEV) 
-- [@songworld](https://github.com/songworld) ,Automative Working Group 
-- [@francisfeng](https://github.com/francisfeng) ,Automative Working 
+- [@songworld](https://github.com/songworld)，Automative Working Group 
+- [@francisfeng](https://github.com/francisfeng)，Automative Working 
 - [@hax](https://github.com/hax)
 
 
 ## 前成员
 
-- [@huangxiaolu](https://github.com/huangxiaolu) ,Web Performance Working Group 
-- [@chunpu](https://github.com/chunpu) ,Browser Testing and Tools Working Group 
-- [@liuyuchenzh](https://github.com/liuyuchenzh) ,Web Performance Working Group
+- [@huangxiaolu](https://github.com/huangxiaolu)，Web Performance Working Group 
+- [@chunpu](https://github.com/chunpu)，Browser Testing and Tools Working Group 
+- [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
 
 
 ## 贡献
@@ -42,7 +42,7 @@
 
 ## 文章
 
-1. [W3C万维物联网标准解析](/articles/20191106_lisongfeng_W3C万维物联网标准解析.md)（20191106 [@lisongfeng]())  
+1. [W3C万维物联网标准解析：架构篇](/articles/20191106_lisongfeng_W3C万维物联网标准解析：架构篇.md)（20191106 [@lisongfeng]())  
 1. [子元素数量和遍历子元素](/articles/20191104_hax_子元素数量和遍历子元素.md)（20191104 [@hax](https://github.com/hax))  
 1. [CSS display属性双值语法](/articles/20191028_betseyliu_CSS_display属性双值语法.md)（20191028 [@betseyliu](https://github.com/betseyliu))  
 1. [W3C万维物联网标准简介](/articles/20191021_cncuckoo_W3C万维物联网标准简介.md)（20191021 [@cncuckoo](https://github.com/cncuckoo))  
