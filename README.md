@@ -42,14 +42,16 @@
 
 ## 文章
 
+1. [W3C万维物联网标准解析](/articles/20191106_lisongfeng_W3C万维物联网标准解析.md)（20191106 [@lisongfeng]())  
+1. [子元素数量和遍历子元素](/articles/20191104_hax_子元素数量和遍历子元素.md)（20191104 [@hax](https://github.com/hax))  
 1. [CSS display属性双值语法](/articles/20191028_betseyliu_CSS_display属性双值语法.md)（20191028 [@betseyliu](https://github.com/betseyliu))  
 1. [W3C万维物联网标准简介](/articles/20191021_cncuckoo_W3C万维物联网标准简介.md)（20191021 [@cncuckoo](https://github.com/cncuckoo))  
-1. [具有“脚本魔力”的属性们](/articles/20191016_具有“脚本魔力”的属性们.md)（2019-09-16 [@anjia](https://github.com/anjia)）
+1. [具有“脚本魔力”的属性们](/articles/20191016_anjia_具有“脚本魔力”的属性们.md)（20191016 [@anjia](https://github.com/anjia))  
 1. [浅谈ShadowDOM](/articles/20191014_liuguanyu_浅谈ShadowDOM.md)（20191014 [@liuguanyu](https://github.com/liuguanyu))  
 1. [使用 SVG 实现圆环日期选择器](/articles/20191009_lizheming_使用_SVG_实现圆环日期选择器.md)（20191009 [@lizheming](https://github.com/lizheming))  
 1. [TTML—让 W3C 获得艾美奖的字幕规范](/articles/20191007_lizheming_TTML—让_W3C_获得艾美奖的字幕规范.md)（20191007 [@lizheming](https://github.com/lizheming))  
 1. [TPAC小记之HTML 3D Element & Native glTF提案](/articles/20190930_betseyliu_TPAC小记之HTML_3D_Element_&_Native_glTF提案.md)（20190930 [@betseyliu](https://github.com/betseyliu))  
-1. [Three.js 地理坐标和三维空间坐标的转换](/articles/20190918_verymuch_Three.js_地理坐标和三维空间坐标的转换)（20190918 [@verymuch](https://github.com/verymuch)) 
+1. [Three.js 地理坐标和三维空间坐标的转换](/articles/20190918_verymuch_Three.js_地理坐标和三维空间坐标的转换.md)（20190918 [@verymuch](https://github.com/verymuch))  
 1. [ARIA 实践指南（1）](/articles/20190916_anjia_ARIA_实践指南（1）.md)（20190916 [@anjia](https://github.com/anjia))  
 1. [CSS字体：字体特性](/articles/20190911_cncuckoo_CSS字体：字体特性.md)（20190911 [@cncuckoo](https://github.com/cncuckoo))  
 1. [TrueType入门：基本概念](/articles/20190911_cncuckoo_TrueType入门：基本概念.md)（20190911 [@cncuckoo](https://github.com/cncuckoo))  
@@ -169,6 +171,7 @@
 1. [为什么不会有CSS4了？](/articles/20180625_cncuckoo_为什么不会有CSS4了？.md)（20180625 [@cncuckoo](https://github.com/cncuckoo))  
 1. [来，一起帮忙制定CSS规范吧](/articles/20180613_cncuckoo_来，一起帮忙制定CSS规范吧.md)（20180613 [@cncuckoo](https://github.com/cncuckoo))  
 1. [同学，W3C了解一下](/articles/20180612_huangxiaolu_同学，W3C了解一下.md)（20180612 [@huangxiaolu](https://github.com/huangxiaolu)) 
+
 
 > **版权声明**
 
