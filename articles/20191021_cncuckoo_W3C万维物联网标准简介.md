@@ -79,7 +79,7 @@ WoT物体描述（TD）基于一个语义词汇表定义了一个信息模型，
 ## 3. WoT绑定模板
 
 - WoT Binding Templates（备忘录）：https://www.w3.org/TR/wot-binding-templates/
-- WoT Binding Templates（编辑草案）：https://www.w3.org/TR/wot-binding-templates/
+- WoT Binding Templates（编辑草案）：https://w3c.github.io/wot-binding-templates/
 
 IoT使用很多不同协议访问设备，因为没有一种协议是通用的。为此，WoT最重要的挑战就是让各种不同的IoT平台（如OCF、oneM2M、OMA LWM2M、OPC UA）和不符合任何特定标准但可以基于合适的网络协议提供够用接口的设备之间能够对话。WoT应对这种多样挑战的方案就是协议绑定，但必须满足一些约束条件。
 

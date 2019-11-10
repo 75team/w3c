@@ -1,0 +1,221 @@
+# ARIA 实践指南（1）
+## ARIA
+ARIA，Accessible Rich Internet Applications，可访问的富 Internet 应用程序。
+
+ARIA 属于可访问性语义的范畴。从功能上来说，ARIA 的 roles、states 和 properties 类似于辅助技术的 CSS。对屏幕阅读器而言，ARIA 控制着它们的非视觉体验的渲染。
+
+举个例子：这段 HTML 代码
+```html
+<button>保存</button>
+```
+屏幕阅读器会读成：
+
+![保存_button](https://p5.ssl.qhimg.com/t01d3b98b8f1feaa57a.jpg)
+
+如果按钮是用`<span>`标签模拟的，即：
+```html
+<span>保存</span>
+```
+此时，屏幕阅读器就不认识它了。若想告诉屏幕阅读器这个 HTML 元素也是一个“按钮”，则需要指定元素的 ARIA role。如下：
+```html
+<span tabindex="0"
+      role="button">保存</span>
+```
+
+此时，屏幕阅读器也会读成：
+
+![保存_button](https://p5.ssl.qhimg.com/t01d3b98b8f1feaa57a.jpg)
+
+我们注意到，HTML 代码里还有一个属性`tabindex="0"`，它表示该元素是可聚焦的，是可以通过键盘访问到的（更多内容请查阅 [tabindex](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex)）。
+
+与此相比，`<button>保存</button>`没写`tabindex="0"`却可以被键盘访问到，也可以被屏幕阅读器识别，这是因为 HTML 内置了这些功能。自带键盘可访问性的标签有`<a>`、`<button>`、`<label>`以及表单元素。键盘可访问包括按 tab 键能让页面中的元素获得焦点、按 Return/Enter 键能激活该元素、表单元素`<select>`在获得焦点时按方向键可以上下切换选项。
+
+### 我们要做的
+
+所以，在使用 ARIA 时，我们要做的就是：
+- 确保可访问性语义，让屏幕阅读器能认识该元素，即给 HTML 标签指定合适的 ARIA 的 role、state 及相关的 properties。这部分是纯 HTML 的
+- 确保键盘可访问性，为每个 ARIA role 定义预期的行为，即管理键盘焦点、提供键盘交互。这部分是 JS 和 HTML 的
+
+作为《ARIA 实践指南》系列文章的第一篇，本文就先介绍两种最基本的控件：链接和按钮。
+
+
+## 链接
+`role="link"` 提供一个超链接，可以是其它页面、网页内锚点、文件、邮箱、电话等。
+
+键盘交互：
+- `enter`：链接跳转，并将焦点移到链接目标处
+
+在日常开发中，一般不用其它 HTML 标签去模拟超链接，而是直接使用原生的`<a>`，这是因为浏览器一般都会自带一些有价值的功能，比如在新窗口中打开目标、将目标URL复制到系统剪贴板等。
+
+考虑到使用 ARIA 模拟链接的场景少之又少，此处就不展开介绍了。
+
+## 按钮
+
+`role="button"` 允许用户触发一个事件或者操作，比如提交表单、打开对话框、执行删除操作。如果激活按钮是打开对话框，那按照惯例，按钮的文案后面常跟着“...”，比如“另存为...”，文件的“浏览...”。
+
+除了普通按钮之外，ARIA 还支持另外两种类型的按钮：
+- 切换按钮：它有两种状态“开启-关闭”。若按钮设置了状态 [aria-pressed](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed)，那么辅助技术会视此按钮为切换按钮。当切换按钮的状态发生变化时，建议按钮对应的 label 别变；如果 label 会发生变化，那就可以不写`aria-pressed`了
+- 菜单按钮：如果按钮的 [aria-haspopup](https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup) 属性设置成了`menu`或者`true`，那么辅助技术会视此按钮为菜单按钮（会在后续章节里介绍）
+
+ARIA 相关：
+- `role="button"`
+- 按钮的标签，默认取按钮上的文本。还可以通过这两种方式设置
+    - `aria-label="labelText"`
+    - `aria-labelledby="IDREF"`
+- 按钮的功能描述，`aria-describedby="IDREF"`
+- `aria-disabled="true"` 表示按钮禁用
+- `aria-pressed="true|false"` 表示是切换按钮
+
+如果按钮是`<div>`或`<span>`模拟的，则还需要设置`tabindex="0"`；如果是用没有`href`属性的`<a>`模拟的，也需要设置`tabindex="0"`.
+
+键盘交互：
+- 当按钮获得焦点时，按`space`键或者`enter`键激活按钮
+- 当按钮被激活之后，根据具体执行的操作类型来设置焦点。比如：
+  - 如果是打开了个对话框，则焦点将在对话框内部移动（“对话框”会在后续的文章里单独介绍）
+  - 如果是关闭了个对话框，则焦点通常会返回打开此对话框的按钮上，比如“取消”按钮
+    - 如果关闭了对话框之后，功能被逻辑引到了另外一个元素上，比如“确认关闭”当前页面，那么焦点会逻辑移动到一个新上下文
+  - 如果还在当前的上下文里，则焦点通常保留在按钮上（比如“重新计算”按钮）
+  - 如果上下文会更改，比如“下一步”，则通常将焦点移动到该操作的起点
+  - 如果使用快捷键激活按钮，则焦点通常保留在激活快捷键的上下文中
+
+
+### 例子1：普通按钮
+
+用`<div>`模拟一个打印按钮
+
+```html
+<div tabindex="0"
+     role="button"
+     id="btnPrint">打印页面</div>
+```
+在 HTML 里设置了`tabindex="0"`，指定了 ARIA 的 `role="button"`，确保屏幕阅读器能识别该元素。
+
+![print_button](https://p3.ssl.qhimg.com/t0182ef6df5f593e0f8.jpg)
+
+键盘交互，需要支持按`space`键和`enter`键能触发打印对话框。由于打印对话框是浏览器自带的，所以此时，我们就不用手动管理对话框打开之后键盘焦点的移动行为了。
+
+JS 代码如下：
+```js
+let btnPrint = document.getElementById('btnPrint')
+
+// 鼠标访问：click
+btnPrint.addEventListener('click', () => {
+    window.print()
+})
+// 键盘访问：keydown
+btnPrint.addEventListener('keydown', (e) => {
+    switch(e.keyCode){
+        case 32: // space
+            e.preventDefault() // 默认会滚动页面
+            break;
+        case 13: // enter
+            e.preventDefault()
+            window.print()  // enter 键的激活时机是在 keydown
+            break;
+    }
+})
+// 键盘访问：keyup
+btnPrint.addEventListener('keyup', (e) => {
+    // space 键，
+    if(e.keyCode === 32){
+        e.preventDefault()
+        window.print()  // space 键的激活时机是在 keyup
+    }
+})
+```
+
+此时，按`space`键或者`enter`键，均可打开打印对话框。且焦点会默认定位在对话框里的某个可聚焦元素上，具体定位到哪个元素是由对话框自己管理的。在打印对话框里，焦点默认定位在了“Save”按钮上（`:focus`时有蓝色的`box-shadow`）。
+
+![](https://p3.ssl.qhimg.com/dr/645_430_80/t014a27e2293a54e568.png)
+
+### 例子2：切换按钮
+
+用`<span>`模拟一个静音按钮，HTML 和 CSS 代码如下：
+
+```html
+<style>
+    #btnMute {
+        display: inline-block;
+        padding: .3em .8em .4em 2em;
+        border: 1px solid;
+        background-repeat: no-repeat;
+        background-position: .8em center;
+        background-size: auto 1em;
+    }
+    #btnMute[aria-pressed="false"] {
+        background-image: url(https://s4.ssl.qhres.com/static/ceaad449f261254b.svg);
+    }
+    #btnMute[aria-pressed="true"] {
+        background-image: url(https://s1.ssl.qhres.com/static/f991a555e87bdbdd.svg);
+    }
+</style>
+
+<span tabindex="0"
+      role="button"
+      aria-pressed="false"
+      id="btnMute">静音</span>
+```
+
+以上代码，在 HTML 里给`<span>`元素设置了三个属性
+- `tabindex="0"` 元素可聚焦，也让屏幕阅读器能捕获到它
+- `role="button"` 告诉屏幕阅读器，它是一个按钮
+- `aria-pressed="false"` 告诉屏幕阅读器，它是一个切换按钮。初始状态，未开启
+
+当`aria-pressed="false"`时，UI 和 屏幕阅读器的阅读文案分别是：
+![](https://p1.ssl.qhimg.com/t01cabb55d71061aaec.png)
+![](https://p1.ssl.qhimg.com/t013b799bf75510504e.png)
+
+当`aria-pressed="true"`时，分别是：
+![](https://p4.ssl.qhimg.com/t017c8998ef4f7af257.png)
+![](https://p4.ssl.qhimg.com/t01529e7fff462208c2.png)
+
+接下来，就是编写 JS，以让按钮支持`space`键和`enter`键。代码如下：
+
+```js
+let btnMute = document.getElementById('btnMute')
+// 鼠标访问：click
+btnMute.addEventListener('click', toggleMutePressed)
+// 键盘访问：keydown
+btnMute.addEventListener('keydown', (e) => {
+    switch(e.keyCode){
+        case 32:
+            e.preventDefault()
+            break;
+        case 13:
+            e.preventDefault()
+            toggleMutePressed()
+            break;
+    }
+})
+// 键盘访问：keyup
+btnMute.addEventListener('keyup', (e) => {
+    if(e.keyCode === 32){
+        e.preventDefault()
+        toggleMutePressed()
+    }
+})
+function toggleMutePressed(){
+    let isPressed = btnMute.getAttribute('aria-pressed') === 'true'
+    btnMute.setAttribute('aria-pressed', isPressed ? 'false' : 'true')
+}
+```
+
+此时，当按`space`键或者`enter`键时，静音按钮会在“开启-关闭”这两种状态间来回切换。
+
+## 小结
+本文介绍了：
+1. 站在开发的角度，在使用 ARIA 时，需要关注的两件事：
+    - 可访问性语义：给元素指定合适的 ARIA 的 role、state 和相关 properties（纯 HTML）
+    - 键盘可访问性：管理键盘焦点、提供键盘交互（JS 和 HTML）
+2. 链接
+    - 键盘交互：响应`enter`键
+3. 按钮：通过两个例子（普通按钮、切换按钮）介绍了以下特性
+    - ARIA 相关
+        - 角色 `role="button"`
+        - 状态 `aria-pressed="false"`和`aria-disabled="true"`
+        - 属性 `aria-label="text"`和`aria-labelledby="IDREF"`、`aria-describedby="IDREF"`
+    - 焦点管理：`tabindex="0"`、按钮被激活后的焦点设置（取决于具体的操作）
+    - 键盘交互：响应`enter`键和`space`键
+
+## 主要参考
+https://www.w3.org/TR/wai-aria-practices-1.1
