@@ -116,7 +116,7 @@ function spliceMemberInfo(members) {
   return Object.entries(members)
     .map(([member, info]) => {
       return `
-- [@${member}](${info.github})${info.desc ? ' ,' + info.desc : ''}`
+- [@${member}](${info.github})${info.desc ? '，' + info.desc : ''}`
     }).join(' ')
 }
 
