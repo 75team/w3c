@@ -63,7 +63,7 @@ blink中`Crypto.getRandomValues`方法，最初使用RC4算法生成随机数，
 
 由此，我们再延展一层。很多浏览器如Chrome在`window.crypto`实现了Web Crypto的API。但是和最终的API实现有一定的差异。最新的浏览器已经将这些方法移除，并在`Crypto.subtle`属性中参照[https://www.w3.org/TR/WebCryptoAPI/](https://www.w3.org/TR/WebCryptoAPI/)重新实现了这些API，开发这可以自己指定加密算法、文摘算法、key值等。感兴趣的读者可以参考[相关的说明](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/subtle)。
 
-对于随机算法，比较公认的是参考nist的随机算法评测程序[https://csrc.nist.gov/projects/random-bit-generation/documentation-and-software]和[Big Crush](http://simul.iro.umontreal.ca/testu01/tu01.html)。可以通过程序的方法对随机算法进行比较客观的评价。
+对于随机算法，比较公认的是参考nist的随机算法评测程序[https://csrc.nist.gov/projects/random-bit-generation/documentation-and-software](https://csrc.nist.gov/projects/random-bit-generation/documentation-and-software)和[Big Crush](http://simul.iro.umontreal.ca/testu01/tu01.html)。可以通过程序的方法对随机算法进行比较客观的评价。
 
 看到这里，我们不禁长出一口气。看来中奖不中奖，阳光普照还是不普照，不光是RPWT，还有一些锅，可以交给算法。
 
