@@ -98,14 +98,17 @@ function getArticlesInfo(dir) {
 
   files.forEach(file => {
     const execReg = /^(\d{8})[-_]([^_]+)[-_](.+)(?:.md)$/;
-    let [fileName, date, writer, articleName] = execReg.exec(file);
-    fileName = rename(articlesDir, fileName);
-    articlesInfo.push({
-      fileName,
-      date,
-      articleName: articleName.replace(/_/g, ' '),
-      writer: writer.toLowerCase(),
-    });
+    const info = execReg.exec(file);
+    if (info !== null){
+        let [fileName, date, writer, articleName] = execReg.exec(file);
+        fileName = rename(articlesDir, fileName);
+        articlesInfo.push({
+          fileName,
+          date,
+          articleName: articleName.replace(/_/g, ' '),
+          writer: writer.toLowerCase(),
+        });
+    }
   })
 
   return articlesInfo.sort((a, b) => b.date - a.date);
