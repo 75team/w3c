@@ -66,7 +66,7 @@
 1. [ES2019新特性你知道哪些](/articles/20190826_betseyliu_ES2019新特性你知道哪些.md)（20190826 [@betseyliu](https://github.com/betseyliu))  
 1. [css blend mode](/articles/20190819_verymuch_css_blend_mode.md)（20190819 [@verymuch](https://github.com/verymuch))  
 1. [【译】移动App的可访问性陷阱和测试方法](/articles/20190815_anjia_【译】移动App的可访问性陷阱和测试方法.md)（20190815 [@anjia](https://github.com/anjia))  
-1. [源自babel的多包管理工具：Lerna](/articles/20190812_anjia_源自babel的多包管理工具：Lerna.md)（20190812 [@anjia](https://github.com/anjia))  
+1. [源自babel的多包管理工具：Lerna](/articles/20190812_liuguanyu_源自babel的多包管理工具：Lerna.md)（20190812 [@liuguanyu](https://github.com/liuguanyu))  
 1. [捕获FMP的原理](/articles/20190807_berwin_捕获FMP的原理.md)（20190807 [@berwin](https://github.com/Berwin))  
 1. [setTimeout小尴尬的启示](/articles/20190805_cncuckoo_setTimeout小尴尬的启示.md)（20190805 [@cncuckoo](https://github.com/cncuckoo))  
 1. [CORS为什么要区分『简单请求』和『预检请求』？](/articles/20190801_hax_CORS为什么要区分『简单请求』和『预检请求』？.md)（20190801 [@hax](https://github.com/hax))  
