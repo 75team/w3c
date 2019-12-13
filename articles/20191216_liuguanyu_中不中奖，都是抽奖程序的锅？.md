@@ -22,11 +22,11 @@ CSPRNG是PRNG的一个子集。产生高强度的随机数，有两个重要的�
 
 我们通过列表来对比一下三类随机数生成器：
 
-|   | 随机性 | 不可预测性 | 不可重现性 | 生成器 |
-| --- | --- | --- | --- | --- |
-| 弱伪随机数 | Y | N | N | 伪随机数生成器 PRNG, 不可用于密码技术 |
-| 强伪随机数 | Y | Y | N | 伪随机数生成器 CSPRNG, 可用于密码技术 |
-| 真随机数 | Y | Y | Y | 真随机数生成器 TRNG, 可用于密码技术 | 
+|            | 随机性 | 不可预测性 | 不可重现性 | 生成器                                |
+| ---------- | ------ | ---------- | ---------- | ------------------------------------- |
+| 弱伪随机数 | Y      | N          | N          | 伪随机数生成器 PRNG, 不可用于密码技术 |
+| 强伪随机数 | Y      | Y          | N          | 伪随机数生成器 CSPRNG, 可用于密码技术 |
+| 真随机数   | Y      | Y          | Y          | 真随机数生成器 TRNG, 可用于密码技术   |
 
 回到我们比较熟悉的ECMAScript，我们常用`Math.random`生成随机数。`Math.random`并没有指定实现的方法，只是给出了算法行为：
 
@@ -34,7 +34,7 @@ CSPRNG是PRNG的一个子集。产生高强度的随机数，有两个重要的�
 
 不同的引擎实现方式是不一样的。事实上，越来越多的浏览器开始采用`xorshift128+`算法来最终实现生成随机数。
 
-这里是V8引擎的[最新的实现](https://chromium.googlesource.com/v8/v8.git/+/refs/heads/master/src/base/utils/random-number-generator.cc)。它首先用散列`murmurhash3`算法，将系统时间散列散列成两个状态值，然后使用`xorshift128+`最终生成随机数。
+这里是V8引擎的[最新的实现](https://chromium.googlesource.com/v8/v8.git/+/refs/heads/master/src/base/utils/random-number-generator.cc)。它首先用散列`murmurhash3`算法，将系统时间散列成两个状态值，然后使用`xorshift128+`最终生成随机数。
 
 这种算法效率很高，但它不是密码学意义上的安全伪随机数生成器。由于它是周期性函数，当获取了足够多的历史数列，就预测未来的状态，不具备不可预测性，不能将它用于密码技术。当然，同样作为弱伪随机数生成器，周期越长，同时效率越高的算法，则被认为是更加优秀的算法。特别地，V8当前的`Math.random`实现，周期为：2^128-1。
 
@@ -71,5 +71,5 @@ blink中`Crypto.getRandomValues`方法，最初使用RC4算法生成随机数，
 
 ### 参考资料
 1. https://security.stackexchange.com/questions/181580/why-is-math-random-not-designed-to-be-cryptographically-secure
-1. http://www.jouypub.com/2018/7665609b0126606e2ae90ad7cfcdce8b/
-1. https://halfrost.com/random_number/
+2. http://www.jouypub.com/2018/7665609b0126606e2ae90ad7cfcdce8b/
+3. https://halfrost.com/random_number/
