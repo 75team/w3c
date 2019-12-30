@@ -128,41 +128,41 @@ WOT接口的实例将以某种名称暴露在`window`和`worker`中。由上面�
 interface ConsumedThing {
   constructor(ThingDescription td);
   Promise<any> readProperty(
-  							DOMString propertyName,
+		DOMString propertyName,
               	optional InteractionOptions options = null
                 );
   Promise<PropertyMap> readAllProperties(
-  							optional InteractionOptions options = null
+		optional InteractionOptions options = null
   						  );
   Promise<PropertyMap> readMultipleProperties(
                 sequence<DOMString> propertyNames,
                 optional InteractionOptions options = null
                 );
   Promise<void> writeProperty(
-  							DOMString propertyName,
-								any value,
-								optional InteractionOptions options = null
-								);
+		DOMString propertyName,
+		any value,
+		optional InteractionOptions options = null
+		);
   Promise<void> writeMultipleProperties(
-  							PropertyMap valueMap,
-								optional InteractionOptions options = null
-								);
+		PropertyMap valueMap,
+		optional InteractionOptions options = null
+		);
   Promise<any> invokeAction(
-  							DOMString actionName,
-								optional any params = null,
-								optional InteractionOptions options = null
-								);
+		DOMString actionName,
+		optional any params = null,
+		optional InteractionOptions options = null
+		);
   Promise<void> observeProperty(
-  							DOMString name,
-								WotListener listener,
-								optional InteractionOptions options = null
-								);
+		DOMString name,
+		WotListener listener,
+		optional InteractionOptions options = null
+		);
   Promise<void> unobserveProperty(DOMString name);
   Promise<void> subscribeEvent(
-  							DOMString name,
-								WotListener listener,
-								optional InteractionOptions options = null
-								);
+		DOMString name,
+		WotListener listener,
+		optional InteractionOptions options = null
+		);
   Promise<void> unsubscribeEvent(DOMString name);
   ThingDescription getThingDescription();
 };
