@@ -129,15 +129,15 @@ interface ConsumedThing {
   constructor(ThingDescription td);
   Promise<any> readProperty(
 		DOMString propertyName,
-              	optional InteractionOptions options = null
-                );
+		optional InteractionOptions options = null
+		);
   Promise<PropertyMap> readAllProperties(
 		optional InteractionOptions options = null
-  						  );
+		);
   Promise<PropertyMap> readMultipleProperties(
-                sequence<DOMString> propertyNames,
-                optional InteractionOptions options = null
-                );
+		sequence<DOMString> propertyNames,
+		optional InteractionOptions options = null
+		);
   Promise<void> writeProperty(
 		DOMString propertyName,
 		any value,
@@ -234,28 +234,28 @@ setTimeout( () => {
 [SecureContext, Exposed=(Window,Worker)]
 interface ExposedThing: ConsumedThing {
   ExposedThing setPropertyReadHandler(
-  				DOMString name,
-          PropertyReadHandler readHandler
-          );
+		DOMString name,
+		PropertyReadHandler readHandler
+		);
   ExposedThing setPropertyWriteHandler(
-  				DOMString name,
-          PropertyWriteHandler writeHandler
-          );
+		DOMString name,
+		PropertyWriteHandler writeHandler
+		);
   ExposedThing setActionHandler(
-  				DOMString name, ActionHandler action);
-		  		void emitEvent(DOMString name, any data);
-  				Promise<void> expose();
-  				Promise<void> destroy();
-};
+		DOMString name, ActionHandler action);
+		void emitEvent(DOMString name, any data);
+		Promise<void> expose();
+		Promise<void> destroy();
+		};
 callback PropertyReadHandler = Promise<any>(
         optional InteractionOptions options = null
         );
 callback PropertyWriteHandler = Promise<void>(
-				any value,
+		any value,
         optional InteractionOptions options = null
         );
 callback ActionHandler = Promise<any>(
-				any params,
+		any params,
         optional InteractionOptions options = null
         );
 ```
@@ -489,10 +489,10 @@ dictionary ThingFilter {
 ```js
 let discovery = new ThingDiscovery({ method: "local" });
 do {
-let td = await discovery.next();
-console.log("Found Thing Description for " + td.title);
-let thing = new ConsumedThing(td);
-console.log("Thing name: " + thing.getThingDescription().title);
+  let td = await discovery.next();
+  console.log("Found Thing Description for " + td.title);
+  let thing = new ConsumedThing(td);
+  console.log("Thing name: " + thing.getThingDescription().title);
 } while (!discovery.done);
 ```
 
