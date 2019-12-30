@@ -42,6 +42,7 @@
 
 ## 文章
 
+1. [Ecma 118th GA会议手记](/articles/20191229_cncuckoo_Ecma_118th_GA会议手记.md)（20191229 [@cncuckoo](https://github.com/cncuckoo))  
 1. [中不中奖，都是抽奖程序的锅？](/articles/20191216_liuguanyu_中不中奖，都是抽奖程序的锅？.md)（20191216 [@liuguanyu](https://github.com/liuguanyu))  
 1. [W3C万维物联网解析：物描述篇](/articles/20191209_cncuckoo_W3C万维物联网解析：物描述篇.md)（20191209 [@cncuckoo](https://github.com/cncuckoo))  
 1. [『 Vue 小 Case 』- Vue Prop 中的 null vs undefined](/articles/20191128_verymuch_『_Vue_小_Case_』-_Vue_Prop_中的_null_vs_undefined.md)（20191128 [@verymuch](https://github.com/verymuch))  
