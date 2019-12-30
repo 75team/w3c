@@ -1,3 +1,5 @@
+# Ecma 118th GA会议手记
+
 近十几年来，Ecma International，简称Ecma，因其制定的ECMAScript（也就是大名鼎鼎的JavaScript语言）标准而在国内技术社区名声大噪。事实上，这家成立于1959的行业协会还制定很多其他国际标准，包括C#、Dart语言和CD-ROM，等等。作为一家注册在日内瓦的国际标准组织，Ecma越来越成为头部互联网公司在标准领域发力的平台。
 
 众所周知，Ecma负责ECMAScript标准制定的技术委员会是TC39。2019年6月，在Ecma第117次会员代表（GA，General Assembly）会议上，360被批准为会员并加入TC39，成为TC39成立22年来的第一家中国会员。(1997年，JavaScript 1.1作为提案被提交给Ecma。)
