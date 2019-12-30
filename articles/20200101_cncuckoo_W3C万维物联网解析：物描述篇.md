@@ -247,17 +247,17 @@ interface ExposedThing: ConsumedThing {
 		Promise<void> expose();
 		Promise<void> destroy();
 		};
-callback PropertyReadHandler = Promise<any>(
-        optional InteractionOptions options = null
-        );
-callback PropertyWriteHandler = Promise<void>(
+  callback PropertyReadHandler = Promise<any>(
+		optional InteractionOptions options = null
+	        );
+  callback PropertyWriteHandler = Promise<void>(
 		any value,
-        optional InteractionOptions options = null
-        );
-callback ActionHandler = Promise<any>(
+	        optional InteractionOptions options = null
+        	);
+  callback ActionHandler = Promise<any>(
 		any params,
-        optional InteractionOptions options = null
-        );
+	        optional InteractionOptions options = null
+        	);
 ```
 
 `ExposedThing`接口扩展`ConsumedThing`接口，可以基于一个完整的或不完整的`ThingDescription`对象构建实例。`ExposedThing`从`ConsumedThing`继承了以下方法：
