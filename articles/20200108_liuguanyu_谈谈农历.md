@@ -47,15 +47,15 @@ const Zodiac = "鼠牛虎兔龙蛇马羊猴鸡狗猪"
 const YearHeavenlyDelta = 6
 const YearEarthlyDelta = 8
 
-const yearHeavenlyIdx = year => (year + YearHeavenlyDelta) % Heavenly.length + 1
+const yearHeavenlyIdx = year => (year + YearHeavenlyDelta) % Heavenly.length 
 
-const yearEarthlyIdx = year => (year + YearEarthlyDelta) % Earthly.length + 1
+const yearEarthlyIdx = year => (year + YearEarthlyDelta) % Earthly.length
 
 const year2HE = year => {
-    let earthlyIdx = yearEarthlyIdx(year) - 1
+    let earthlyIdx = yearEarthlyIdx(year)
 
     return {
-        heavenly: Heavenly[yearHeavenlyIdx(year)-1],
+        heavenly: Heavenly[yearHeavenlyIdx(year)],
         earthly: Earthly[earthlyIdx],
         zodiac: Zodiac[earthlyIdx]
     }
@@ -66,17 +66,20 @@ const year2HE = year => {
 
 除了干支纪年，人们也用干支记录月与日。如1949年10月1日为：己丑年癸酉月甲子日。循环方式与纪年法无异。同样是周期为60的周期函数。
 
-对于闰月，干支与前一个月相同，所以每年月的地支是固定的。天干的公式为`月天干=年天干x2+月地支`，需要说明的是，因为农历以冬月（十一月）建子（为子月），因此月的地支正月为寅，下面的公式可以计算月地支：
+对于闰月，干支与前一个月相同，所以每年月的地支是固定的。天干的公式为：取公历年份除以5的余数减2后乘以2再减1，当该数是负数时加10。需要说明的是，因为农历以冬月（十一月）建子（为子月），因此月的地支正月为寅，二月为卯，…… ，腊月为丑。下面的代码可以计算月干支：
 
 ```JavaScript
-const monthHeavenlyIdx = month => (year + YearHeavenlyDelta) % Heavenly.length + 1
+const monthHeavenlyIdx = (year, month)=> {
+   let ret = ((year % 5）- 2) * 2 
+   return ret < 0 ? ret + 10 : ret
+}
+
 const monthEarthlyIdx = month => (month - 2 + Earthly.length) % Earthly.length
 
 const month2HE = (year, month) => {
     return {
-        heavenly: yearHeavenlyIdx(year)*2 + ,
-        earthly: Earthly[earthlyIdx],
-        zodiac: Zodiac[earthlyIdx]
+        heavenly: Heavenly[monthHeavenlyIdx(year, month)],
+        earthly: Earthly[earthlyIdx]
     }
 }
 ```
