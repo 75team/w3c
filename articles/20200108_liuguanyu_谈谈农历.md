@@ -47,10 +47,15 @@ const Zodiac = "鼠牛虎兔龙蛇马羊猴鸡狗猪"
 const YearHeavenlyDelta = 6
 const YearEarthlyDelta = 8
 
+const yearHeavenlyIdx = year => (year + YearHeavenlyDelta) % Heavenly.length + 1
+
+const yearEarthlyIdx = year => (year + YearEarthlyDelta) % Earthly.length + 1
+
 const year2HE = year => {
-    let earthlyIdx = (year + YearEarthlyDelta) % Earthly.length
+    let earthlyIdx = yearEarthlyIdx(year) - 1
+
     return {
-        heavenly: Heavenly[(year + YearHeavenlyDelta) % Heavenly.length],
+        heavenly: Heavenly[yearHeavenlyIdx(year)-1],
         earthly: Earthly[earthlyIdx],
         zodiac: Zodiac[earthlyIdx]
     }
@@ -60,6 +65,25 @@ const year2HE = year => {
 上述代码可以通过调用`year2HE(year)`查询农历年的干支和生肖。
 
 除了干支纪年，人们也用干支记录月与日。如1949年10月1日为：己丑年癸酉月甲子日。循环方式与纪年法无异。同样是周期为60的周期函数。
+
+对于闰月，干支与前一个月相同，所以每年月的地支是固定的。天干的公式为`月天干=年天干x2+月地支`，需要说明的是，因为农历以冬月（十一月）建子（为子月），因此月的地支正月为寅，下面的公式可以计算月地支：
+
+```JavaScript
+const monthHeavenlyIdx = month => (year + YearHeavenlyDelta) % Heavenly.length + 1
+const monthEarthlyIdx = month => (month - 2 + Earthly.length) % Earthly.length
+
+const month2HE = (year, month) => {
+    return {
+        heavenly: yearHeavenlyIdx(year)*2 + ,
+        earthly: Earthly[earthlyIdx],
+        zodiac: Zodiac[earthlyIdx]
+    }
+}
+```
+
+同样地，人们常用地支来标注时辰。从子时到亥时，依次分别对应23时到1时，1时到3时，...，21时到23时。所以，你看《长安十二时辰》时候，就知道大致是几点了。
+
+如果是公历的话，需要先转化成农历，然后再调用这些方法来判断干支。文章结尾的地方，我会给读者推荐一个这样的库。
 
 农历的月份划分是以朔日作为标准的。朔日，即当天月球恰好运行至与太阳黄经相等，称为朔。月球运行到地球和太阳之间，和太阳几乎同时出没，在地球上看不到月亮。朔日也是经常发生日食的时候。
 
