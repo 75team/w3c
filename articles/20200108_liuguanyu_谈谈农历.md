@@ -74,12 +74,10 @@ const monthHeavenlyIdx = (year, month)=> {
    return ret < 0 ? ret + 10 : ret
 }
 
-const monthEarthlyIdx = month => (month - 2 + Earthly.length) % Earthly.length
-
 const month2HE = (year, month) => {
     return {
         heavenly: Heavenly[monthHeavenlyIdx(year, month)],
-        earthly: Earthly[earthlyIdx]
+        earthly: (Earthly.split("").join("").replace("子丑", "") + "子丑").split("")[month % Earthly.length]
     }
 }
 ```
