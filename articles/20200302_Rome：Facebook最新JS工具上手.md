@@ -6,7 +6,7 @@ Rome项目地址：https://github.com/facebookexperimental/rome。
 
 
 
-![](https://p3.ssl.qhimg.com/t01b0c5ed5c05e8c59b.jpg)
+![](https://p1.ssl.qhimg.com/t01c3c6f7ed56290d7c.jpg)
 
 
 
