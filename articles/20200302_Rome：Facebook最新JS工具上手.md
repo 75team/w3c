@@ -1,4 +1,4 @@
-# 20200302_Rome：Facebook最新JS工具上手
+# Rome：Facebook最新JS工具上手
 
 北京时间2020年2月27日，Facebook宣布其实验性JavaScript工具链Rome开源。Rome是Babel和Yarn作者、React Native团队成员Sebastian McKenzie的新作品。开源之前，Rome基本上Sebastian McKenzie的个人项目，只不过Facebook愿意付薪水让他潜心开发。
 
