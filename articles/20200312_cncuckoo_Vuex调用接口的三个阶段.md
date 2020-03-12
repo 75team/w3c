@@ -310,10 +310,10 @@ export const mapMutations = MAP => Object.keys(MAP).reduce((pre, serviceName) =>
 响应的归一化之所以放在store3.mapper.js这一层处理，是因为归一化不仅要涵盖正常和非正常响应，还要涵盖错误。而我们说的错误大致可以分三类或三级：
 
 - 网络错误，包含断网、弱网等，断网会导致请求立即失败，弱网会导致请求超时；
-- 系统错误，通常由于后端服务不能正常提供响应，如服务下线；
+- 系统错误，通常由于后端服务不能正常提供响应导致，如服务下线；
 - 接口错误，指的是由于请求本身问题导致接口返回了错误响应。
 
-以下是service3.js实现三级错误处理的代码，其中包括两种实现超时的方式：使用`AbortController`超时中断请求和使用包装约定（promise）接管`fetch`响应，然后超时拒绝约定（reject promis）。
+以下是service3.js实现三级错误处理的代码，其中包括两种实现超时的方式：使用`AbortController`超时中断请求和使用包装约定（promise）接管`fetch`响应，然后超时拒绝约定（reject promise）。
 
 lib/service3.js
 
