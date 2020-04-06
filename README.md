@@ -42,7 +42,7 @@
 
 ## 文章
 
-1. [谈谈小程序自动化](/articles/20200406_liuguanyu_谈谈小程序自动化.md)（20200406 [@liuguanyu](https://github.com/liuguanyu))  
+1. [谈谈小程序自动化](/articles/20200408_liuguanyu_谈谈小程序自动化.md)（20200408 [@liuguanyu](https://github.com/liuguanyu))  
 1. [Web标准：前端的原力](/articles/20200328_cncuckoo_Web标准：前端的原力.md)（20200328 [@cncuckoo](https://github.com/cncuckoo))  
 1. [Vuex调用接口的三个阶段](/articles/20200312_cncuckoo_Vuex调用接口的三个阶段.md)（20200312 [@cncuckoo](https://github.com/cncuckoo))  
 1. [Rome：Facebook最新JS工具上手](/articles/20200302_cncuckoo_Rome：Facebook最新JS工具上手.md)（20200302 [@cncuckoo](https://github.com/cncuckoo))  
