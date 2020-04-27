@@ -14,8 +14,12 @@
 
 - [@cncuckoo](https://github.com/cncuckoo)，Advisory Committee Representative（顾问委员会代表） 
 - [@liuguanyu](https://github.com/liuguanyu)，CSS Working Group 
+- [@anjia](https://github.com/anjia)，CSS Working Group 
 - [@verymuch](https://github.com/verymuch)，Web of Things Working Group 
+- [@berwin](https://github.com/Berwin)，Web Performance Working Group 
 - [@lizheming](https://github.com/lizheming) 
+- [@betseyliu](https://github.com/betseyliu) 
+- [@nimitzdev](https://github.com/NimitzDEV) 
 - [@songworld](https://github.com/songworld)，Automative Working Group 
 - [@francisfeng](https://github.com/francisfeng)，Automative Working 
 - [@hax](https://github.com/hax)
@@ -23,10 +27,6 @@
 
 ## 前成员
 
-- [@betseyliu](https://github.com/betseyliu) 
-- [@nimitzdev](https://github.com/NimitzDEV) 
-- [@anjia](https://github.com/anjia)，CSS Working Group 
-- [@berwin](https://github.com/Berwin)，Web Performance Working Group 
 - [@huangxiaolu](https://github.com/huangxiaolu)，Web Performance Working Group 
 - [@chunpu](https://github.com/chunpu)，Browser Testing and Tools Working Group 
 - [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
@@ -42,7 +42,7 @@
 
 ## 文章
 
-
+1. [前端最佳实践之可维护性](/articles/20200427_cncuckoo_前端最佳实践之可维护性.md)（20200427 [@cncuckoo](https://github.com/cncuckoo))  
 1. [围观“33行代码的React”](/articles/20200420_cncuckoo_围观“33行代码的React”.md)（20200420 [@cncuckoo](https://github.com/cncuckoo))  
 1. [谈谈小程序自动化](/articles/20200408_liuguanyu_谈谈小程序自动化.md)（20200408 [@liuguanyu](https://github.com/liuguanyu))  
 1. [Web标准：前端的原力](/articles/20200328_cncuckoo_Web标准：前端的原力.md)（20200328 [@cncuckoo](https://github.com/cncuckoo))  
