@@ -14,11 +14,11 @@ Deno是通用JavaScript/TypeScript编程环境，集成了很多最好的开源�
 
 作为Node.js的创始人，Ryan Dahl又打造了Deno。Deno利用了2009年Node.js发布之后JavaScript的新增特性，同时也解决了Ryan在其“Node.js十大遗憾”（演讲）中提到的设计缺陷。有人称其为Node.js的后续者，但作者本人并没有这么说过。
 
-与Node.js使用C++不同，Deno是使用Rust开发的，构建在Tokio（https://tokio.rs/，Rust异步运行时）平台之上。但与Node.js类似，Deno也使用V8引擎运行JavaScript。内置TypeScript是Deno的是一个明显特征。尽管需要先编译成JavaScript再运行，但这个过程在内部完成，因此看起来就像Deno原生支持TypeScript一样。
+与Node.js使用C++不同，Deno是使用Rust开发的，构建在Tokio（[https://tokio.rs/](https://tokio.rs/)，Rust异步运行时）平台之上。但与Node.js类似，Deno也使用V8引擎运行JavaScript。内置TypeScript是Deno的是一个明显特征。尽管需要先编译成JavaScript再运行，但这个过程在内部完成，因此看起来就像Deno原生支持TypeScript一样。
 
 ## 1. 上手
 
-根据官网主页（https://deno.land/）的指导，可以下载Deno。要升级到新版本，运行`deno upgrade`。
+根据官网主页（[https://deno.land/](https://deno.land/)）的指导，可以下载Deno。要升级到新版本，运行`deno upgrade`。
 
 要了解Deno子命令，使用如下任意一命令。
 
@@ -83,19 +83,19 @@ deno run --allow-run --allow-write mod.ts
 
 #### 3. 使用任务运行器
 
-可以使用GNU工具`make`创建包含一组Deno命令及相关权限的文件。也可以使用特定于Deno的版本Drake（https://deno.land/x/drake/）。
+可以使用GNU工具`make`创建包含一组Deno命令及相关权限的文件。也可以使用特定于Deno的版本Drake（[https://deno.land/x/drake/](https://deno.land/x/drake/)）。
 
 #### 4. 安全可执行的Deno程序
 
-使用`deno install`安装一个包含其执行所需所有权限的Deno程序（https://github.com/denoland/deno/tree/master/docs）。安装之后，可以通过`$PATH`来访问这个程序。
+使用`deno install`安装一个包含其执行所需所有权限的Deno程序（[https://github.com/denoland/deno/tree/master/docs](https://github.com/denoland/deno/tree/master/docs)）。安装之后，可以通过`$PATH`来访问这个程序。
 
 ## 3. 标准库
 
-Deno标准库（https://deno.land/std/）包含常用的模块，由Deno项目维护，保证可以在Deno中使用。标准库涵盖最常用的工具，API风格及特性镜像了Go语言的标准库。
+Deno标准库（[https://deno.land/std/](https://deno.land/std/)）包含常用的模块，由Deno项目维护，保证可以在Deno中使用。标准库涵盖最常用的工具，API风格及特性镜像了Go语言的标准库。
 
 JavaScript一直因缺少标准库而饱受诟病。用户不得不为此重复“发明轮子”，而开发者经常要搜索npm仓库来寻找解决常见问题的模块，而这些模块本来就是应该由平台提供的。
 
-像React这样解决复杂问题的第三方包另当别论，但像生成UUID（https://en.wikipedia.org/wiki/Universally_unique_identifier）这样简单的任务最好还是使用标准库来完成。这些小库可以作为更大库的组件，让开发更快、惊吓更少。多少次一个流行的库突然宣布废弃，而用户只能自己维护或再去寻找新的替代库？调查显示，常用的开源软件包中有10-20%已经不再积极维护了。
+像React这样解决复杂问题的第三方包另当别论，但像生成UUID（[https://en.wikipedia.org/wiki/Universally_unique_identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)）这样简单的任务最好还是使用标准库来完成。这些小库可以作为更大库的组件，让开发更快、惊吓更少。多少次一个流行的库突然宣布废弃，而用户只能自己维护或再去寻找新的替代库？调查显示，常用的开源软件包中有10-20%已经不再积极维护了。
 
 ### 3.1 内置模块及对应的npm包
 
@@ -128,7 +128,7 @@ TypeScript是JavaScript的超集，增加了显式类型声明。任何有效的
 deno run -c tsconfig.json [file-to-run.ts]
 ```
 
-关于默认tsconfig.json的细节，可以参考Deno手册（https://github.com/denoland/deno/tree/master/docs）。
+关于默认tsconfig.json的细节，可以参考Deno手册（[https://github.com/denoland/deno/tree/master/docs](https://github.com/denoland/deno/tree/master/docs)）。
 
 如果你跟多数开发者一样，那听说Deno默认使用`strict`模式一定会高兴。除非有人故意重写这个设置，否则Deno会尽其所能将代码中的草率之处报告给用户。
 
@@ -136,7 +136,7 @@ deno run -c tsconfig.json [file-to-run.ts]
 
 Web标准的制定时间很长，一旦发布，谁也不能视而不见。虽然各种框架你方唱罢我登场，但Web标准则始终如一。在学习Web标准上花费的时间永远不会浪费，因为没有人胆敢推翻Web。在可以预见的未来几十年，甚至到你职业生涯的终点，Web仍将继续存在和发展。
 
-`fetch`是用于获取资源的Web API。浏览器中有一个JavaScript方法叫`fetch()`。如果你想在Node.js中使用这个标准API，需要依赖第三方的Node Fetch（https://github.com/node-fetch/node-fetch）。而在Deno中，这个API是内置的，就像浏览器中的版本一样，开箱即用。
+`fetch`是用于获取资源的Web API。浏览器中有一个JavaScript方法叫`fetch()`。如果你想在Node.js中使用这个标准API，需要依赖第三方的Node Fetch（[https://github.com/node-fetch/node-fetch](https://github.com/node-fetch/node-fetch)）。而在Deno中，这个API是内置的，就像浏览器中的版本一样，开箱即用。
 
 Deno 1.0提供以下兼容Web的API。
 
@@ -200,7 +200,7 @@ Deno希望模块包含文件扩展名，但TypeScript不希望如此：
 
 ![](https://p4.ssl.qhimg.com/t018909fb8654c4d69a.jpg)
 
-使用扩展名符合逻辑，也是一种显而易见的方式。可惜现实总比理想要复杂。目前为止，可以使用Visual Studio Code Deno扩展（https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno）在Deno项目中解决这个问题。
+使用扩展名符合逻辑，也是一种显而易见的方式。可惜现实总比理想要复杂。目前为止，可以使用Visual Studio Code Deno扩展（[https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno](https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno)）在Deno项目中解决这个问题。
 
 TypeScript创始人似乎对这个问题有自己的看法。在最终抛弃CommonJS之前，我认为这个问题不会有简单的解决方案。
 
@@ -230,24 +230,24 @@ import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 
 ### 7.2 查找兼容的第三方库
 
-目前有一个存放兼容Deno的第三方库的用户区域（https://deno.land/x/），但导航设计很简陋。例如，不能按照流行度或下载量搜索。预计这个用户区域要么会被扩展，要么会出现替代性的网站，用于托管社区贡献的第三方模块。
+目前有一个存放兼容Deno的第三方库的用户区域（[https://deno.land/x/](https://deno.land/x/)），但导航设计很简陋。例如，不能按照流行度或下载量搜索。预计这个用户区域要么会被扩展，要么会出现替代性的网站，用于托管社区贡献的第三方模块。
 
 虽然官方没有支持向后兼容Node.js，但仍然有很多库和应用可以在Deno下使用。有些可以开箱即用，有些则需要一些调整才能用。
 
 | 库类型                                  | 兼容性                                                       |
 | --------------------------------------- | ------------------------------------------------------------ |
-| 在浏览器中运行<br />使用ESM语法         | 应该可以开箱即用<br />试试Pika CDN（https://www.pika.dev/cdn） |
-| 在浏览器中运行<br />使用CommonJS语法    | 使用jspm.io（https://jspm.io/）用ESM语法来封装               |
+| 在浏览器中运行<br />使用ESM语法         | 应该可以开箱即用<br />试试Pika CDN（[https://www.pika.dev/cdn](https://www.pika.dev/cdn)） |
+| 在浏览器中运行<br />使用CommonJS语法    | 使用jspm.io（[https://jspm.io/](https://jspm.io/)）用ESM语法来封装               |
 | 不在浏览器中运行<br />不使用Node.js API | 使用jspm.io用ESM语法来封装                                   |
-| 使用Node.js API                         | 可能无法使用，不过可以试试这个官方针对Node.sj的兼容层<br />（https://deno.land/std/node/） |
+| 使用Node.js API                         | 可能无法使用，不过可以试试这个官方针对Node.sj的兼容层<br />（[https://deno.land/std/node/](https://deno.land/std/node/)） |
 
 ### 7.3 安装第三方模块
 
-Deno仍然非常新，周围生态还有待完善。在本文写作时，我推荐在标准库和用户库之后，把Pika（https://www.pika.dev/cdn）作为搜索兼容模块的首选。
+Deno仍然非常新，周围生态还有待完善。在本文写作时，我推荐在标准库和用户库之后，把Pika（[https://www.pika.dev/cdn](https://www.pika.dev/cdn)）作为搜索兼容模块的首选。
 
-Pika的开发者已经针对Deno通过ECMAScript提供了TypeScript类型，叫X-TypeScript-Types（https://dev.to/pika/introducing-pika-cdn-deno-p8b）。要在Pika中找一个包：
+Pika的开发者已经针对Deno通过ECMAScript提供了TypeScript类型，叫X-TypeScript-Types（[https://dev.to/pika/introducing-pika-cdn-deno-p8b](https://dev.to/pika/introducing-pika-cdn-deno-p8b)）。要在Pika中找一个包：
 
-- 先通过https://www.pika.dev/search搜索
+- 先通过[https://www.pika.dev/search](https://www.pika.dev/search)搜索
 
 - 找到兼容模块；在本文写作时，搜索react返回：
 
@@ -312,7 +312,7 @@ export { green, bold } from "https://deno.land/std@v0.39.0/fmt/colors.ts";
 
 如果想更新某个模块，可以修改deps.ts中的URL。例如，把@v0.39.0替换成@v0.41.0，这样其他地方就都会使用新版本了。如果你直接在每个模块中导入 `https://deno.land/std@v0.39.0/fmt/colors.ts` ，那么就得搜索整个应用，逐一替换。
 
-假设以前下载的模块不会被以后下载的模影响也存在安全风险。这也是为什么有一个选项用于创建锁文件（https://github.com/denoland/deno/tree/master/docs）的原因。这样可以保证新下载的模块与最初下载的模块相同。
+假设以前下载的模块不会被以后下载的模影响也存在安全风险。这也是为什么有一个选项用于创建锁文件（[https://github.com/denoland/deno/tree/master/docs](https://github.com/denoland/deno/tree/master/docs)）的原因。这样可以保证新下载的模块与最初下载的模块相同。
 
 ### 7.6 `deno doc`与对元数据使用JSDoc
 
@@ -348,7 +348,7 @@ function rulesToRemove(key: string, val: any[]): boolean
   Returns a value of if the rule is to be included
 ```
 
-如果你的程序是在线托管的，可以使用这个在线文档查看器：https://doc.deno.land/。
+如果你的程序是在线托管的，可以使用这个在线文档查看器：[https://doc.deno.land/](https://doc.deno.land/)。
 
 ## 8. Deno的内置工具
 
@@ -360,7 +360,7 @@ JavaScript本身是不是需要编译的，因此可以直接在浏览器中运�
 
 不幸的是，这种简单性和低门槛已经被一种叫做极度工具崇拜的东西在不知不觉间破坏了。结果JavaScript开发变成一个复杂的噩梦。我曾经完整地学习过一个讲解如何配置Webpack的课程。人生苦短，这种没意义的生活该结束了。
 
-工具之乱已经到了让很多人急切想回归真正写代码的状态，而不是摆弄配置文件或者因为要在不同的竞争性标准中做出选择而苦恼。Facebook的Rome（https://github.com/facebookexperimental/rome）是一个为解决这个问题而出现的项目。在本文写作时，这个项目还处于幼年期。虽然这个项目是有益的，但Deno应该是一个更本质的解决方案。
+工具之乱已经到了让很多人急切想回归真正写代码的状态，而不是摆弄配置文件或者因为要在不同的竞争性标准中做出选择而苦恼。Facebook的Rome（[https://github.com/facebookexperimental/rome](https://github.com/facebookexperimental/rome)）是一个为解决这个问题而出现的项目。在本文写作时，这个项目还处于幼年期。虽然这个项目是有益的，但Deno应该是一个更本质的解决方案。
 
 Deno本身是一个完整的生态，包含运行时及自己的模块/包管理系统。这就决定了它自己内置的工具会有更广泛的应用范围。下面我们就来介绍Deno 1.0中内置的工具，以及如何利用它们减少对第三方库的依赖和简化开发。
 
@@ -368,9 +368,9 @@ Deno本身是一个完整的生态，包含运行时及自己的模块/包管理
 
 ### 8.1 测试
 
-测试运行器以`Deno.test()`函数的形式内置于Deno的核心，而断言库（https://deno.land/std/testing/）也包含在标准库中。你喜欢的`assertEquals()`、`assertStrictEq()`一个也不少，此外还包含一些不太常见的断言，如`assertThrowsAsync()`。
+测试运行器以`Deno.test()`函数的形式内置于Deno的核心，而断言库（[https://deno.land/std/testing/](https://deno.land/std/testing/)）也包含在标准库中。你喜欢的`assertEquals()`、`assertStrictEq()`一个也不少，此外还包含一些不太常见的断言，如`assertThrowsAsync()`。
 
-在本文写作时，没有测试覆盖功能。另外，监控模式也需要使用Denon（https://deno.land/x/denon/）等第三方工具来设置。
+在本文写作时，没有测试覆盖功能。另外，监控模式也需要使用Denon（[https://deno.land/x/denon/](https://deno.land/x/denon/)）等第三方工具来设置。
 
 要了测试运行器的全部选项，使用`deno test --help`。虽然还很有限，但或许包含很多某些你熟悉的程序如Mocha中的特性。例如，`--failfast`会在遇到第一个错误时停止，而`--filter`可用于过滤要运行的测试。
 
@@ -394,13 +394,13 @@ Deno.test({
 
 #### 2. 格式化
 
-格式化基于dprint（https://github.com/dprint/dprint），是一个Prettier替代库，照搬了Prettier 2.0所有得到认可的规则。
+格式化基于dprint（[https://github.com/dprint/dprint](https://github.com/dprint/dprint)），是一个Prettier替代库，照搬了Prettier 2.0所有得到认可的规则。
 
-要格式化文件，可以使用`deno fmt <files>`或者Visual Studio Code扩展（https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno），后面会介绍。
+要格式化文件，可以使用`deno fmt <files>`或者Visual Studio Code扩展（[https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno](https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno)），后面会介绍。
 
 #### 3. 编译与打包
 
-Deno可以通过命令行`deno bundle`创建简单的包，但它也暴露了内部编译器API（https://deno.land/std/manual.md#compiler-api），因此用户可以控制自己的输出，有时候可以为在前端使用而自定义。这个API当前被标记为不稳定，所以需要使用`--unstable`标签。
+Deno可以通过命令行`deno bundle`创建简单的包，但它也暴露了内部编译器API（[https://deno.land/std/manual.md#compiler-api](https://deno.land/std/manual.md#compiler-api)），因此用户可以控制自己的输出，有时候可以为在前端使用而自定义。这个API当前被标记为不稳定，所以需要使用`--unstable`标签。
 
 Deno虽然有一些兼容Web的API，但并不完整。如果想将编译引用DOM的前端TypeScript，需要在编译或打包时告诉Deno相关的类型。可以使用编译器API选项`lib`。
 
@@ -471,11 +471,11 @@ Dene内置了调试功能，但在本文写作时，Visual Studio Code扩展还�
 
 ### 8.3 文件监控
 
-Deno内置了基于Rust notify（https://github.com/notify-rs/notify）的文件监控功能，通过`Deno.watchFs()`来使用。Deno喜欢在后台暴露强大的API，让用户自己按喜好实现自己的代码。因此没有`--watch`标记，而是需要创建自己的实现或使用一个第三方模块。
+Deno内置了基于Rust notify（[https://github.com/notify-rs/notify](https://github.com/notify-rs/notify)）的文件监控功能，通过`Deno.watchFs()`来使用。Deno喜欢在后台暴露强大的API，让用户自己按喜好实现自己的代码。因此没有`--watch`标记，而是需要创建自己的实现或使用一个第三方模块。
 
-编写自己的文件监控器，唯一有点难度的是消除抖动。这个API可能连续触发很多事件，而我们并却希望多次执行某个操作。Github用户Caesar2011使用`Date.now()`用23行TypeScript代码就解决了这个问题（https://github.com/Caesar2011/rhinoder/blob/master/mod.ts）。
+编写自己的文件监控器，唯一有点难度的是消除抖动。这个API可能连续触发很多事件，而我们并却希望多次执行某个操作。Github用户Caesar2011使用`Date.now()`用23行TypeScript代码就解决了这个问题（[https://github.com/Caesar2011/rhinoder/blob/master/mod.ts](https://github.com/Caesar2011/rhinoder/blob/master/mod.ts)）。
 
-还有一个更高级的Deno文件监控工具叫Denon（https://deno.land/x/denon/），相当于nodemon。如果你想监控工作空间的变化并重新运行测试，只要执行下面的命令：
+还有一个更高级的Deno文件监控工具叫Denon（[https://deno.land/x/denon/](https://deno.land/x/denon/)），相当于nodemon。如果你想监控工作空间的变化并重新运行测试，只要执行下面的命令：
 
 ```shell
 denon test
@@ -483,7 +483,7 @@ denon test
 
 ## 9. Visual Studio Code插件
 
-axetroy在Visual Studio Market Place发布的插件（https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno）是目前最好的扩展。安装以后，在项目目录下创建一个.vscode/settings.json文件，然后就可以在每个项目中独立启动这个扩展。
+axetroy在Visual Studio Market Place发布的插件（[https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno](https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno)）是目前最好的扩展。安装以后，在项目目录下创建一个.vscode/settings.json文件，然后就可以在每个项目中独立启动这个扩展。
 
 ```json
 // .vscode/settings.json
@@ -507,8 +507,9 @@ Deno成功避免了很多JavaScript开发的缺点，下面只列举几点。
 
 虽然眼下还不能完全取代Node.sj，但Deno已经成为可以日常使用的一个出色的编程环境。
 
+## 11. 相关文章
 
-
+- [Rome：Facebook最新JS工具上手](https://mp.weixin.qq.com/s/CzKO1I_pr6gKjGb2uAOTmA)
 
 
 
