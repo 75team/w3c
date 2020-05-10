@@ -18,7 +18,7 @@ Deno是通用JavaScript/TypeScript编程环境，集成了很多最好的开源�
 
 ## 1. 上手
 
-根据官网主页（[https://deno.land/](https://deno.land/)）的指导，可以下载Deno。要升级到新版本，运行`deno upgrade`。
+根据官网主页（[https://deno.land/](https://deno.land/)）的指导，可以下载Deno。要升级到新版本，运行`deno upgrade`。如果你之前安装的Deno版本过低，可以尝试再次运行终端脚本安装。
 
 要了解Deno子命令，使用如下任意一命令。
 
@@ -45,7 +45,7 @@ deno run file-needing-to-run-a-subprocess.ts
 error: Uncaught PermissionDenied: access to run a subprocess, run again with the --allow-run flag
 ```
 
-Deno使用命令行选项显式授权对系统不同部分的访问。最常用的包括：
+Deno使用命令行选项显式允许对系统不同部分的访问。最常用的包括：
 
 - 环境
 - 网络
@@ -62,7 +62,7 @@ deno --allow-read=/etc
 
 ### 2.1 使用权限的快捷方式
 
-每次运行应用都要授权很快就觉得麻烦。为此，可以使用如下方法。
+每次运行应用都要授权很快就会觉得麻烦。为此，可以使用如下方法。
 
 #### 1. 允许所有权限
 
@@ -87,15 +87,15 @@ deno run --allow-run --allow-write mod.ts
 
 #### 4. 安全可执行的Deno程序
 
-使用`deno install`安装一个包含其执行所需所有权限的Deno程序（[https://github.com/denoland/deno/tree/master/docs](https://github.com/denoland/deno/tree/master/docs)）。安装之后，可以通过`$PATH`来访问这个程序。
+使用`deno install`安装一个包含其执行所需权限的Deno程序（[https://github.com/denoland/deno/tree/master/docs](https://github.com/denoland/deno/tree/master/docs)）。安装之后，这个程序的路径就在`$PATH`里。
 
 ## 3. 标准库
 
 Deno标准库（[https://deno.land/std/](https://deno.land/std/)）包含常用的模块，由Deno项目维护，保证可以在Deno中使用。标准库涵盖最常用的工具，API风格及特性镜像了Go语言的标准库。
 
-JavaScript一直因缺少标准库而饱受诟病。用户不得不为此重复“发明轮子”，而开发者经常要搜索npm仓库来寻找解决常见问题的模块，而这些模块本来就是应该由平台提供的。
+JavaScript一直因缺少标准库而饱受诟病。用户不得不为此重复“发明轮子”，开发者经常要搜索npm仓库来寻找解决常见问题的模块，而这些模块本来就是应该由平台提供的。
 
-像React这样解决复杂问题的第三方包另当别论，但像生成UUID（[https://en.wikipedia.org/wiki/Universally_unique_identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)）这样简单的任务最好还是使用标准库来完成。这些小库可以作为更大库的组件，让开发更快、惊吓更少。多少次一个流行的库突然宣布废弃，而用户只能自己维护或再去寻找新的替代库？调查显示，常用的开源软件包中有10-20%已经不再积极维护了。
+像React这样解决复杂问题的第三方包另当别论，但像生成UUID（[https://en.wikipedia.org/wiki/Universally_unique_identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)）这样简单的任务最好还是使用标准库来完成。这些小库可以作为更大库的组件，让开发更快、惊吓更少。不知道有多少次一个流行的库突然宣布废弃，用户只能自己维护或者再去寻找新的替代库。调查显示，常用的开源软件包中有10-20%已经不再积极维护。
 
 ### 3.1 内置模块及对应的npm包
 
@@ -118,9 +118,9 @@ TypeScript是JavaScript的超集，增加了显式类型声明。任何有效的
 
 在Deno中使用TypeScript，你什么也不用做。如果没有Deno，那你必须先把TypeScript编译为JavaScript，然后才能运行。Deno内部帮你进行编译，因此让你使用TypeScript更容易。
 
-### 4.1 使用你自己的tsconfig.json
+### 4.1 使用自己的tsconfig.json
 
-熟悉TypeScript人可能知道要使用tsconfig.json文件指定编译选项。但在使用Deno时这个文件不是必需的。因为Deno有自己默认的配置。如果你要使用自己的tsconfig.json，而其中的选项与Deno有冲突，你会看到警示消息。
+熟悉TypeScript的人可能知道要使用tsconfig.json文件指定编译选项。但在使用Deno时这个文件不是必需的。因为Deno有自己默认的配置。如果你要使用自己的tsconfig.json，而其中的选项与Deno有冲突，你会看到警示消息。
 
 这个特性要求使用`-c`选项并指定你自己的tsconfig.json。
 
@@ -132,7 +132,7 @@ deno run -c tsconfig.json [file-to-run.ts]
 
 如果你跟多数开发者一样，那听说Deno默认使用`strict`模式一定会高兴。除非有人故意重写这个设置，否则Deno会尽其所能将代码中的草率之处报告给用户。
 
-## 5. Deno尽可能使用Web标准
+## 5. Deno极力贴近Web标准
 
 Web标准的制定时间很长，一旦发布，谁也不能视而不见。虽然各种框架你方唱罢我登场，但Web标准则始终如一。在学习Web标准上花费的时间永远不会浪费，因为没有人胆敢推翻Web。在可以预见的未来几十年，甚至到你职业生涯的终点，Web仍将继续存在和发展。
 
@@ -181,11 +181,11 @@ Deno 1.0提供以下兼容Web的API。
 - ImportMeta
 - Location
 
-如上API都在程序的顶级作用域。这意味着如果你不使用`Deno()`命名空间中的任何方法，你的代码应该同时可以在Deno和浏览器中运行。虽然Deno的这些API并不是100%符合Web标准，但这结前端开发者而言依然是一个重大利好。
+如上API都在程序的顶级作用域。这意味着如果你不使用`Deno()`命名空间中的任何方法，你的代码应该同时可以在Deno和浏览器中运行。虽然Deno的这些API并不是100%符合Web标准，但这对前端开发者依然是重大利好。
 
 ## 6. ECMAScript模块
 
-Deno相比于Node.js的一个主要变化是Deno使用了正式的ECMAScript模块标准，而不是以往的CommonJS。Node.js直到2019年底才在13.2.0中支持ECMAScript模块，但即便如此支持仍不完善，并且还需要包含有争议的.mjs扩展名。
+Deno相比于Node.js的一个主要变化是使用了正式的ECMAScript模块标准，而不是老旧的CommonJS。Node.js直到2019年底才在13.2.0中支持ECMAScript模块，即便如此支持仍不完善，并且还需要包含有争议的.mjs扩展名。
 
 Deno通过在其模块系统中拥抱现代Web标准与过去挥手作别。模块可以使用URL或者包含强制扩展名的文件路径来引用。例如：
 
@@ -223,10 +223,10 @@ import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 下面我们来分析一下变化。
 
 - 不再有中心化的包管理器，而是直接从Web上导入ECMAScript模块。
-- 不再有“魔法般”的Node.js模块解析。现在，直观的语法更容易定位问题。
+- 不再有“魔法般”的Node.js模块解析。现在，直观的语法更容易定位来源。
 - 不再有node_modules目录。相反，依赖下载后会藏身于你的硬盘，你看不到。如果想刷新缓存再次下载，只要在命令后面加上`--reload`。
 
-如果想把依赖下载到项目代码附近而不是使用全缓存，可以使用`$DENO_DIR`环境变量。
+如果想把依赖下载到项目代码附近而不是使用全局缓存，可以使用`$DENO_DIR`环境变量。
 
 ### 7.2 查找兼容的第三方库
 
@@ -239,7 +239,7 @@ import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 | 在浏览器中运行<br />使用ESM语法         | 应该可以开箱即用<br />试试Pika CDN（[https://www.pika.dev/cdn](https://www.pika.dev/cdn)） |
 | 在浏览器中运行<br />使用CommonJS语法    | 使用jspm.io（[https://jspm.io/](https://jspm.io/)）用ESM语法来封装               |
 | 不在浏览器中运行<br />不使用Node.js API | 使用jspm.io用ESM语法来封装                                   |
-| 使用Node.js API                         | 可能无法使用，不过可以试试这个官方针对Node.sj的兼容层<br />（[https://deno.land/std/node/](https://deno.land/std/node/)） |
+| 使用Node.js API                         | 可能无法使用，不过可以试试这个官方针对Node.js的兼容层<br />（[https://deno.land/std/node/](https://deno.land/std/node/)） |
 
 ### 7.3 安装第三方模块
 
@@ -263,14 +263,14 @@ import * as pkg from 'https://cdn.pika.dev/preact@^10.3.0';
 
 ### 7.4 超越package.json
 
-JavaScript生态的主要依赖关系还是通过package.json来解析。这个文件已经膨胀到身兼数职，比如：
+JavaScript生态的主要依赖关系还是依托package.json。这个文件已经膨胀到身兼数职，比如：
 
 - 保存项目元数据
 - 列出项目带版本的依赖
 - 将依赖区分为dependencies和devDependencies
 - 定义程序的入口
 - 存储与项目相关的终端脚本
-- 定义type，是最近为改进对ECMAScript模块的支持新增加的
+- 定义type，是最近为改进对ECMAScript模块的支持而新增的
 
 ```json
 {
@@ -295,7 +295,7 @@ JavaScript生态的主要依赖关系还是通过package.json来解析。这个�
 }
 ```
 
-所有这些功能都是随时间推移而增加的，现在已经成为JavaScript生态运行的标准方式。很容易忘记这并不是一个正式的标准，而只会在这些功能必要时才会想起来。既然JavaScript这么流行，这件事就该好好从头思考。
+所有这些功能都是随时间推移而增加的，现在已经成为JavaScript生态运行的标准方式。很多人都会忘记这并不是一个正式标准，而只会在这些功能必要时才会想起来。既然JavaScript这么流行，这件事就该好好从头想一想。
 
 Deno还不能取代package.json的全部功能，但眼下也有一些解决方案。
 
@@ -328,7 +328,7 @@ JSDoc发布于1999年，21年前。它是目前使用和支持最多的JavaScrip
  *
 ```
 
-Deno内置支持JSDoc并使用它构建文档系统。虽然目前尚未使用类似上面的元数据，但`deno doc`例会读取函数及期参数的描述。
+Deno内置支持JSDoc并使用它构建文档系统。虽然目前尚未使用类似上面的元数据，但`deno doc`例会读取函数及其参数的描述。
 
 ```ts
 /**
@@ -360,11 +360,11 @@ JavaScript本身是不是需要编译的，因此可以直接在浏览器中运�
 
 不幸的是，这种简单性和低门槛已经被一种叫做极度工具崇拜的东西在不知不觉间破坏了。结果JavaScript开发变成一个复杂的噩梦。我曾经完整地学习过一个讲解如何配置Webpack的课程。人生苦短，这种没意义的生活该结束了。
 
-工具之乱已经到了让很多人急切想回归真正写代码的状态，而不是摆弄配置文件或者因为要在不同的竞争性标准中做出选择而苦恼。Facebook的Rome（[https://github.com/facebookexperimental/rome](https://github.com/facebookexperimental/rome)）是一个为解决这个问题而出现的项目。在本文写作时，这个项目还处于幼年期。虽然这个项目是有益的，但Deno应该是一个更本质的解决方案。
+工具之乱已经让很多人急切想回归真正写代码的状态，而不是摆弄配置文件或者因为要在不同的竞争性标准中做出选择而苦恼。Facebook的Rome（[https://github.com/facebookexperimental/rome](https://github.com/facebookexperimental/rome)）是一个为解决这个问题而出现的项目。在本文写作时，这个项目还处于幼年期。虽然这个项目是有益的，但Deno应该是一个更本质的解决方案。
 
 Deno本身是一个完整的生态，包含运行时及自己的模块/包管理系统。这就决定了它自己内置的工具会有更广泛的应用范围。下面我们就来介绍Deno 1.0中内置的工具，以及如何利用它们减少对第三方库的依赖和简化开发。
 
-当然，目前Deno还不可能取代整个前端构建工具链，但我们离这一天应该不会太远了。
+当然，目前Deno还不可能取代整个前端构建工具链，但我们离这一天应该不远了。
 
 ### 8.1 测试
 
@@ -372,7 +372,7 @@ Deno本身是一个完整的生态，包含运行时及自己的模块/包管理
 
 在本文写作时，没有测试覆盖功能。另外，监控模式也需要使用Denon（[https://deno.land/x/denon/](https://deno.land/x/denon/)）等第三方工具来设置。
 
-要了测试运行器的全部选项，使用`deno test --help`。虽然还很有限，但或许包含很多某些你熟悉的程序如Mocha中的特性。例如，`--failfast`会在遇到第一个错误时停止，而`--filter`可用于过滤要运行的测试。
+要了解测试运行器的全部选项，使用`deno test --help`。虽然还很有限，但或许包含很多某些你熟悉的程序如Mocha中的特性。例如，`--failfast`会在遇到第一个错误时停止，而`--filter`可用于过滤要运行的测试。
 
 #### 1. 使用测试运行器
 
@@ -402,7 +402,7 @@ Deno.test({
 
 Deno可以通过命令行`deno bundle`创建简单的包，但它也暴露了内部编译器API（[https://deno.land/std/manual.md#compiler-api](https://deno.land/std/manual.md#compiler-api)），因此用户可以控制自己的输出，有时候可以为在前端使用而自定义。这个API当前被标记为不稳定，所以需要使用`--unstable`标签。
 
-Deno虽然有一些兼容Web的API，但并不完整。如果想将编译引用DOM的前端TypeScript，需要在编译或打包时告诉Deno相关的类型。可以使用编译器API选项`lib`。
+Deno虽然有一些兼容Web的API，但并不完整。如果想编译引用DOM的前端TypeScript，需要在编译或打包时告诉Deno相关的类型。可以使用编译器API选项`lib`。
 
 index.html
 
@@ -473,7 +473,7 @@ Dene内置了调试功能，但在本文写作时，Visual Studio Code扩展还�
 
 Deno内置了基于Rust notify（[https://github.com/notify-rs/notify](https://github.com/notify-rs/notify)）的文件监控功能，通过`Deno.watchFs()`来使用。Deno喜欢在后台暴露强大的API，让用户自己按喜好实现自己的代码。因此没有`--watch`标记，而是需要创建自己的实现或使用一个第三方模块。
 
-编写自己的文件监控器，唯一有点难度的是消除抖动。这个API可能连续触发很多事件，而我们并却希望多次执行某个操作。Github用户Caesar2011使用`Date.now()`用23行TypeScript代码就解决了这个问题（[https://github.com/Caesar2011/rhinoder/blob/master/mod.ts](https://github.com/Caesar2011/rhinoder/blob/master/mod.ts)）。
+编写自己的文件监控器，唯一有点难度的是消除抖动。这个API可能连续触发很多事件，而我们可能并不希望多次执行某个操作。Github用户Caesar2011使用`Date.now()`用23行TypeScript代码就解决了这个问题（[https://github.com/Caesar2011/rhinoder/blob/master/mod.ts](https://github.com/Caesar2011/rhinoder/blob/master/mod.ts)）。
 
 还有一个更高级的Deno文件监控工具叫Denon（[https://deno.land/x/denon/](https://deno.land/x/denon/)），相当于nodemon。如果你想监控工作空间的变化并重新运行测试，只要执行下面的命令：
 
@@ -502,10 +502,10 @@ Deno成功避免了很多JavaScript开发的缺点，下面只列举几点。
 
 - 通过使用Web标准，Deno让自己的API更加面向未来。同时，这也让开发者信心大增，不必再浪费时间去学习那些很快过时的东西。
 - 以TypeScript加强JavaScript同时去掉编译负担，实现了更紧密的集成。
-- 内置工具意味常见功能开箱即用，用着不再浪费时间去搜索。
-- 去中心化的包管理将用户从npm解放出来，而ECMAScript模块系统相对于老旧的CommonJS也给人带来了新鲜感。
+- 内置工具意味着常见功能开箱即用，用着不再浪费时间去搜索。
+- 去中心化的包管理将用户从npm中解放出来，而ECMAScript模块系统相比于老旧的CommonJS也让人眼前一亮。
 
-虽然眼下还不能完全取代Node.sj，但Deno已经成为可以日常使用的一个出色的编程环境。
+虽然还不能完全取代Node.js，但Deno已经成为可以日常使用的一个出色的编程环境。
 
 ## 11. 相关文章
 
