@@ -42,6 +42,7 @@
 
 ## 文章
 
+1. [Deno 1.0，来了解一下](/articles/20200510_cncuckoo_Deno_1.0，来了解一下.md)（20200510 [@cncuckoo](https://github.com/cncuckoo))  
 1. [前端最佳实践之可维护性](/articles/20200427_cncuckoo_前端最佳实践之可维护性.md)（20200427 [@cncuckoo](https://github.com/cncuckoo))  
 1. [围观“33行代码的React”](/articles/20200420_cncuckoo_围观“33行代码的React”.md)（20200420 [@cncuckoo](https://github.com/cncuckoo))  
 1. [谈谈小程序自动化](/articles/20200408_liuguanyu_谈谈小程序自动化.md)（20200408 [@liuguanyu](https://github.com/liuguanyu))  
