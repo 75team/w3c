@@ -212,7 +212,7 @@ Deno的包管理方式已经发生了天翻地覆的变化。不再依赖中心�
 
 像npm这样的中心化仓库有好处也有不足，这方面也是Deno饱受争议之处。
 
-### 7.1 Deno新的包含管理机制
+### 7.1 Deno新的包管理机制
 
 导入一个包变得如此简单可能会吓到你。
 
@@ -328,7 +328,7 @@ JSDoc发布于1999年，21年前。它是目前使用和支持最多的JavaScrip
  *
 ```
 
-Deno内置支持JSDoc并使用它构建文档系统。虽然目前尚未使用类似上面的元数据，但`deno doc`例会读取函数及其参数的描述。
+Deno内置支持JSDoc并使用它构建文档系统。虽然目前尚未使用类似上面的元数据，但`deno doc`会读取函数及其参数的描述。
 
 ```ts
 /**
@@ -376,7 +376,7 @@ Deno本身是一个完整的生态，包含运行时及自己的模块/包管理
 
 #### 1. 使用测试运行器
 
-最基本的语法是`deno test`。这个命令会运行工作目录中所有以 `_test`或`.test`结尾且扩展名为.js、.ts、.jsx或.tsx文件（如example_test.ts）。
+最基本的语法是`deno test`。这个命令会运行工作目录中所有以 `_test`或`.test`结尾且扩展名为.js、.ts、.jsx或.tsx的文件（如example_test.ts）。
 
 ```ts
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
@@ -461,7 +461,7 @@ if (errors) {
 
 Dene内置了调试功能，但在本文写作时，Visual Studio Code扩展还不支持它。要调试，需要手工执行如下操作。
 
-- `deno run -A --inspect-brk fileToDebug.ts`（注意：使用对模块的最低权限）
+- `deno run -A --inspect-brk fileToDebug.ts`（注意：对你的模块只授权最低权限）
 
 - 在Chrome或Chromium中打开`chrome://inspect`，之后会看到类似下面的屏幕
 
@@ -483,7 +483,7 @@ denon test
 
 ## 9. Visual Studio Code插件
 
-axetroy在Visual Studio Market Place发布的插件（[https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno](https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno)）是目前最好的扩展。安装以后，在项目目录下创建一个.vscode/settings.json文件，然后就可以在每个项目中独立启动这个扩展。
+axetroy在Visual Studio Market Place发布的插件（[https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno](https://marketplace.visualstudio.com/items?itemName=axetroy.vscode-deno)）是目前最好的扩展。安装以后，在项目目录下创建一个.vscode/settings.json文件，然后就可以在每个项目中独立启用这个扩展。
 
 ```json
 // .vscode/settings.json
