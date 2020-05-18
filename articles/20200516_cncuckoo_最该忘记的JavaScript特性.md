@@ -1,6 +1,7 @@
 # 犀牛书作者：最该忘记的JavaScript特性
 
 > 原文：https://davidflanagan.com/2020/05/12/javascript-to-forget.html
+> 
 > 作者：David Flanagan
 
 
@@ -25,3 +26,4 @@ JavaScript这门语言的第一个演示版差不多就在25年前诞生。
 - 最初的DOM API是在人们疯狂迷恋XML的时代定义的。（当时的人们确实相信用不了几年，XML就可以解决所有数据问题。真是个难以置信的时代。）某种程度上，正是W3C的认可，才让Java那些人影响了DOM API，这些人觉得最好只定义一套API，JavaScript程序员能用它操作HTML文档，而Java程序员能用它操作XML数据。这也是为什么会有Attr节点（最好当它不存在）这么怪异的东西的原因。DOM Level 3 API中最让我不理解的一个操作是从文档中删除元素e，你不能像今天这样写成e.remove()，而是必须写成e.parentNode.removeChild(e)。
 
 
+不管怎么说，现在都已经2020年了。犀牛书第7版将不会再花笔墨描述这些陈旧的特性，这些特性大家最好还是忘掉。
