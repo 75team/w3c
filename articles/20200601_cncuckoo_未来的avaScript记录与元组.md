@@ -1,12 +1,12 @@
 # 未来的JavaScript记录与元组
 
-> 原文地址：https://2ality.com/2020/05/records-tuples-first-look.html
+> 原文地址：[https://2ality.com/2020/05/records-tuples-first-look.html](https://2ality.com/2020/05/records-tuples-first-look.html)
 >
 > 原文作者：Dr. Axel Rauschmayer
 
 Dr. Axel Rauschmayer最近撰文介绍了还处于Stage1阶段的两个JavaScript新特性：记录和元组。
 
-记录和元组是一个新提案（Record & Tuple，https://github.com/tc39/proposal-record-tuple），建议为JavaScript增加两个复合原始类型：
+记录和元组是一个新提案（Record & Tuple，[https://github.com/tc39/proposal-record-tuple](https://github.com/tc39/proposal-record-tuple)），建议为JavaScript增加两个复合原始类型：
 
 - 记录（Record），是不可修改的按值比较的对象
 - 元组（Tuple），是不可修改的按值比较的数组
@@ -75,7 +75,7 @@ true
 #['a', 'b']
 ```
 
-注意：这些都是浅层转换。如果值树中的任何节点不是原始值，Record()和Tuple.from()会抛出异常。
+注意：这些都是浅层转换。如果值树结构中有任何节点不是原始值，Record()和Tuple.from()会抛出异常。
 
 ### 使用记录
 
@@ -117,7 +117,7 @@ assert.ok(
 
 ### 为什么按值比较的值不可修改
 
-某些数据结构（比如散列映射和搜索树）有槽位，其中键的保存位置根据它们的值来确定。如果键的值改变了，那这个键通常必须放到不同的槽位。这就是为什么在JavaScript中，可以用作键的值：
+某些数据结构（比如散列映射和搜索树）有槽位，其中键的保存位置根据它们的值来确定。如果键的值改变了，那这个键通常必须放到不同的槽位。这就是为什么在JavaScript中可以用作键的值：
 
 - 要么按值比较且不可修改（原始值）
 - 要么按标识比较且可修改（对象）
@@ -126,9 +126,9 @@ assert.ok(
 
 复合原始值有如下好处。
 
-- 深度比较对象，这是一个内置操作，可以通过如===来调用
-- 共享值：如果对象是可修改的，为了安全共享就需要深度复制它的一个副本。而对于不可修改的值，就可以直接共享
-- 数据的非破坏性更新：如果要修改复合值，由于一切都是不可修改的，所以就要创建一个可修改的副本，然后就可以放心地重用不必修改的部分
+- 深度比较对象，这是一个内置操作，可以通过如===来调用。
+- 共享值：如果对象是可修改的，为了安全共享就需要深度复制它的一个副本。而对于不可修改的值，就可以直接共享。
+- 数据的非破坏性更新：如果要修改复合值，由于一切都是不可修改的，所以就要创建一个可修改的副本，然后就可以放心地重用不必修改的部分。
 - 在Map和Set等数据结构中使用：因为两个内容相同的复合原始值在这门语言的任何地方（包括作为Map的键和作为Set的元素）都被认为严格相等，所以映射和集合成会变得更有用。
 
 接下来演示这些好处。
@@ -153,7 +153,7 @@ assert.ok(
 
 ### 映射的复合键
 
-因为对象是按标识比较的，所以在（非弱）映射中用对象作为键几乎没什么意义：
+因为对象是按标识比较的，所以在（非弱）映射中用对象作为键几乎没什么用：
 
 ```js
 const m = new Map();
@@ -305,7 +305,7 @@ displayData(#['Hello', 'world']); // 不显示
 
 ### 测试
 
-多数测试框架都支持深度相等，以检查某个计算是否产生了期待的结果。例如，Node.js内置的assert模块有一个函数叫deepEqual()。有了复合原始值，就可以直接断言：
+多数测试框架都支持深度相等，以检查某个计算是否产生了预期的结果。例如，Node.js内置的assert模块有一个函数叫deepEqual()。有了复合原始值，就可以直接断言：
 
 ```js
 function invert(color) {
@@ -322,7 +322,7 @@ assert.ok(
 
 ## 新语法的优缺点
 
-新语言的一个缺点是字符#已经在很多地方被占用了（比如私有字段），另外非数字字母字符多少显得有点神秘。可以看看下面的例子：
+新语法的一个缺点是字符#已经在很多地方被占用了（比如私有字段），另外非数字字母字符多少显得有点神秘。可以看看下面的例子：
 
 ```js
 const della = #{
@@ -341,7 +341,7 @@ const della = #{
 };
 ```
 
-优点是这个语法比较简洁。对于一个常用的结构，我们都希望它简单。此外，一旦熟悉了这个语法之后，神秘感自然就会越来越淡。
+优点是这个语法比较简洁。对于一个常用的结构，当然越简单越好。此外，一旦熟悉了这个语法之后，神秘感自然就会越来越淡。
 
 除了特殊的字面量语法，还可以使用工厂函数：
 
@@ -362,7 +362,7 @@ const della = Record({
 });
 ```
 
-如果JavaScript支持Tagged Collection Literals（https://github.com/zkat/proposal-collection-literals，已撤销），这个语法还可能有所改进：
+如果JavaScript支持Tagged Collection Literals（[https://github.com/zkat/proposal-collection-literals](https://github.com/zkat/proposal-collection-literals)，已撤销），这个语法还可能有所改进：
 
 ```js
 const della = Record!{
@@ -405,8 +405,8 @@ const della = R!{
 
 ## JSON与记录和元组
 
-- JSON.stringify()把记录当成对象，把元组当成数组（会递归）。
-- JSON.parseImmutable与JSON.parse()类似，但返回记录而非对象，返回元组而非数组（会递归）。
+- JSON.stringify()把记录当成对象，把元组当成数组（递归）。
+- JSON.parseImmutable与JSON.parse()类似，但返回记录而非对象，返回元组而非数组（递归）。
 
 ## 未来：类的实例会按值比较吗？
 
