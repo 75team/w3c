@@ -42,7 +42,7 @@
 
 ## 文章
 
-1. [未来的avaScript记录与元组](/articles/20200601_cncuckoo_未来的avaScript记录与元组.md)（20200601 [@cncuckoo](https://github.com/cncuckoo))  
+1. [未来的JavaScript记录与元组](/articles/20200601_cncuckoo_未来的avaScript记录与元组.md)（20200601 [@cncuckoo](https://github.com/cncuckoo))  
 1. [最该忘记的JavaScript特性](/articles/20200516_cncuckoo_最该忘记的JavaScript特性.md)（20200516 [@cncuckoo](https://github.com/cncuckoo))  
 1. [Deno 1.0，来了解一下](/articles/20200510_cncuckoo_Deno_1.0，来了解一下.md)（20200510 [@cncuckoo](https://github.com/cncuckoo))  
 1. [前端最佳实践之可维护性](/articles/20200427_cncuckoo_前端最佳实践之可维护性.md)（20200427 [@cncuckoo](https://github.com/cncuckoo))  
