@@ -3,7 +3,7 @@
 
 本项目记录 360 W3C 工作组参与 Web 标准制定过程中的各项产出。
 
-360 自 2012 年加入 W3C（World Wide Web Consortium，万维网联盟，又称 W3C 理事会）成为正式会员。2015 年 8 月，W3C 会员事务由浏览器部门移交到 Web 平台部奇舞团（360 最大前端团队）。
+360 自 2012 年加入 W3C（World Wide Web Consortium，万维网联盟，又称 W3C 理事会）成为正式会员。2015 年 8 月，W3C 会员事务由浏览器部门移交到 Web 平台部奇舞团（360 最大前端团队）。2020年8月，W3C会员事务移交到浏览器部门。
 
 经过一段时间调研和准备，2018 年初，在 360 技术委员会前端分会支持下，360 W3C 工作组正式成立。目前成员主要来自 360 各前端团队，同时也向各大业务线开放。
 
@@ -12,21 +12,21 @@
 
 ## 成员
 
-- [@cncuckoo](https://github.com/cncuckoo)，Advisory Committee Representative（顾问委员会代表） 
+- [@panhongxue](https://github.com/panhongxue)，Advisory Committee Representative（顾问委员会代表） 
+- [@cncuckoo](https://github.com/cncuckoo)，former Advisory Committee Representative
 - [@liuguanyu](https://github.com/liuguanyu)，CSS Working Group 
-- [@anjia](https://github.com/anjia)，CSS Working Group 
 - [@verymuch](https://github.com/verymuch)，Web of Things Working Group 
-- [@berwin](https://github.com/Berwin)，Web Performance Working Group 
 - [@lizheming](https://github.com/lizheming) 
-- [@betseyliu](https://github.com/betseyliu) 
 - [@nimitzdev](https://github.com/NimitzDEV) 
-- [@songworld](https://github.com/songworld)，Automative Working Group 
 - [@francisfeng](https://github.com/francisfeng)，Automative Working 
 - [@hax](https://github.com/hax)
 
-
 ## 前成员
 
+- [@betseyliu](https://github.com/betseyliu) 
+- [@songworld](https://github.com/songworld)，Automative Working Group 
+- [@anjia](https://github.com/anjia)，CSS Working Group 
+- [@berwin](https://github.com/Berwin)，Web Performance Working Group 
 - [@huangxiaolu](https://github.com/huangxiaolu)，Web Performance Working Group 
 - [@chunpu](https://github.com/chunpu)，Browser Testing and Tools Working Group 
 - [@liuyuchenzh](https://github.com/liuyuchenzh)，Web Performance Working Group
