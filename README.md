@@ -16,15 +16,15 @@
 - [@cncuckoo](https://github.com/cncuckoo)，former Advisory Committee Representative
 - [@liuguanyu](https://github.com/liuguanyu)，CSS Working Group 
 - [@verymuch](https://github.com/verymuch)，Web of Things Working Group 
+- [@francisfeng](https://github.com/francisfeng)，Automative Working 
+- [@songworld](https://github.com/songworld)，Automative Working Group 
+- [@hax](https://github.com/hax)
 - [@lizheming](https://github.com/lizheming) 
 - [@nimitzdev](https://github.com/NimitzDEV) 
-- [@francisfeng](https://github.com/francisfeng)，Automative Working 
-- [@hax](https://github.com/hax)
+- [@betseyliu](https://github.com/betseyliu) 
 
 ## 前成员
 
-- [@betseyliu](https://github.com/betseyliu) 
-- [@songworld](https://github.com/songworld)，Automative Working Group 
 - [@anjia](https://github.com/anjia)，CSS Working Group 
 - [@berwin](https://github.com/Berwin)，Web Performance Working Group 
 - [@huangxiaolu](https://github.com/huangxiaolu)，Web Performance Working Group 
